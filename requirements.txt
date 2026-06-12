@@ -1,0 +1,5 @@
+python-dotenv>=1.0.0
+pyyaml>=6.0
+requests>=2.31.0
+litellm>=1.80.10,<2.0.0
+tenacity>=8.2.0

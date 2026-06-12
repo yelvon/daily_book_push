@@ -1,0 +1,24 @@
+schedule:
+  timezone: Asia/Shanghai
+  hour: 8
+  minute: 0
+
+rotation:
+  mode: round_robin
+
+books:
+  - id: sample
+    file: books/sample.txt
+    title: 示例短文
+    author: 示例作者
+    enabled: true
+    daily_chars: 200
+
+ai:
+  enabled: true
+  on_failure: skip
+
+notify:
+  channels:
+    - feishu
+    - wecom
