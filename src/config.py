@@ -12,7 +12,9 @@ from dotenv import load_dotenv
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_CONFIG_PATH = ROOT_DIR / "config" / "books.yaml"
+DEFAULT_RECOMMEND_CONFIG_PATH = ROOT_DIR / "config" / "recommend.yaml"
 DEFAULT_PROGRESS_PATH = ROOT_DIR / "state" / "progress.json"
+DEFAULT_RECOMMEND_HISTORY_PATH = ROOT_DIR / "state" / "recommend_history.json"
 
 
 @dataclass
@@ -24,6 +26,20 @@ class BookConfig:
     enabled: bool = True
     daily_chars: int = 2000
     encoding: str = "utf-8"
+
+
+@dataclass
+class RecommendConfig:
+    mode: str = "recommend"
+    alternate_even_day: str = "read"
+    language: str = "zh"
+    use_google_search: bool = True
+    history_days: int = 90
+    max_history_in_prompt: int = 30
+    categories: List[str] = field(default_factory=list)
+    rotate_categories: bool = True
+    avoid_repeat: bool = True
+    recommend_history_path: Path = DEFAULT_RECOMMEND_HISTORY_PATH
 
 
 @dataclass
@@ -72,6 +88,39 @@ def _parse_books(raw: Dict[str, Any]) -> List[BookConfig]:
             )
         )
     return books
+
+
+def load_recommend_config(path: Optional[Path] = None) -> RecommendConfig:
+    setup_env()
+    cfg_path = path or DEFAULT_RECOMMEND_CONFIG_PATH
+    if not cfg_path.exists():
+        return RecommendConfig()
+
+    with cfg_path.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+
+    rec = raw.get("recommend") or {}
+    strategy = raw.get("schedule_strategy") or {}
+    use_search = rec.get("use_google_search", True)
+    env_search = os.getenv("GEMINI_USE_SEARCH")
+    if env_search is not None:
+        use_search = env_search.strip().lower() not in {"0", "false", "no", "off"}
+
+    env_mode = os.getenv("RUN_MODE")
+    mode = str(env_mode or raw.get("mode", "recommend"))
+
+    return RecommendConfig(
+        mode=mode,
+        alternate_even_day=str(strategy.get("alternate_even_day", "read")),
+        language=str(rec.get("language", "zh")),
+        use_google_search=bool(use_search),
+        history_days=int(rec.get("history_days", 90)),
+        max_history_in_prompt=int(rec.get("max_history_in_prompt", 30)),
+        categories=[str(c) for c in rec.get("categories") or []],
+        rotate_categories=bool(rec.get("rotate_categories", True)),
+        avoid_repeat=bool(rec.get("avoid_repeat", True)),
+        recommend_history_path=DEFAULT_RECOMMEND_HISTORY_PATH,
+    )
 
 
 def load_app_config(config_path: Optional[Path] = None) -> AppConfig:

@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""每日读书推送 - CLI 入口。"""
+"""每日读书 / 荐书推送 - CLI 入口。"""
 
 from __future__ import annotations
 
 import argparse
 import logging
 import sys
+from datetime import date
 from pathlib import Path
 
-from src.config import load_app_config, resolve_book_path
+from src.config import load_app_config, load_recommend_config, resolve_book_path
 from src.message import build_all_finished_message, build_message
 from src.notifier import send_message
 from src.progress import (
@@ -19,6 +20,14 @@ from src.progress import (
     reset_book_progress,
     save_progress,
 )
+from src.recommend_history import (
+    append_record,
+    load_recommend_history,
+    prune_history,
+    recent_titles,
+    save_recommend_history,
+)
+from src.recommender import generate_daily_recommendation
 from src.rotation import next_rotation_index, peek_next_book_title, pick_book
 from src.splitter import split_text
 from src.summarizer import summarize_segment
@@ -39,7 +48,65 @@ def setup_logging() -> None:
     )
 
 
-def run(args: argparse.Namespace) -> int:
+def run_recommend(args: argparse.Namespace) -> int:
+    config = load_app_config()
+    recommend = load_recommend_config()
+
+    history_state = load_recommend_history(recommend.recommend_history_path)
+    history_state = prune_history(history_state, recommend.history_days)
+    recent = recent_titles(history_state, recommend.max_history_in_prompt)
+
+    result = generate_daily_recommendation(config, recommend, recent)
+    if not result:
+        fallback = "## 每日荐书\n\n今日荐书生成失败，请检查 GEMINI_API_KEY 或稍后重试。"
+        if args.dry_run:
+            print(fallback)
+            return 1
+        send_message(config, fallback)
+        return 1
+
+    logger.info("今日荐书: %s / %s", result.record.title, result.record.author)
+
+    if args.dry_run:
+        print(result.message)
+        return 0
+
+    if not send_message(config, result.message):
+        logger.error("推送失败")
+        return 1
+
+    append_record(history_state, result.record)
+    save_recommend_history(recommend.recommend_history_path, history_state)
+    logger.info("荐书推送完成，历史已更新")
+    return 0
+
+
+def _resolve_mode(explicit_mode: str | None) -> str:
+    if explicit_mode:
+        return explicit_mode
+    return load_recommend_config().mode
+
+
+def _resolve_alternate_mode(recommend_cfg) -> str:
+    even = date.today().toordinal() % 2 == 0
+    even_mode = recommend_cfg.alternate_even_day
+    odd_mode = "recommend" if even_mode == "read" else "read"
+    return even_mode if even else odd_mode
+
+
+def run_both(args: argparse.Namespace) -> int:
+    read_args = argparse.Namespace(**{**vars(args), "mode": "read"})
+    recommend_args = argparse.Namespace(**{**vars(args), "mode": "recommend"})
+
+    read_code = run_read(read_args)
+    recommend_code = run_recommend(recommend_args)
+
+    if args.dry_run:
+        return 0 if read_code == 0 or recommend_code == 0 else 1
+    return 0 if read_code == 0 and recommend_code == 0 else 1
+
+
+def run_read(args: argparse.Namespace) -> int:
     config = load_app_config()
     state = load_progress(config.progress_path)
 
@@ -48,14 +115,6 @@ def run(args: argparse.Namespace) -> int:
         save_progress(config.progress_path, state)
         logger.info("已重置书籍进度: %s", args.reset)
         return 0
-
-    if args.notify_test:
-        test_msg = "## 每日读书测试\n\n这是一条测试消息。"
-        if args.dry_run:
-            print(test_msg)
-            return 0
-        ok = send_message(config, test_msg)
-        return 0 if ok else 1
 
     pick = pick_book(config.books, state, force_book_id=args.book)
     if pick is None:
@@ -121,14 +180,47 @@ def run(args: argparse.Namespace) -> int:
     return 0
 
 
+def run(args: argparse.Namespace) -> int:
+    if args.notify_test:
+        test_msg = "## 每日荐书测试\n\n这是一条测试消息。"
+        if args.dry_run:
+            print(test_msg)
+            return 0
+        config = load_app_config()
+        ok = send_message(config, test_msg)
+        return 0 if ok else 1
+
+    mode = _resolve_mode(args.mode)
+    recommend_cfg = load_recommend_config()
+
+    if mode == "alternate":
+        mode = _resolve_alternate_mode(recommend_cfg)
+        logger.info("alternate 模式，今日执行: %s", mode)
+
+    if mode == "both":
+        return run_both(args)
+    if mode == "recommend":
+        return run_recommend(args)
+    if mode == "read":
+        return run_read(args)
+    logger.error("未知模式: %s（可选: recommend / read / both / alternate）", mode)
+    return 1
+
+
 def main() -> None:
     setup_logging()
-    parser = argparse.ArgumentParser(description="每日读书推送")
-    parser.add_argument("--dry-run", action="store_true", help="预览消息，不推送、不写进度")
-    parser.add_argument("--book", help="强制指定书籍 id")
-    parser.add_argument("--reset", metavar="BOOK_ID", help="重置指定书籍进度")
+    parser = argparse.ArgumentParser(description="每日读书 / AI 荐书推送")
+    parser.add_argument(
+        "--mode",
+        choices=["recommend", "read", "both", "alternate"],
+        default=None,
+        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换",
+    )
+    parser.add_argument("--dry-run", action="store_true", help="预览消息，不推送、不写状态")
+    parser.add_argument("--book", help="[read 模式] 强制指定书籍 id")
+    parser.add_argument("--reset", metavar="BOOK_ID", help="[read 模式] 重置指定书籍进度")
     parser.add_argument("--notify-test", action="store_true", help="发送测试通知")
-    parser.add_argument("--skip-ai", action="store_true", help="跳过 AI 摘要")
+    parser.add_argument("--skip-ai", action="store_true", help="[read 模式] 跳过 AI 摘要")
     args = parser.parse_args()
     sys.exit(run(args))
 

@@ -1,5 +1,13 @@
 {
   "rotation_index": 0,
   "last_book_id": null,
-  "books": {}
+  "books": {
+    "wealth_of_nations": {
+      "offset": 1073,
+      "total_chars": 2432722,
+      "finished": false,
+      "last_push_date": null,
+      "day_count": 0
+    }
+  }
 }

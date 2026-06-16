@@ -7,11 +7,18 @@ rotation:
   mode: round_robin
 
 books:
+  - id: wealth_of_nations
+    file: books/wealth_of_nations.txt
+    title: 国富论
+    author: 亚当·斯密
+    enabled: true
+    daily_chars: 2000
+
   - id: sample
     file: books/sample.txt
     title: 示例短文
     author: 示例作者
-    enabled: true
+    enabled: false
     daily_chars: 200
 
 ai:

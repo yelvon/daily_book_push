@@ -1,0 +1,32 @@
+# 运行模式：
+#   recommend  - 纯 AI 每日荐书（默认）
+#   read       - 本地 txt 分段 + AI 摘要
+#   both       - 同一天推送两条：先读书、后荐书
+#   alternate  - 按日轮换：一天读书、一天荐书
+
+mode: recommend
+
+schedule_strategy:
+  # alternate 模式下：even_day=read 表示偶数日读书，奇数日荐书
+  alternate_even_day: read
+
+recommend:
+  language: zh
+  use_google_search: true
+  history_days: 90
+  max_history_in_prompt: 30
+
+  # 荐书偏好（可自由增删）
+  categories:
+    - 经济学与理财
+    - 心理学与认知
+    - 历史与传记
+    - 哲学与思维
+    - 文学经典
+    - 科技与社会
+
+  # 轮播：每天侧重一个类别，避免推荐过于单一
+  rotate_categories: true
+
+  # 排除最近 N 天内已推荐过的书（由 history 文件记录）
+  avoid_repeat: true
