@@ -57,6 +57,8 @@ jobs:
 
       - name: 执行推送
         env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ vars.CURSOR_MODEL || secrets.CURSOR_MODEL || 'composer-2.5' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini/gemini-2.5-flash' }}
           GEMINI_MODEL_FALLBACK: ${{ vars.GEMINI_MODEL_FALLBACK || secrets.GEMINI_MODEL_FALLBACK || 'gemini/gemini-2.0-flash' }}
@@ -76,6 +78,7 @@ jobs:
           echo "每日推送 | 模式: $MODE"
           echo "时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
           echo "=========================================="
+          echo "Cursor: $([ -n "$CURSOR_API_KEY" ] && echo '已配置' || echo '未配置')"
           echo "Gemini: $([ -n "$GEMINI_API_KEY" ] && echo '已配置' || echo '未配置')"
           echo "联网搜索: $GEMINI_USE_SEARCH"
           echo "飞书: $([ -n "$FEISHU_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"

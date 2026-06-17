@@ -40,7 +40,7 @@ python main.py --mode alternate --dry-run
 
 ## 荐书模式详情
 
-每天由 Gemini 根据偏好与历史记录推荐一本书，推送内容包含：
+每天由 AI 根据偏好与历史记录推荐一本书，推送内容包含：
 
 - 为什么今天推荐
 - 一句话概括
@@ -52,7 +52,7 @@ python main.py --mode alternate --dry-run
 
 - `categories`：感兴趣的领域
 - `rotate_categories`：每天轮换一个侧重类别
-- `use_google_search`：是否启用 Gemini 联网（需支持的模型）
+- `use_google_search`：是否启用 Gemini 联网（仅 Gemini 后端生效）
 - `avoid_repeat`：避免与近 90 天推荐重复
 
 历史记录保存在 `state/recommend_history.json`。
@@ -63,11 +63,14 @@ python main.py --mode alternate --dry-run
 
 | Secret | 说明 | 必填 |
 |---|---|---|
-| `GEMINI_API_KEY` | Google Gemini API Key | 是 |
+| `CURSOR_API_KEY` | Cursor API Key（[Integrations](https://cursor.com/dashboard/integrations)） | 二选一 |
+| `GEMINI_API_KEY` | Google Gemini API Key | 二选一 |
 | `FEISHU_WEBHOOK_URL` | 飞书机器人 | 至少一个 |
 | `WECHAT_WEBHOOK_URL` | 企业微信机器人 | 至少一个 |
 
-可选：`GEMINI_MODEL`、`GEMINI_USE_SEARCH`、`FEISHU_WEBHOOK_SECRET`
+> **LLM 选择**：`CURSOR_API_KEY` 与 `GEMINI_API_KEY` 至少配置一个；两者都配时 **Cursor 优先**，Cursor 失败会自动回退 Gemini。
+
+可选：`CURSOR_MODEL`、`GEMINI_MODEL`、`GEMINI_USE_SEARCH`、`FEISHU_WEBHOOK_SECRET`
 
 ### 手动测试
 
@@ -83,7 +86,7 @@ Actions → **每日荐书推送** → Run workflow
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env   # 填入 GEMINI_API_KEY 和 Webhook
+cp .env.example .env   # 填入 CURSOR_API_KEY 或 GEMINI_API_KEY，以及 Webhook
 
 python main.py --dry-run              # 预览今日荐书
 python main.py                        # 正式推送
@@ -98,6 +101,7 @@ config/recommend.yaml      # 荐书偏好
 config/books.yaml          # [read 模式] 本地书籍
 state/recommend_history.json
 state/progress.json        # [read 模式] 阅读进度
+src/llm_client.py         # LLM 调用（Cursor 优先，Gemini 备用）
 src/recommender.py         # AI 荐书逻辑
 main.py
 ```
@@ -112,5 +116,5 @@ pytest tests/ -q
 ## 说明
 
 - 荐书内容依赖 AI，请自行判断准确性；金句可能为概括或意译
-- 联网搜索需 Gemini 支持 `googleSearch` 工具；失败时会自动降级为模型自身知识
+- Gemini 联网搜索需模型支持 `googleSearch` 工具；Cursor 后端无联网，失败时会自动降级为模型自身知识或回退 Gemini
 - 建议私有仓库；`read` 模式书籍文件需自行管理版权

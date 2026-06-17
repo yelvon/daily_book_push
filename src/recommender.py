@@ -10,7 +10,7 @@ from typing import List, Optional, Tuple
 from zoneinfo import ZoneInfo
 
 from src.config import AppConfig, RecommendConfig
-from src.llm_client import call_with_fallback
+from src.llm_client import call_with_auto_provider
 from src.recommend_history import RecommendRecord
 
 logger = logging.getLogger(__name__)
@@ -118,8 +118,8 @@ def generate_daily_recommendation(
     recommend: RecommendConfig,
     recent_records: List[RecommendRecord],
 ) -> Optional[RecommendResult]:
-    if not config.gemini_api_key:
-        logger.error("未配置 GEMINI_API_KEY")
+    if not config.cursor_api_key and not config.gemini_api_key:
+        logger.error("未配置 CURSOR_API_KEY 或 GEMINI_API_KEY")
         return None
 
     today, weekday = _today_context(config.schedule_timezone)
@@ -135,13 +135,8 @@ def generate_daily_recommendation(
         history_block=history_block,
     )
 
-    models = [config.gemini_model]
-    if config.gemini_model_fallback:
-        models.append(config.gemini_model_fallback)
-
-    raw = call_with_fallback(
-        api_key=config.gemini_api_key,
-        models=models,
+    raw = call_with_auto_provider(
+        config=config,
         system_prompt=SYSTEM_PROMPT,
         user_prompt=user_prompt,
         temperature=0.8,

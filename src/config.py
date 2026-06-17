@@ -52,6 +52,8 @@ class AppConfig:
     config_path: Path = DEFAULT_CONFIG_PATH
     progress_path: Path = DEFAULT_PROGRESS_PATH
     root_dir: Path = ROOT_DIR
+    cursor_api_key: Optional[str] = None
+    cursor_model: str = "composer-2.5"
     gemini_api_key: Optional[str] = None
     gemini_model: str = "gemini/gemini-2.5-flash"
     gemini_model_fallback: Optional[str] = None
@@ -149,6 +151,8 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         config_path=path,
         progress_path=DEFAULT_PROGRESS_PATH,
         root_dir=ROOT_DIR,
+        cursor_api_key=os.getenv("CURSOR_API_KEY") or None,
+        cursor_model=os.getenv("CURSOR_MODEL", "composer-2.5"),
         gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
         gemini_model=os.getenv("GEMINI_MODEL", "gemini/gemini-2.5-flash"),
         gemini_model_fallback=os.getenv("GEMINI_MODEL_FALLBACK") or None,

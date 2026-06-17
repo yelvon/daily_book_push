@@ -1,14 +1,12 @@
-"""LiteLLM 摘要生成。"""
+"""LiteLLM / Cursor 摘要生成。"""
 
 from __future__ import annotations
 
 import logging
 from typing import Optional
 
-import litellm
-from tenacity import retry, stop_after_attempt, wait_exponential
-
 from src.config import AppConfig, BookConfig
+from src.llm_client import call_with_auto_provider
 
 logger = logging.getLogger(__name__)
 
@@ -29,8 +27,8 @@ SYSTEM_PROMPT = """你是一位阅读助手。根据用户提供的书籍片段�
 def summarize_segment(config: AppConfig, book: BookConfig, segment: str) -> Optional[str]:
     if not config.ai_enabled:
         return None
-    if not config.gemini_api_key:
-        logger.warning("未配置 GEMINI_API_KEY，跳过 AI 摘要")
+    if not config.cursor_api_key and not config.gemini_api_key:
+        logger.warning("未配置 CURSOR_API_KEY 或 GEMINI_API_KEY，跳过 AI 摘要")
         return None
     if not segment.strip():
         return None
@@ -41,34 +39,11 @@ def summarize_segment(config: AppConfig, book: BookConfig, segment: str) -> Opti
         f"今日阅读片段：\n{segment}"
     )
 
-    models = [config.gemini_model]
-    if config.gemini_model_fallback:
-        models.append(config.gemini_model_fallback)
-
-    for model in models:
-        try:
-            result = _call_litellm(config.gemini_api_key, model, user_prompt)
-            if result:
-                return result.strip()
-        except Exception as exc:
-            logger.warning("模型 %s 摘要失败: %s", model, exc)
-
-    return None
-
-
-@retry(stop=stop_after_attempt(2), wait=wait_exponential(multiplier=1, min=1, max=4), reraise=True)
-def _call_litellm(api_key: str, model: str, user_prompt: str) -> str:
-    response = litellm.completion(
-        model=model,
-        api_key=api_key,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
+    return call_with_auto_provider(
+        config=config,
+        system_prompt=SYSTEM_PROMPT,
+        user_prompt=user_prompt,
         temperature=0.3,
         max_tokens=1024,
+        use_google_search=False,
     )
-    content = response.choices[0].message.content
-    if not content:
-        raise ValueError("LLM 返回空内容")
-    return content

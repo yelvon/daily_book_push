@@ -58,7 +58,7 @@ def run_recommend(args: argparse.Namespace) -> int:
 
     result = generate_daily_recommendation(config, recommend, recent)
     if not result:
-        fallback = "## 每日荐书\n\n今日荐书生成失败，请检查 GEMINI_API_KEY 或稍后重试。"
+        fallback = "## 每日荐书\n\n今日荐书生成失败，请检查 CURSOR_API_KEY / GEMINI_API_KEY 或稍后重试。"
         if args.dry_run:
             print(fallback)
             return 1
