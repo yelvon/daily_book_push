@@ -61,7 +61,7 @@ class AppConfig:
     feishu_webhook_secret: Optional[str] = None
     feishu_webhook_keyword: Optional[str] = None
     wechat_webhook_url: Optional[str] = None
-    wechat_msg_type: str = "markdown"
+    wechat_msg_type: str = "text"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
@@ -160,7 +160,7 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         feishu_webhook_secret=os.getenv("FEISHU_WEBHOOK_SECRET") or None,
         feishu_webhook_keyword=os.getenv("FEISHU_WEBHOOK_KEYWORD") or None,
         wechat_webhook_url=os.getenv("WECHAT_WEBHOOK_URL") or None,
-        wechat_msg_type=os.getenv("WECHAT_MSG_TYPE", "markdown"),
+        wechat_msg_type=os.getenv("WECHAT_MSG_TYPE", "text"),
         webhook_verify_ssl=verify_ssl,
     )
 

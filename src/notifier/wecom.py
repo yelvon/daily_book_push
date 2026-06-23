@@ -9,14 +9,18 @@ import requests
 
 from src.config import AppConfig
 from src.notifier.chunk import chunk_content_by_max_bytes
+from src.notifier.wecom_format import adapt_markdown_for_wework, strip_markdown
 
 logger = logging.getLogger(__name__)
+
+_TEXT_MAX_BYTES = 2048
+_MARKDOWN_MAX_BYTES = 4096
 
 
 class WecomNotifier:
     def __init__(self, config: AppConfig) -> None:
         self._url = config.wechat_webhook_url
-        self._msg_type = config.wechat_msg_type
+        self._msg_type = config.wechat_msg_type.lower()
         self._max_bytes = config.wechat_max_bytes
         self._verify_ssl = config.webhook_verify_ssl
 
@@ -24,14 +28,27 @@ class WecomNotifier:
         if not self._url:
             return False
 
-        if self._msg_type == "text":
-            max_bytes = min(self._max_bytes, 2000)
-        else:
-            max_bytes = self._max_bytes
+        prepared = self._prepare_content(content)
+        max_bytes = self._effective_max_bytes()
 
-        if len(content.encode("utf-8")) > max_bytes:
-            return self._send_chunked(content, max_bytes)
-        return self._send_once(content)
+        if len(prepared.encode("utf-8")) > max_bytes:
+            return self._send_chunked(prepared, max_bytes)
+        return self._send_once(prepared)
+
+    def _effective_max_bytes(self) -> int:
+        if self._msg_type == "text":
+            return min(self._max_bytes, _TEXT_MAX_BYTES)
+        return min(self._max_bytes, _MARKDOWN_MAX_BYTES)
+
+    def _prepare_content(self, content: str) -> str:
+        if self._msg_type == "text":
+            return strip_markdown(content)
+        if self._msg_type == "markdown_v2":
+            return content.strip()
+        if self._msg_type == "markdown":
+            return adapt_markdown_for_wework(content)
+        logger.warning("未知 WECHAT_MSG_TYPE=%s，按 text 发送以兼容个人微信", self._msg_type)
+        return strip_markdown(content)
 
     def _send_chunked(self, content: str, max_bytes: int) -> bool:
         chunks = chunk_content_by_max_bytes(content, max_bytes, add_page_marker=True)
@@ -70,4 +87,6 @@ class WecomNotifier:
     def _build_payload(self, content: str) -> dict:
         if self._msg_type == "text":
             return {"msgtype": "text", "text": {"content": content}}
+        if self._msg_type == "markdown_v2":
+            return {"msgtype": "markdown_v2", "markdown_v2": {"content": content}}
         return {"msgtype": "markdown", "markdown": {"content": content}}
