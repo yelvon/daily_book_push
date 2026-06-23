@@ -5,6 +5,8 @@ from __future__ import annotations
 import logging
 import time
 
+import requests
+
 from src.config import AppConfig
 from src.notifier.chunk import chunk_content_by_max_bytes
 
