@@ -3,6 +3,7 @@
 #   read       - 本地 txt 分段 + AI 摘要
 #   both       - 同一天推送两条：先读书、后荐书
 #   alternate  - 按日轮换：一天读书、一天荐书
+#   economics  - 每日经济学独立频道
 
 mode: recommend
 

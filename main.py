@@ -10,7 +10,20 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from src.config import load_app_config, load_recommend_config, resolve_book_path
+from src.config import (
+    load_app_config,
+    load_economics_config,
+    load_recommend_config,
+    resolve_book_path,
+    select_channel_notifier_config,
+)
+from src.economics import generate_daily_economics
+from src.economics_progress import (
+    append_record as append_economics_record,
+    load_economics_progress,
+    prune_history as prune_economics_history,
+    save_economics_progress,
+)
 from src.message import build_all_finished_message, build_message
 from src.notifier import send_message
 from src.progress import (
@@ -78,6 +91,40 @@ def run_recommend(args: argparse.Namespace) -> int:
     append_record(history_state, result.record)
     save_recommend_history(recommend.recommend_history_path, history_state)
     logger.info("荐书推送完成，历史已更新")
+    return 0
+
+
+def run_economics(args: argparse.Namespace) -> int:
+    config = load_app_config()
+    economics = load_economics_config()
+
+    state = load_economics_progress(economics.progress_path)
+    state = prune_economics_history(state, economics.history_days)
+
+    result = generate_daily_economics(config, economics, state)
+    if not result:
+        fallback = "## 今日经济学\n\n今日经济学内容生成失败，请检查 CURSOR_API_KEY / GEMINI_API_KEY 或稍后重试。"
+        if args.dry_run:
+            print(fallback)
+            return 1
+        channel_config = select_channel_notifier_config(config, "economics")
+        send_message(channel_config, fallback)
+        return 1
+
+    logger.info("今日经济学: %s / %s", result.record.topic, result.record.module)
+
+    if args.dry_run:
+        print(result.message)
+        return 0
+
+    channel_config = select_channel_notifier_config(config, "economics")
+    if not send_message(channel_config, result.message):
+        logger.error("经济学频道推送失败")
+        return 1
+
+    append_economics_record(state, result.record)
+    save_economics_progress(economics.progress_path, state)
+    logger.info("经济学推送完成，进度已更新")
     return 0
 
 
@@ -201,9 +248,11 @@ def run(args: argparse.Namespace) -> int:
         return run_both(args)
     if mode == "recommend":
         return run_recommend(args)
+    if mode == "economics":
+        return run_economics(args)
     if mode == "read":
         return run_read(args)
-    logger.error("未知模式: %s（可选: recommend / read / both / alternate）", mode)
+    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics）", mode)
     return 1
 
 
@@ -212,9 +261,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="每日读书 / AI 荐书推送")
     parser.add_argument(
         "--mode",
-        choices=["recommend", "read", "both", "alternate"],
+        choices=["recommend", "read", "both", "alternate", "economics"],
         default=None,
-        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换",
+        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学",
     )
     parser.add_argument("--dry-run", action="store_true", help="预览消息，不推送、不写状态")
     parser.add_argument("--book", help="[read 模式] 强制指定书籍 id")

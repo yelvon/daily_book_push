@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -13,8 +13,10 @@ from dotenv import load_dotenv
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_CONFIG_PATH = ROOT_DIR / "config" / "books.yaml"
 DEFAULT_RECOMMEND_CONFIG_PATH = ROOT_DIR / "config" / "recommend.yaml"
+DEFAULT_ECONOMICS_CONFIG_PATH = ROOT_DIR / "config" / "economics.yaml"
 DEFAULT_PROGRESS_PATH = ROOT_DIR / "state" / "progress.json"
 DEFAULT_RECOMMEND_HISTORY_PATH = ROOT_DIR / "state" / "recommend_history.json"
+DEFAULT_ECONOMICS_PROGRESS_PATH = ROOT_DIR / "state" / "economics_progress.json"
 
 
 @dataclass
@@ -43,6 +45,19 @@ class RecommendConfig:
 
 
 @dataclass
+class EconomicsConfig:
+    language: str = "zh"
+    use_google_search: bool = True
+    history_days: int = 180
+    level_start: str = "beginner"
+    level_progression: str = "gradual"
+    weekday_style: str = "concept"
+    weekend_style: str = "case_review"
+    syllabus: List[str] = field(default_factory=list)
+    progress_path: Path = DEFAULT_ECONOMICS_PROGRESS_PATH
+
+
+@dataclass
 class AppConfig:
     books: List[BookConfig] = field(default_factory=list)
     rotation_mode: str = "round_robin"
@@ -62,9 +77,15 @@ class AppConfig:
     feishu_webhook_keyword: Optional[str] = None
     wechat_webhook_url: Optional[str] = None
     wechat_msg_type: str = "text"
+    economics_feishu_webhook_url: Optional[str] = None
+    economics_feishu_webhook_secret: Optional[str] = None
+    economics_feishu_webhook_keyword: Optional[str] = None
+    economics_wechat_webhook_url: Optional[str] = None
+    economics_wechat_msg_type: str = "markdown"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
+    notification_title: str = "每日读书"
 
 
 def setup_env() -> None:
@@ -125,6 +146,49 @@ def load_recommend_config(path: Optional[Path] = None) -> RecommendConfig:
     )
 
 
+def load_economics_config(path: Optional[Path] = None) -> EconomicsConfig:
+    setup_env()
+    cfg_path = path or DEFAULT_ECONOMICS_CONFIG_PATH
+    if not cfg_path.exists():
+        return EconomicsConfig(
+            syllabus=[
+                "基础概念",
+                "消费者选择",
+                "供给与需求",
+                "市场与价格",
+                "企业与成本",
+                "竞争与垄断",
+                "宏观经济",
+                "货币与通胀",
+                "金融市场",
+                "全球化与制度",
+            ]
+        )
+
+    with cfg_path.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+
+    econ = raw.get("economics") or {}
+    level = econ.get("level") or {}
+    schedule = econ.get("schedule") or {}
+    use_search = econ.get("use_google_search", True)
+    env_search = os.getenv("ECONOMICS_USE_SEARCH")
+    if env_search is not None:
+        use_search = env_search.strip().lower() not in {"0", "false", "no", "off"}
+
+    return EconomicsConfig(
+        language=str(econ.get("language", "zh")),
+        use_google_search=bool(use_search),
+        history_days=int(econ.get("history_days", 180)),
+        level_start=str(level.get("start", "beginner")),
+        level_progression=str(level.get("progression", "gradual")),
+        weekday_style=str(schedule.get("weekday_style", "concept")),
+        weekend_style=str(schedule.get("weekend_style", "case_review")),
+        syllabus=[str(item) for item in econ.get("syllabus") or []],
+        progress_path=DEFAULT_ECONOMICS_PROGRESS_PATH,
+    )
+
+
 def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
     setup_env()
     path = config_path or DEFAULT_CONFIG_PATH
@@ -161,6 +225,11 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         feishu_webhook_keyword=os.getenv("FEISHU_WEBHOOK_KEYWORD") or None,
         wechat_webhook_url=os.getenv("WECHAT_WEBHOOK_URL") or None,
         wechat_msg_type=os.getenv("WECHAT_MSG_TYPE", "text"),
+        economics_feishu_webhook_url=os.getenv("ECONOMICS_FEISHU_WEBHOOK_URL") or None,
+        economics_feishu_webhook_secret=os.getenv("ECONOMICS_FEISHU_WEBHOOK_SECRET") or None,
+        economics_feishu_webhook_keyword=os.getenv("ECONOMICS_FEISHU_WEBHOOK_KEYWORD") or None,
+        economics_wechat_webhook_url=os.getenv("ECONOMICS_WECHAT_WEBHOOK_URL") or None,
+        economics_wechat_msg_type=os.getenv("ECONOMICS_WECHAT_MSG_TYPE", "markdown"),
         webhook_verify_ssl=verify_ssl,
     )
 
@@ -170,3 +239,17 @@ def resolve_book_path(config: AppConfig, book: BookConfig) -> Path:
     if not path.is_absolute():
         path = config.root_dir / path
     return path
+
+
+def select_channel_notifier_config(config: AppConfig, channel: str) -> AppConfig:
+    if channel != "economics":
+        return config
+    return replace(
+        config,
+        feishu_webhook_url=config.economics_feishu_webhook_url,
+        feishu_webhook_secret=config.economics_feishu_webhook_secret,
+        feishu_webhook_keyword=config.economics_feishu_webhook_keyword,
+        wechat_webhook_url=config.economics_wechat_webhook_url,
+        wechat_msg_type=config.economics_wechat_msg_type,
+        notification_title="每日经济学",
+    )

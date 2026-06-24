@@ -1,0 +1,27 @@
+# 每日经济学独立频道配置
+
+economics:
+  language: zh
+  use_google_search: true
+  history_days: 180
+
+  level:
+    start: beginner
+    progression: gradual
+
+  schedule:
+    # 平日学概念，周末做案例/复盘
+    weekday_style: concept
+    weekend_style: case_review
+
+  syllabus:
+    - 基础概念
+    - 消费者选择
+    - 供给与需求
+    - 市场与价格
+    - 企业与成本
+    - 竞争与垄断
+    - 宏观经济
+    - 货币与通胀
+    - 金融市场
+    - 全球化与制度

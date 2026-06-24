@@ -25,6 +25,7 @@ class FeishuNotifier:
         self._keyword = (config.feishu_webhook_keyword or "").strip()
         self._max_bytes = config.feishu_max_bytes
         self._verify_ssl = config.webhook_verify_ssl
+        self._title = config.notification_title
 
     def send(self, content: str) -> bool:
         if not self._url:
@@ -70,7 +71,7 @@ class FeishuNotifier:
     def _send_once(self, content: str) -> bool:
         card = {
             "config": {"wide_screen_mode": True},
-            "header": {"title": {"tag": "plain_text", "content": "每日读书"}},
+            "header": {"title": {"tag": "plain_text", "content": self._title}},
             "elements": [{"tag": "div", "text": {"tag": "lark_md", "content": content}}],
         }
         payloads = [
