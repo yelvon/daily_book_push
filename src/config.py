@@ -77,11 +77,12 @@ class AppConfig:
     feishu_webhook_keyword: Optional[str] = None
     wechat_webhook_url: Optional[str] = None
     wechat_msg_type: str = "text"
+    wechat_personal_compat: bool = True
     economics_feishu_webhook_url: Optional[str] = None
     economics_feishu_webhook_secret: Optional[str] = None
     economics_feishu_webhook_keyword: Optional[str] = None
     economics_wechat_webhook_url: Optional[str] = None
-    economics_wechat_msg_type: str = "markdown"
+    economics_wechat_msg_type: str = "text"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
@@ -94,6 +95,13 @@ def setup_env() -> None:
         load_dotenv(env_file)
     else:
         load_dotenv(ROOT_DIR / ".env")
+
+
+def _env_bool(name: str, *, default: bool) -> bool:
+    raw = os.getenv(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() not in {"0", "false", "no", "off"}
 
 
 def _parse_books(raw: Dict[str, Any]) -> List[BookConfig]:
@@ -225,11 +233,12 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         feishu_webhook_keyword=os.getenv("FEISHU_WEBHOOK_KEYWORD") or None,
         wechat_webhook_url=os.getenv("WECHAT_WEBHOOK_URL") or None,
         wechat_msg_type=os.getenv("WECHAT_MSG_TYPE", "text"),
+        wechat_personal_compat=_env_bool("WECHAT_PERSONAL_COMPAT", default=True),
         economics_feishu_webhook_url=os.getenv("ECONOMICS_FEISHU_WEBHOOK_URL") or None,
         economics_feishu_webhook_secret=os.getenv("ECONOMICS_FEISHU_WEBHOOK_SECRET") or None,
         economics_feishu_webhook_keyword=os.getenv("ECONOMICS_FEISHU_WEBHOOK_KEYWORD") or None,
         economics_wechat_webhook_url=os.getenv("ECONOMICS_WECHAT_WEBHOOK_URL") or None,
-        economics_wechat_msg_type=os.getenv("ECONOMICS_WECHAT_MSG_TYPE", "markdown"),
+        economics_wechat_msg_type=os.getenv("ECONOMICS_WECHAT_MSG_TYPE", "text"),
         webhook_verify_ssl=verify_ssl,
     )
 
@@ -251,5 +260,6 @@ def select_channel_notifier_config(config: AppConfig, channel: str) -> AppConfig
         feishu_webhook_keyword=config.economics_feishu_webhook_keyword,
         wechat_webhook_url=config.economics_wechat_webhook_url,
         wechat_msg_type=config.economics_wechat_msg_type,
+        wechat_personal_compat=config.wechat_personal_compat,
         notification_title="每日经济学",
     )

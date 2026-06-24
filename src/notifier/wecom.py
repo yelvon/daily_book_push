@@ -20,7 +20,8 @@ _MARKDOWN_MAX_BYTES = 4096
 class WecomNotifier:
     def __init__(self, config: AppConfig) -> None:
         self._url = config.wechat_webhook_url
-        self._msg_type = config.wechat_msg_type.lower()
+        self._requested_msg_type = config.wechat_msg_type.lower()
+        self._personal_compat = config.wechat_personal_compat
         self._max_bytes = config.wechat_max_bytes
         self._verify_ssl = config.webhook_verify_ssl
 
@@ -35,19 +36,30 @@ class WecomNotifier:
             return self._send_chunked(prepared, max_bytes)
         return self._send_once(prepared)
 
+    def _effective_msg_type(self) -> str:
+        if self._personal_compat and self._requested_msg_type in {"markdown", "markdown_v2"}:
+            if self._requested_msg_type != "text":
+                logger.info(
+                    "WECHAT_MSG_TYPE=%s 已自动降级为 text（个人微信仅支持纯文本）",
+                    self._requested_msg_type,
+                )
+            return "text"
+        return self._requested_msg_type
+
     def _effective_max_bytes(self) -> int:
-        if self._msg_type == "text":
+        if self._effective_msg_type() == "text":
             return min(self._max_bytes, _TEXT_MAX_BYTES)
         return min(self._max_bytes, _MARKDOWN_MAX_BYTES)
 
     def _prepare_content(self, content: str) -> str:
-        if self._msg_type == "text":
+        msg_type = self._effective_msg_type()
+        if msg_type == "text":
             return strip_markdown(content)
-        if self._msg_type == "markdown_v2":
+        if msg_type == "markdown_v2":
             return content.strip()
-        if self._msg_type == "markdown":
+        if msg_type == "markdown":
             return adapt_markdown_for_wework(content)
-        logger.warning("未知 WECHAT_MSG_TYPE=%s，按 text 发送以兼容个人微信", self._msg_type)
+        logger.warning("未知 WECHAT_MSG_TYPE=%s，按 text 发送以兼容个人微信", msg_type)
         return strip_markdown(content)
 
     def _send_chunked(self, content: str, max_bytes: int) -> bool:
@@ -85,8 +97,9 @@ class WecomNotifier:
         return False
 
     def _build_payload(self, content: str) -> dict:
-        if self._msg_type == "text":
+        msg_type = self._effective_msg_type()
+        if msg_type == "text":
             return {"msgtype": "text", "text": {"content": content}}
-        if self._msg_type == "markdown_v2":
+        if msg_type == "markdown_v2":
             return {"msgtype": "markdown_v2", "markdown_v2": {"content": content}}
         return {"msgtype": "markdown", "markdown": {"content": content}}
