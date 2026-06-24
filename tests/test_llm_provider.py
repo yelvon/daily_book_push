@@ -8,7 +8,13 @@ from unittest.mock import patch
 import pytest
 
 from src.config import AppConfig
-from src.llm_client import available_providers, call_with_auto_provider
+from src.llm_client import (
+    _gemini_models,
+    _is_retryable_llm_error,
+    _search_attempts,
+    available_providers,
+    call_with_auto_provider,
+)
 
 
 def _config(
@@ -98,3 +104,31 @@ def test_call_with_auto_provider_gemini_only(mock_gemini) -> None:
 
     assert result == "gemini only"
     mock_gemini.assert_called_once()
+
+
+def test_is_retryable_llm_error_detects_503() -> None:
+    exc = RuntimeError('litellm.ServiceUnavailableError: GeminiException - {"code": 503}')
+    assert _is_retryable_llm_error(exc) is True
+
+
+def test_is_retryable_llm_error_ignores_auth_error() -> None:
+    exc = RuntimeError("401 invalid api key")
+    assert _is_retryable_llm_error(exc) is False
+
+
+def test_gemini_models_includes_default_fallback() -> None:
+    config = AppConfig(
+        root_dir=Path("/tmp/daily_book_push"),
+        gemini_model="gemini/gemini-2.5-flash",
+        gemini_model_fallback=None,
+    )
+    assert _gemini_models(config) == [
+        "gemini/gemini-2.5-flash",
+        "gemini/gemini-2.0-flash",
+    ]
+
+
+def test_search_attempts_prefers_search_then_plain() -> None:
+    assert _search_attempts(True, "gemini/gemini-2.5-flash") == [True, False]
+    assert _search_attempts(False, "gemini/gemini-2.5-flash") == [False]
+
