@@ -1,33 +1,19 @@
-name: 每日荐书推送
+name: 每日经济学推送
 
 on:
   schedule:
-    # UTC 0:00 = 北京时间 08:00
-    - cron: "0 0 * * *"
+    # UTC 12:00 = 北京时间 20:00
+    - cron: "0 12 * * *"
   workflow_dispatch:
     inputs:
-      mode:
-        description: "运行模式"
-        required: true
-        default: recommend
-        type: choice
-        options:
-          - recommend
-          - read
-          - both
-          - alternate
       dry_run:
         description: "仅预览，不推送、不写状态"
         required: false
         default: false
         type: boolean
-      book_id:
-        description: "[read 模式] 强制指定书籍 id"
-        required: false
-        type: string
 
 concurrency:
-  group: daily-book-push
+  group: daily-economics-push
   cancel-in-progress: false
 
 permissions:
@@ -64,37 +50,27 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini/gemini-2.5-flash' }}
           GEMINI_MODEL_FALLBACK: ${{ vars.GEMINI_MODEL_FALLBACK || secrets.GEMINI_MODEL_FALLBACK || 'gemini/gemini-2.0-flash' }}
           GEMINI_USE_SEARCH: ${{ vars.GEMINI_USE_SEARCH || secrets.GEMINI_USE_SEARCH || 'true' }}
-          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-          FEISHU_WEBHOOK_KEYWORD: ${{ vars.FEISHU_WEBHOOK_KEYWORD || secrets.FEISHU_WEBHOOK_KEYWORD }}
-          WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
-          WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'text' }}
+          ECONOMICS_FEISHU_WEBHOOK_URL: ${{ secrets.ECONOMICS_FEISHU_WEBHOOK_URL }}
+          ECONOMICS_FEISHU_WEBHOOK_SECRET: ${{ secrets.ECONOMICS_FEISHU_WEBHOOK_SECRET }}
+          ECONOMICS_FEISHU_WEBHOOK_KEYWORD: ${{ vars.ECONOMICS_FEISHU_WEBHOOK_KEYWORD || secrets.ECONOMICS_FEISHU_WEBHOOK_KEYWORD }}
+          ECONOMICS_WECHAT_WEBHOOK_URL: ${{ secrets.ECONOMICS_WECHAT_WEBHOOK_URL }}
+          ECONOMICS_WECHAT_MSG_TYPE: ${{ vars.ECONOMICS_WECHAT_MSG_TYPE || secrets.ECONOMICS_WECHAT_MSG_TYPE || 'markdown' }}
           WEBHOOK_VERIFY_SSL: ${{ vars.WEBHOOK_VERIFY_SSL || secrets.WEBHOOK_VERIFY_SSL || 'true' }}
         run: |
-          MODE="${{ github.event.inputs.mode }}"
-          if [ -z "$MODE" ]; then
-            MODE="(读取 config/recommend.yaml)"
-          fi
           echo "=========================================="
-          echo "每日荐书推送 | 模式: $MODE"
+          echo "每日经济学推送 | 模式: economics"
           echo "时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
           echo "=========================================="
           echo "Cursor: $([ -n "$CURSOR_API_KEY" ] && echo '已配置' || echo '未配置')"
           echo "Gemini: $([ -n "$GEMINI_API_KEY" ] && echo '已配置' || echo '未配置')"
           echo "联网搜索: $GEMINI_USE_SEARCH"
-          echo "飞书: $([ -n "$FEISHU_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"
-          echo "企微: $([ -n "$WECHAT_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"
+          echo "经济学飞书: $([ -n "$ECONOMICS_FEISHU_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"
+          echo "经济学企微: $([ -n "$ECONOMICS_WECHAT_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"
           echo "=========================================="
 
-          ARGS=""
-          if [ -n "${{ github.event.inputs.mode }}" ]; then
-            ARGS="--mode ${{ github.event.inputs.mode }}"
-          fi
+          ARGS="--mode economics"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
-          fi
-          if [ -n "${{ github.event.inputs.book_id }}" ]; then
-            ARGS="$ARGS --book ${{ github.event.inputs.book_id }}"
           fi
           python main.py $ARGS
 
@@ -103,14 +79,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/recommend_history.json state/progress.json
-          git diff --staged --quiet || git commit -m "chore: update book state [skip ci]"
+          git add state/economics_progress.json
+          git diff --staged --quiet || git commit -m "chore: update economics state [skip ci]"
           git push
 
       - name: 上传日志
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: daily-book-push-logs-${{ github.run_number }}
+          name: daily-economics-push-logs-${{ github.run_number }}
           path: logs/
           retention-days: 14

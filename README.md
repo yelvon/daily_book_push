@@ -100,15 +100,22 @@ python main.py --mode economics --dry-run
 
 可选：`CURSOR_MODEL`、`GEMINI_MODEL`、`GEMINI_USE_SEARCH`、`FEISHU_WEBHOOK_SECRET`
 
+### 定时推送
+
+两个 workflow 独立运行，互不干扰：
+
+| Workflow | 内容 | 北京时间 | cron (UTC) |
+|---|---|---|---|
+| **每日荐书推送** | 荐书 / 读书（由 `config/recommend.yaml` 的 `mode` 决定） | 08:00 | `0 0 * * *` |
+| **每日经济学推送** | 经济学学习 | 20:00 | `0 12 * * *` |
+
+修改时间：编辑对应 workflow 文件里的 `cron` 表达式（GitHub Actions 使用 UTC）。
+
 ### 手动测试
 
-Actions → **每日荐书推送** → Run workflow
-
-- `mode=recommend`（默认）
-- `mode=economics`（每日经济学）
-- `dry_run=true` 可仅预览
-
-默认定时：每天 UTC 0:00（北京时间 08:00）。
+- Actions → **每日荐书推送**：可选 `recommend` / `read` / `both` / `alternate`
+- Actions → **每日经济学推送**：固定 `economics` 模式
+- 两个 workflow 都支持 `dry_run=true` 仅预览
 
 ## 本地调试
 
@@ -127,6 +134,9 @@ python main.py --mode economics --dry-run
 ## 目录结构
 
 ```
+.github/workflows/
+  daily-push.yml           # 荐书/读书，北京时间 08:00
+  daily-economics-push.yml # 经济学，北京时间 20:00
 config/recommend.yaml      # 荐书偏好
 config/economics.yaml      # [economics 模式] 经济学学习路径
 config/books.yaml          # [read 模式] 本地书籍
