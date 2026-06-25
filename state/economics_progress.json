@@ -1,5 +1,14 @@
 {
-  "current_day": 1,
-  "last_topic": "",
-  "history": []
+  "current_day": 2,
+  "last_topic": "稀缺性",
+  "history": [
+    {
+      "date": "2026-06-25",
+      "day": 1,
+      "topic": "稀缺性",
+      "module": "基础概念",
+      "level": "beginner",
+      "style": "concept"
+    }
+  ]
 }
