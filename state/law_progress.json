@@ -1,5 +1,14 @@
 {
-  "current_day": 1,
-  "last_topic": "",
-  "history": []
+  "current_day": 2,
+  "last_topic": "公司章程",
+  "history": [
+    {
+      "date": "2026-06-26",
+      "day": 1,
+      "topic": "公司章程",
+      "module": "创业法律常识",
+      "level": "beginner",
+      "style": "concept"
+    }
+  ]
 }
