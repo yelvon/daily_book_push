@@ -1,0 +1,39 @@
+# 每日市场事件雷达配置
+
+market:
+  language: zh
+  use_google_search: true
+  lookahead_days: 90
+  max_events_per_section: 6
+
+  regions:
+    - 中国
+    - 美国
+    - 全球
+
+  asset_classes:
+    - A股
+    - 港股
+    - 美股
+    - 美债
+    - 美元
+    - 人民币
+    - 黄金
+    - 原油
+    - 商品
+    - 加密资产
+
+  event_types:
+    - 宏观数据
+    - 央行会议
+    - 政策窗口
+    - 财报季
+    - 期货期权交割
+    - 指数调仓
+    - 地缘政治
+    - 商品能源会议
+
+  reliability:
+    require_status_label: true
+    allow_watchlist: true
+    require_source_note: true

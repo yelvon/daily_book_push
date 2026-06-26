@@ -9,6 +9,7 @@ from src.economics import EconomicsResult
 from src.economics_progress import EconomicsRecord
 from src.law import LawResult
 from src.law_progress import LawRecord
+from src.market import MarketRadarResult, MarketSummaryRecord
 
 
 def test_alternate_even_day_read():
@@ -116,4 +117,34 @@ def test_run_business_dry_run_prints_without_saving(capsys):
 
     assert code == 0
     assert "每日商业案例" in capsys.readouterr().out
+    mock_save.assert_not_called()
+
+
+def test_run_market_dry_run_prints_without_saving(capsys):
+    from main import run_market
+
+    args = Namespace(dry_run=True)
+    result = MarketRadarResult(
+        message="## 每日市场事件雷达｜2026-06-26",
+        record=MarketSummaryRecord(
+            date="2026-06-26",
+            top_risk="美国非农就业数据",
+            risk_level="high",
+            event_count=5,
+        ),
+    )
+
+    with patch("main.load_app_config"), patch("main.load_market_config"), patch(
+        "main.load_market_events"
+    ), patch("main.prune_market_history") as mock_prune, patch(
+        "main.generate_daily_market_radar", return_value=result
+    ), patch(
+        "main.save_market_events"
+    ) as mock_save:
+        mock_prune.side_effect = lambda state, keep_days: state
+
+        code = run_market(args)
+
+    assert code == 0
+    assert "每日市场事件雷达" in capsys.readouterr().out
     mock_save.assert_not_called()

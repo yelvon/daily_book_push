@@ -1,6 +1,6 @@
 # daily_book_push
 
-GitHub Actions 每日定时推送：**AI 荐书 / 本地读书 / 每日经济学 / 每日法学 / 每日商业案例** 到飞书 / 企业微信。各学习频道支持独立群机器人，避免消息堆叠。
+GitHub Actions 每日定时推送：**AI 荐书 / 本地读书 / 市场事件雷达 / 每日经济学 / 每日法学 / 每日商业案例** 到飞书 / 企业微信。各学习频道支持独立群机器人，避免消息堆叠。
 
 ## 推送模式（可兼容）
 
@@ -13,6 +13,7 @@ GitHub Actions 每日定时推送：**AI 荐书 / 本地读书 / 每日经济学
 | **economics** | 每日经济学学习：平日概念、周末案例/复盘 | `mode: economics` |
 | **law** | 每日法学（创业法律）：平日概念、周末案例/复盘 | `mode: law` |
 | **business** | 每日商业案例：创业者可迁移的商业判断 | `mode: business` |
+| **market** | 每日市场事件雷达：未来 90 天重要市场事件 | `mode: market` |
 
 默认模式由 [`config/recommend.yaml`](config/recommend.yaml) 的 `mode` 决定，也可用 CLI `--mode` 或 Actions 手动选择覆盖。
 
@@ -42,6 +43,7 @@ python main.py --mode alternate --dry-run
 python main.py --mode economics --dry-run
 python main.py --mode law --dry-run
 python main.py --mode business --dry-run
+python main.py --mode market --dry-run
 ```
 
 ## 荐书模式详情
@@ -122,6 +124,24 @@ python main.py --mode business --dry-run
 
 运行 `--mode business` 时只会使用商业案例专用 webhook；如果没配置，不会回退到书籍群。
 
+## 每日市场事件雷达
+
+`market` 是独立市场事件频道，配置见 [`config/market.yaml`](config/market.yaml)。默认节奏：
+
+- 每天北京时间 09:00 推送未来 90 天重要市场事件
+- 重点覆盖中国、美国和全球宏观数据、央行会议、政策窗口、期货期权交割、指数调仓、财报季和地缘政治
+- 所有重点事件要求标注 `confirmed` / `scheduled` / `watchlist`
+- 仅做事件观察，不构成投资建议
+
+状态保存在 `state/market_events.json`。
+
+市场事件频道使用：
+
+- `MARKET_FEISHU_WEBHOOK_URL`
+- `MARKET_WECHAT_WEBHOOK_URL`
+
+运行 `--mode market` 时只会使用市场事件专用 webhook；如果没配置，不会回退到书籍群。
+
 ## 快速开始（GitHub Actions）
 
 ### Secrets
@@ -138,6 +158,8 @@ python main.py --mode business --dry-run
 | `LAW_WECHAT_WEBHOOK_URL` | 法学频道企业微信机器人 | law 模式至少一个 |
 | `BUSINESS_FEISHU_WEBHOOK_URL` | 商业案例频道飞书机器人 | business 模式至少一个 |
 | `BUSINESS_WECHAT_WEBHOOK_URL` | 商业案例频道企业微信机器人 | business 模式至少一个 |
+| `MARKET_FEISHU_WEBHOOK_URL` | 市场事件频道飞书机器人 | market 模式至少一个 |
+| `MARKET_WECHAT_WEBHOOK_URL` | 市场事件频道企业微信机器人 | market 模式至少一个 |
 
 > **LLM 选择**：`CURSOR_API_KEY` 与 `GEMINI_API_KEY` 至少配置一个；两者都配时 **Cursor 优先**，Cursor 失败会自动回退 Gemini。
 
@@ -145,11 +167,12 @@ python main.py --mode business --dry-run
 
 ### 定时推送
 
-四个 workflow 独立运行，互不干扰：
+五个 workflow 独立运行，互不干扰：
 
 | Workflow | 内容 | 北京时间 | cron (UTC) |
 |---|---|---|---|
 | **每日荐书推送** | 荐书 / 读书（由 `config/recommend.yaml` 的 `mode` 决定） | 08:00 | `0 0 * * *` |
+| **每日市场事件雷达** | 未来 90 天市场事件 | 09:00 | `0 1 * * *` |
 | **每日法学推送** | 创业法律学习 | 12:30 | `30 4 * * *` |
 | **每日商业案例推送** | 商业案例学习 | 18:00 | `0 10 * * *` |
 | **每日经济学推送** | 经济学学习 | 20:00 | `0 12 * * *` |
@@ -159,10 +182,11 @@ python main.py --mode business --dry-run
 ### 手动测试
 
 - Actions → **每日荐书推送**：可选 `recommend` / `read` / `both` / `alternate`
+- Actions → **每日市场事件雷达**：固定 `market` 模式
 - Actions → **每日法学推送**：固定 `law` 模式
 - Actions → **每日商业案例推送**：固定 `business` 模式
 - Actions → **每日经济学推送**：固定 `economics` 模式
-- 四个 workflow 都支持 `dry_run=true` 仅预览
+- 五个 workflow 都支持 `dry_run=true` 仅预览
 
 ## 本地调试
 
@@ -178,6 +202,7 @@ python main.py --mode read --dry-run  # 旧模式：本地 txt
 python main.py --mode economics --dry-run
 python main.py --mode law --dry-run
 python main.py --mode business --dry-run
+python main.py --mode market --dry-run
 ```
 
 ## 目录结构
@@ -185,6 +210,7 @@ python main.py --mode business --dry-run
 ```
 .github/workflows/
   daily-push.yml           # 荐书/读书，北京时间 08:00
+  daily-market-push.yml    # 市场事件雷达，北京时间 09:00
   daily-law-push.yml       # 法学，北京时间 12:30
   daily-business-push.yml  # 商业案例，北京时间 18:00
   daily-economics-push.yml # 经济学，北京时间 20:00
@@ -192,17 +218,20 @@ config/recommend.yaml      # 荐书偏好
 config/economics.yaml      # [economics 模式] 经济学学习路径
 config/law.yaml            # [law 模式] 创业法律学习路径
 config/business.yaml       # [business 模式] 商业案例学习路径
+config/market.yaml         # [market 模式] 市场事件雷达配置
 config/books.yaml          # [read 模式] 本地书籍
 state/recommend_history.json
 state/economics_progress.json
 state/law_progress.json
 state/business_progress.json
+state/market_events.json
 state/progress.json        # [read 模式] 阅读进度
 src/llm_client.py         # LLM 调用（Cursor 优先，Gemini 备用）
 src/recommender.py         # AI 荐书逻辑
 src/economics.py           # 每日经济学逻辑
 src/law.py                 # 每日法学逻辑
 src/business.py            # 每日商业案例逻辑
+src/market.py              # 每日市场事件雷达逻辑
 main.py
 ```
 
@@ -215,7 +244,8 @@ pytest tests/ -q
 
 ## 说明
 
-- 荐书、经济学、法学、商业案例内容均依赖 AI，请自行判断准确性
+- 荐书、经济学、法学、商业案例、市场事件内容均依赖 AI，请自行判断准确性
+- 市场事件雷达仅供事件观察，不构成投资建议
 - 法学内容不构成法律意见，重要决策请咨询执业律师
 - Gemini 联网搜索需模型支持 `googleSearch` 工具；Cursor 后端无联网，失败时会自动降级为模型自身知识或回退 Gemini
 - 建议私有仓库；`read` 模式书籍文件需自行管理版权

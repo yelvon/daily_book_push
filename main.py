@@ -15,6 +15,7 @@ from src.config import (
     load_business_config,
     load_economics_config,
     load_law_config,
+    load_market_config,
     load_recommend_config,
     resolve_book_path,
     select_channel_notifier_config,
@@ -39,6 +40,14 @@ from src.law_progress import (
     load_law_progress,
     prune_history as prune_law_history,
     save_law_progress,
+)
+from src.market import generate_daily_market_radar
+from src.market_events import (
+    MarketEventRecord,
+    append_event as append_market_event,
+    load_market_events,
+    prune_history as prune_market_history,
+    save_market_events,
 )
 from src.message import build_all_finished_message, build_message
 from src.notifier import send_message
@@ -212,6 +221,50 @@ def run_business(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_market(args: argparse.Namespace) -> int:
+    config = load_app_config()
+    market = load_market_config()
+
+    state = load_market_events(market.events_path)
+    state = prune_market_history(state, keep_days=180)
+
+    result = generate_daily_market_radar(config, market, state)
+    if not result:
+        fallback = "## 每日市场事件雷达\n\n今日市场事件雷达生成失败（可能是 Gemini 服务暂时繁忙）。请稍后重试，或配置 CURSOR_API_KEY 作为备用。"
+        if args.dry_run:
+            print(fallback)
+            return 1
+        channel_config = select_channel_notifier_config(config, "market")
+        send_message(channel_config, fallback)
+        return 1
+
+    logger.info("今日市场事件雷达: %s / %s", result.record.top_risk, result.record.risk_level)
+
+    if args.dry_run:
+        print(result.message)
+        return 0
+
+    channel_config = select_channel_notifier_config(config, "market")
+    if not send_message(channel_config, result.message):
+        logger.error("市场事件频道推送失败")
+        return 1
+
+    append_market_event(
+        state,
+        MarketEventRecord(
+            date=result.record.date,
+            event=result.record.top_risk,
+            region="综合",
+            event_date="待确认",
+            status="watchlist",
+            risk_level=result.record.risk_level,
+        ),
+    )
+    save_market_events(market.events_path, state)
+    logger.info("市场事件雷达推送完成，状态已更新")
+    return 0
+
+
 def _resolve_mode(explicit_mode: str | None) -> str:
     if explicit_mode:
         return explicit_mode
@@ -338,9 +391,11 @@ def run(args: argparse.Namespace) -> int:
         return run_law(args)
     if mode == "business":
         return run_business(args)
+    if mode == "market":
+        return run_market(args)
     if mode == "read":
         return run_read(args)
-    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics / law / business）", mode)
+    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics / law / business / market）", mode)
     return 1
 
 
@@ -349,9 +404,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="每日读书 / AI 荐书推送")
     parser.add_argument(
         "--mode",
-        choices=["recommend", "read", "both", "alternate", "economics", "law", "business"],
+        choices=["recommend", "read", "both", "alternate", "economics", "law", "business", "market"],
         default=None,
-        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学; law=每日法学; business=每日商业案例",
+        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学; law=每日法学; business=每日商业案例; market=市场事件雷达",
     )
     parser.add_argument("--dry-run", action="store_true", help="预览消息，不推送、不写状态")
     parser.add_argument("--book", help="[read 模式] 强制指定书籍 id")

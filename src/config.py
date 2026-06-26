@@ -16,11 +16,13 @@ DEFAULT_RECOMMEND_CONFIG_PATH = ROOT_DIR / "config" / "recommend.yaml"
 DEFAULT_ECONOMICS_CONFIG_PATH = ROOT_DIR / "config" / "economics.yaml"
 DEFAULT_LAW_CONFIG_PATH = ROOT_DIR / "config" / "law.yaml"
 DEFAULT_BUSINESS_CONFIG_PATH = ROOT_DIR / "config" / "business.yaml"
+DEFAULT_MARKET_CONFIG_PATH = ROOT_DIR / "config" / "market.yaml"
 DEFAULT_PROGRESS_PATH = ROOT_DIR / "state" / "progress.json"
 DEFAULT_RECOMMEND_HISTORY_PATH = ROOT_DIR / "state" / "recommend_history.json"
 DEFAULT_ECONOMICS_PROGRESS_PATH = ROOT_DIR / "state" / "economics_progress.json"
 DEFAULT_LAW_PROGRESS_PATH = ROOT_DIR / "state" / "law_progress.json"
 DEFAULT_BUSINESS_PROGRESS_PATH = ROOT_DIR / "state" / "business_progress.json"
+DEFAULT_MARKET_EVENTS_PATH = ROOT_DIR / "state" / "market_events.json"
 
 
 @dataclass
@@ -92,6 +94,21 @@ class BusinessConfig:
 
 
 @dataclass
+class MarketConfig:
+    language: str = "zh"
+    use_google_search: bool = True
+    lookahead_days: int = 90
+    max_events_per_section: int = 6
+    regions: List[str] = field(default_factory=list)
+    asset_classes: List[str] = field(default_factory=list)
+    event_types: List[str] = field(default_factory=list)
+    require_status_label: bool = True
+    allow_watchlist: bool = True
+    require_source_note: bool = True
+    events_path: Path = DEFAULT_MARKET_EVENTS_PATH
+
+
+@dataclass
 class AppConfig:
     books: List[BookConfig] = field(default_factory=list)
     rotation_mode: str = "round_robin"
@@ -127,6 +144,11 @@ class AppConfig:
     business_feishu_webhook_keyword: Optional[str] = None
     business_wechat_webhook_url: Optional[str] = None
     business_wechat_msg_type: str = "text"
+    market_feishu_webhook_url: Optional[str] = None
+    market_feishu_webhook_secret: Optional[str] = None
+    market_feishu_webhook_keyword: Optional[str] = None
+    market_wechat_webhook_url: Optional[str] = None
+    market_wechat_msg_type: str = "text"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
@@ -335,6 +357,53 @@ def load_business_config(path: Optional[Path] = None) -> BusinessConfig:
     )
 
 
+def load_market_config(path: Optional[Path] = None) -> MarketConfig:
+    setup_env()
+    cfg_path = path or DEFAULT_MARKET_CONFIG_PATH
+    default_regions = ["中国", "美国", "全球"]
+    default_asset_classes = ["A股", "港股", "美股", "美债", "美元", "人民币", "黄金", "原油", "商品", "加密资产"]
+    default_event_types = [
+        "宏观数据",
+        "央行会议",
+        "政策窗口",
+        "财报季",
+        "期货期权交割",
+        "指数调仓",
+        "地缘政治",
+        "商品能源会议",
+    ]
+    if not cfg_path.exists():
+        return MarketConfig(
+            regions=default_regions,
+            asset_classes=default_asset_classes,
+            event_types=default_event_types,
+        )
+
+    with cfg_path.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+
+    market = raw.get("market") or {}
+    reliability = market.get("reliability") or {}
+    use_search = market.get("use_google_search", True)
+    env_search = os.getenv("MARKET_USE_SEARCH")
+    if env_search is not None:
+        use_search = env_search.strip().lower() not in {"0", "false", "no", "off"}
+
+    return MarketConfig(
+        language=str(market.get("language", "zh")),
+        use_google_search=bool(use_search),
+        lookahead_days=int(market.get("lookahead_days", 90)),
+        max_events_per_section=int(market.get("max_events_per_section", 6)),
+        regions=[str(item) for item in market.get("regions") or default_regions],
+        asset_classes=[str(item) for item in market.get("asset_classes") or default_asset_classes],
+        event_types=[str(item) for item in market.get("event_types") or default_event_types],
+        require_status_label=bool(reliability.get("require_status_label", True)),
+        allow_watchlist=bool(reliability.get("allow_watchlist", True)),
+        require_source_note=bool(reliability.get("require_source_note", True)),
+        events_path=DEFAULT_MARKET_EVENTS_PATH,
+    )
+
+
 def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
     setup_env()
     path = config_path or DEFAULT_CONFIG_PATH
@@ -387,6 +456,11 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         business_feishu_webhook_keyword=os.getenv("BUSINESS_FEISHU_WEBHOOK_KEYWORD") or None,
         business_wechat_webhook_url=os.getenv("BUSINESS_WECHAT_WEBHOOK_URL") or None,
         business_wechat_msg_type=os.getenv("BUSINESS_WECHAT_MSG_TYPE", "text"),
+        market_feishu_webhook_url=os.getenv("MARKET_FEISHU_WEBHOOK_URL") or None,
+        market_feishu_webhook_secret=os.getenv("MARKET_FEISHU_WEBHOOK_SECRET") or None,
+        market_feishu_webhook_keyword=os.getenv("MARKET_FEISHU_WEBHOOK_KEYWORD") or None,
+        market_wechat_webhook_url=os.getenv("MARKET_WECHAT_WEBHOOK_URL") or None,
+        market_wechat_msg_type=os.getenv("MARKET_WECHAT_MSG_TYPE", "text"),
         webhook_verify_ssl=verify_ssl,
     )
 
@@ -431,5 +505,16 @@ def select_channel_notifier_config(config: AppConfig, channel: str) -> AppConfig
             wechat_msg_type=config.business_wechat_msg_type,
             wechat_personal_compat=config.wechat_personal_compat,
             notification_title="每日商业案例",
+        )
+    if channel == "market":
+        return replace(
+            config,
+            feishu_webhook_url=config.market_feishu_webhook_url,
+            feishu_webhook_secret=config.market_feishu_webhook_secret,
+            feishu_webhook_keyword=config.market_feishu_webhook_keyword,
+            wechat_webhook_url=config.market_wechat_webhook_url,
+            wechat_msg_type=config.market_wechat_msg_type,
+            wechat_personal_compat=config.wechat_personal_compat,
+            notification_title="每日市场事件雷达",
         )
     return config

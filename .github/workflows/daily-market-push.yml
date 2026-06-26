@@ -1,0 +1,93 @@
+name: 每日市场事件雷达
+
+on:
+  schedule:
+    # UTC 01:00 = 北京时间 09:00
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "仅预览，不推送、不写状态"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: daily-market-push
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 随机延迟
+        run: sleep $((RANDOM % 30))
+
+      - name: 检出代码
+        uses: actions/checkout@v5
+
+      - name: 设置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 安装依赖
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 执行推送
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ vars.CURSOR_MODEL || secrets.CURSOR_MODEL || 'composer-2.5' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini/gemini-2.5-flash' }}
+          GEMINI_MODEL_FALLBACK: ${{ vars.GEMINI_MODEL_FALLBACK || secrets.GEMINI_MODEL_FALLBACK || 'gemini/gemini-2.0-flash' }}
+          GEMINI_USE_SEARCH: ${{ vars.GEMINI_USE_SEARCH || secrets.GEMINI_USE_SEARCH || 'true' }}
+          MARKET_FEISHU_WEBHOOK_URL: ${{ secrets.MARKET_FEISHU_WEBHOOK_URL }}
+          MARKET_FEISHU_WEBHOOK_SECRET: ${{ secrets.MARKET_FEISHU_WEBHOOK_SECRET }}
+          MARKET_FEISHU_WEBHOOK_KEYWORD: ${{ vars.MARKET_FEISHU_WEBHOOK_KEYWORD || secrets.MARKET_FEISHU_WEBHOOK_KEYWORD }}
+          MARKET_WECHAT_WEBHOOK_URL: ${{ secrets.MARKET_WECHAT_WEBHOOK_URL }}
+          MARKET_WECHAT_MSG_TYPE: ${{ vars.MARKET_WECHAT_MSG_TYPE || secrets.MARKET_WECHAT_MSG_TYPE || 'text' }}
+          WECHAT_PERSONAL_COMPAT: ${{ vars.WECHAT_PERSONAL_COMPAT || secrets.WECHAT_PERSONAL_COMPAT || 'true' }}
+          WEBHOOK_VERIFY_SSL: ${{ vars.WEBHOOK_VERIFY_SSL || secrets.WEBHOOK_VERIFY_SSL || 'true' }}
+        run: |
+          echo "=========================================="
+          echo "每日市场事件雷达 | 模式: market"
+          echo "时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
+          echo "=========================================="
+          echo "Cursor: $([ -n "$CURSOR_API_KEY" ] && echo '已配置' || echo '未配置')"
+          echo "Gemini: $([ -n "$GEMINI_API_KEY" ] && echo '已配置' || echo '未配置')"
+          echo "联网搜索: $GEMINI_USE_SEARCH"
+          echo "市场飞书: $([ -n "$MARKET_FEISHU_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"
+          echo "市场企微: $([ -n "$MARKET_WECHAT_WEBHOOK_URL" ] && echo '已配置' || echo '未配置')"
+          echo "=========================================="
+
+          ARGS="--mode market"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python main.py $ARGS
+
+      - name: 提交状态文件
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/market_events.json
+          git diff --staged --quiet || git commit -m "chore: update market events [skip ci]"
+          git push
+
+      - name: 上传日志
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: daily-market-push-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 14
