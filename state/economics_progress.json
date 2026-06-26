@@ -1,11 +1,19 @@
 {
-  "current_day": 2,
-  "last_topic": "稀缺性",
+  "current_day": 3,
+  "last_topic": "机会成本",
   "history": [
     {
       "date": "2026-06-25",
       "day": 1,
       "topic": "稀缺性",
+      "module": "基础概念",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-06-26",
+      "day": 2,
+      "topic": "机会成本",
       "module": "基础概念",
       "level": "beginner",
       "style": "concept"
