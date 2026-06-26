@@ -1,4 +1,13 @@
 {
-  "last_run_date": "",
-  "history": []
+  "last_run_date": "2026-06-26",
+  "history": [
+    {
+      "date": "2026-06-26",
+      "event": "未知事件",
+      "region": "综合",
+      "event_date": "待确认",
+      "status": "watchlist",
+      "risk_level": "medium"
+    }
+  ]
 }
