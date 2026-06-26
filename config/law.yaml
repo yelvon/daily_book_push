@@ -1,0 +1,28 @@
+# 每日法学独立频道配置（创业法律）
+
+law:
+  language: zh
+  use_google_search: true
+  history_days: 180
+  jurisdiction: cn_primary
+
+  level:
+    start: beginner
+    progression: gradual
+
+  schedule:
+    weekday_style: concept
+    weekend_style: case_review
+
+  syllabus:
+    - 创业法律常识
+    - 公司设立与主体选择
+    - 股权结构与股东权利
+    - 股东协议与控制权
+    - 劳动合同与用工合规
+    - 合同管理与风险条款
+    - 融资与尽调要点
+    - 知识产权与商业秘密
+    - 广告合规与消费者权益
+    - 数据合规与隐私
+    - 争议解决与维权

@@ -14,9 +14,11 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_CONFIG_PATH = ROOT_DIR / "config" / "books.yaml"
 DEFAULT_RECOMMEND_CONFIG_PATH = ROOT_DIR / "config" / "recommend.yaml"
 DEFAULT_ECONOMICS_CONFIG_PATH = ROOT_DIR / "config" / "economics.yaml"
+DEFAULT_LAW_CONFIG_PATH = ROOT_DIR / "config" / "law.yaml"
 DEFAULT_PROGRESS_PATH = ROOT_DIR / "state" / "progress.json"
 DEFAULT_RECOMMEND_HISTORY_PATH = ROOT_DIR / "state" / "recommend_history.json"
 DEFAULT_ECONOMICS_PROGRESS_PATH = ROOT_DIR / "state" / "economics_progress.json"
+DEFAULT_LAW_PROGRESS_PATH = ROOT_DIR / "state" / "law_progress.json"
 
 
 @dataclass
@@ -58,6 +60,20 @@ class EconomicsConfig:
 
 
 @dataclass
+class LawConfig:
+    language: str = "zh"
+    use_google_search: bool = True
+    history_days: int = 180
+    jurisdiction: str = "cn_primary"
+    level_start: str = "beginner"
+    level_progression: str = "gradual"
+    weekday_style: str = "concept"
+    weekend_style: str = "case_review"
+    syllabus: List[str] = field(default_factory=list)
+    progress_path: Path = DEFAULT_LAW_PROGRESS_PATH
+
+
+@dataclass
 class AppConfig:
     books: List[BookConfig] = field(default_factory=list)
     rotation_mode: str = "round_robin"
@@ -83,6 +99,11 @@ class AppConfig:
     economics_feishu_webhook_keyword: Optional[str] = None
     economics_wechat_webhook_url: Optional[str] = None
     economics_wechat_msg_type: str = "text"
+    law_feishu_webhook_url: Optional[str] = None
+    law_feishu_webhook_secret: Optional[str] = None
+    law_feishu_webhook_keyword: Optional[str] = None
+    law_wechat_webhook_url: Optional[str] = None
+    law_wechat_msg_type: str = "text"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
@@ -197,6 +218,51 @@ def load_economics_config(path: Optional[Path] = None) -> EconomicsConfig:
     )
 
 
+def load_law_config(path: Optional[Path] = None) -> LawConfig:
+    setup_env()
+    cfg_path = path or DEFAULT_LAW_CONFIG_PATH
+    if not cfg_path.exists():
+        return LawConfig(
+            syllabus=[
+                "创业法律常识",
+                "公司设立与主体选择",
+                "股权结构与股东权利",
+                "股东协议与控制权",
+                "劳动合同与用工合规",
+                "合同管理与风险条款",
+                "融资与尽调要点",
+                "知识产权与商业秘密",
+                "广告合规与消费者权益",
+                "数据合规与隐私",
+                "争议解决与维权",
+            ]
+        )
+
+    with cfg_path.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+
+    law = raw.get("law") or {}
+    level = law.get("level") or {}
+    schedule = law.get("schedule") or {}
+    use_search = law.get("use_google_search", True)
+    env_search = os.getenv("LAW_USE_SEARCH")
+    if env_search is not None:
+        use_search = env_search.strip().lower() not in {"0", "false", "no", "off"}
+
+    return LawConfig(
+        language=str(law.get("language", "zh")),
+        use_google_search=bool(use_search),
+        history_days=int(law.get("history_days", 180)),
+        jurisdiction=str(law.get("jurisdiction", "cn_primary")),
+        level_start=str(level.get("start", "beginner")),
+        level_progression=str(level.get("progression", "gradual")),
+        weekday_style=str(schedule.get("weekday_style", "concept")),
+        weekend_style=str(schedule.get("weekend_style", "case_review")),
+        syllabus=[str(item) for item in law.get("syllabus") or []],
+        progress_path=DEFAULT_LAW_PROGRESS_PATH,
+    )
+
+
 def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
     setup_env()
     path = config_path or DEFAULT_CONFIG_PATH
@@ -239,6 +305,11 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         economics_feishu_webhook_keyword=os.getenv("ECONOMICS_FEISHU_WEBHOOK_KEYWORD") or None,
         economics_wechat_webhook_url=os.getenv("ECONOMICS_WECHAT_WEBHOOK_URL") or None,
         economics_wechat_msg_type=os.getenv("ECONOMICS_WECHAT_MSG_TYPE", "text"),
+        law_feishu_webhook_url=os.getenv("LAW_FEISHU_WEBHOOK_URL") or None,
+        law_feishu_webhook_secret=os.getenv("LAW_FEISHU_WEBHOOK_SECRET") or None,
+        law_feishu_webhook_keyword=os.getenv("LAW_FEISHU_WEBHOOK_KEYWORD") or None,
+        law_wechat_webhook_url=os.getenv("LAW_WECHAT_WEBHOOK_URL") or None,
+        law_wechat_msg_type=os.getenv("LAW_WECHAT_MSG_TYPE", "text"),
         webhook_verify_ssl=verify_ssl,
     )
 
@@ -251,15 +322,26 @@ def resolve_book_path(config: AppConfig, book: BookConfig) -> Path:
 
 
 def select_channel_notifier_config(config: AppConfig, channel: str) -> AppConfig:
-    if channel != "economics":
-        return config
-    return replace(
-        config,
-        feishu_webhook_url=config.economics_feishu_webhook_url,
-        feishu_webhook_secret=config.economics_feishu_webhook_secret,
-        feishu_webhook_keyword=config.economics_feishu_webhook_keyword,
-        wechat_webhook_url=config.economics_wechat_webhook_url,
-        wechat_msg_type=config.economics_wechat_msg_type,
-        wechat_personal_compat=config.wechat_personal_compat,
-        notification_title="每日经济学",
-    )
+    if channel == "economics":
+        return replace(
+            config,
+            feishu_webhook_url=config.economics_feishu_webhook_url,
+            feishu_webhook_secret=config.economics_feishu_webhook_secret,
+            feishu_webhook_keyword=config.economics_feishu_webhook_keyword,
+            wechat_webhook_url=config.economics_wechat_webhook_url,
+            wechat_msg_type=config.economics_wechat_msg_type,
+            wechat_personal_compat=config.wechat_personal_compat,
+            notification_title="每日经济学",
+        )
+    if channel == "law":
+        return replace(
+            config,
+            feishu_webhook_url=config.law_feishu_webhook_url,
+            feishu_webhook_secret=config.law_feishu_webhook_secret,
+            feishu_webhook_keyword=config.law_feishu_webhook_keyword,
+            wechat_webhook_url=config.law_wechat_webhook_url,
+            wechat_msg_type=config.law_wechat_msg_type,
+            wechat_personal_compat=config.wechat_personal_compat,
+            notification_title="每日法学",
+        )
+    return config

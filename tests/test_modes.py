@@ -5,6 +5,8 @@ from unittest.mock import patch
 from src.config import RecommendConfig
 from src.economics import EconomicsResult
 from src.economics_progress import EconomicsRecord
+from src.law import LawResult
+from src.law_progress import LawRecord
 
 
 def test_alternate_even_day_read():
@@ -47,4 +49,36 @@ def test_run_economics_dry_run_prints_without_saving(capsys):
 
     assert code == 0
     assert "今日经济学" in capsys.readouterr().out
+    mock_save.assert_not_called()
+
+
+def test_run_law_dry_run_prints_without_saving(capsys):
+    from main import run_law
+
+    args = Namespace(dry_run=True)
+    result = LawResult(
+        message="## 今日法学｜竞业限制",
+        record=LawRecord(
+            date="2026-06-24",
+            day=1,
+            topic="竞业限制",
+            module="劳动合同与用工合规",
+            level="beginner",
+            style="concept",
+        ),
+    )
+
+    with patch("main.load_app_config"), patch("main.load_law_config"), patch(
+        "main.load_law_progress"
+    ), patch("main.prune_law_history") as mock_prune, patch(
+        "main.generate_daily_law", return_value=result
+    ), patch(
+        "main.save_law_progress"
+    ) as mock_save:
+        mock_prune.side_effect = lambda state, keep_days: state
+
+        code = run_law(args)
+
+    assert code == 0
+    assert "今日法学" in capsys.readouterr().out
     mock_save.assert_not_called()
