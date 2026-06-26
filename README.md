@@ -1,6 +1,6 @@
 # daily_book_push
 
-GitHub Actions 每日定时推送：**AI 荐书 / 本地读书 / 每日经济学 / 每日法学** 到飞书 / 企业微信。各学习频道支持独立群机器人，避免消息堆叠。
+GitHub Actions 每日定时推送：**AI 荐书 / 本地读书 / 每日经济学 / 每日法学 / 每日商业案例** 到飞书 / 企业微信。各学习频道支持独立群机器人，避免消息堆叠。
 
 ## 推送模式（可兼容）
 
@@ -12,6 +12,7 @@ GitHub Actions 每日定时推送：**AI 荐书 / 本地读书 / 每日经济学
 | **alternate** | 按日轮换：一天读书、一天荐书 | `mode: alternate` |
 | **economics** | 每日经济学学习：平日概念、周末案例/复盘 | `mode: economics` |
 | **law** | 每日法学（创业法律）：平日概念、周末案例/复盘 | `mode: law` |
+| **business** | 每日商业案例：创业者可迁移的商业判断 | `mode: business` |
 
 默认模式由 [`config/recommend.yaml`](config/recommend.yaml) 的 `mode` 决定，也可用 CLI `--mode` 或 Actions 手动选择覆盖。
 
@@ -40,6 +41,7 @@ python main.py --mode both --dry-run
 python main.py --mode alternate --dry-run
 python main.py --mode economics --dry-run
 python main.py --mode law --dry-run
+python main.py --mode business --dry-run
 ```
 
 ## 荐书模式详情
@@ -103,6 +105,23 @@ python main.py --mode law --dry-run
 
 运行 `--mode law` 时只会使用法学专用 webhook；如果没配置，不会回退到书籍群。
 
+## 每日商业案例频道
+
+`business` 是独立创业案例频道，配置见 [`config/business.yaml`](config/business.yaml)。默认节奏：
+
+- 平日：拆一个真实公司、产品、商业模式或关键决策
+- 周末：复盘本周案例背后的共同规律
+- 重点：不是新闻摘要，而是提炼商业机制、创业者启发和适用边界
+
+进度保存在 `state/business_progress.json`。
+
+商业案例频道使用：
+
+- `BUSINESS_FEISHU_WEBHOOK_URL`
+- `BUSINESS_WECHAT_WEBHOOK_URL`
+
+运行 `--mode business` 时只会使用商业案例专用 webhook；如果没配置，不会回退到书籍群。
+
 ## 快速开始（GitHub Actions）
 
 ### Secrets
@@ -117,6 +136,8 @@ python main.py --mode law --dry-run
 | `ECONOMICS_WECHAT_WEBHOOK_URL` | 经济学频道企业微信机器人 | economics 模式至少一个 |
 | `LAW_FEISHU_WEBHOOK_URL` | 法学频道飞书机器人 | law 模式至少一个 |
 | `LAW_WECHAT_WEBHOOK_URL` | 法学频道企业微信机器人 | law 模式至少一个 |
+| `BUSINESS_FEISHU_WEBHOOK_URL` | 商业案例频道飞书机器人 | business 模式至少一个 |
+| `BUSINESS_WECHAT_WEBHOOK_URL` | 商业案例频道企业微信机器人 | business 模式至少一个 |
 
 > **LLM 选择**：`CURSOR_API_KEY` 与 `GEMINI_API_KEY` 至少配置一个；两者都配时 **Cursor 优先**，Cursor 失败会自动回退 Gemini。
 
@@ -124,12 +145,13 @@ python main.py --mode law --dry-run
 
 ### 定时推送
 
-三个 workflow 独立运行，互不干扰：
+四个 workflow 独立运行，互不干扰：
 
 | Workflow | 内容 | 北京时间 | cron (UTC) |
 |---|---|---|---|
 | **每日荐书推送** | 荐书 / 读书（由 `config/recommend.yaml` 的 `mode` 决定） | 08:00 | `0 0 * * *` |
 | **每日法学推送** | 创业法律学习 | 12:30 | `30 4 * * *` |
+| **每日商业案例推送** | 商业案例学习 | 18:00 | `0 10 * * *` |
 | **每日经济学推送** | 经济学学习 | 20:00 | `0 12 * * *` |
 
 修改时间：编辑对应 workflow 文件里的 `cron` 表达式（GitHub Actions 使用 UTC）。
@@ -138,8 +160,9 @@ python main.py --mode law --dry-run
 
 - Actions → **每日荐书推送**：可选 `recommend` / `read` / `both` / `alternate`
 - Actions → **每日法学推送**：固定 `law` 模式
+- Actions → **每日商业案例推送**：固定 `business` 模式
 - Actions → **每日经济学推送**：固定 `economics` 模式
-- 三个 workflow 都支持 `dry_run=true` 仅预览
+- 四个 workflow 都支持 `dry_run=true` 仅预览
 
 ## 本地调试
 
@@ -154,6 +177,7 @@ python main.py --notify-test          # 测试通知
 python main.py --mode read --dry-run  # 旧模式：本地 txt
 python main.py --mode economics --dry-run
 python main.py --mode law --dry-run
+python main.py --mode business --dry-run
 ```
 
 ## 目录结构
@@ -162,19 +186,23 @@ python main.py --mode law --dry-run
 .github/workflows/
   daily-push.yml           # 荐书/读书，北京时间 08:00
   daily-law-push.yml       # 法学，北京时间 12:30
+  daily-business-push.yml  # 商业案例，北京时间 18:00
   daily-economics-push.yml # 经济学，北京时间 20:00
 config/recommend.yaml      # 荐书偏好
 config/economics.yaml      # [economics 模式] 经济学学习路径
 config/law.yaml            # [law 模式] 创业法律学习路径
+config/business.yaml       # [business 模式] 商业案例学习路径
 config/books.yaml          # [read 模式] 本地书籍
 state/recommend_history.json
 state/economics_progress.json
 state/law_progress.json
+state/business_progress.json
 state/progress.json        # [read 模式] 阅读进度
 src/llm_client.py         # LLM 调用（Cursor 优先，Gemini 备用）
 src/recommender.py         # AI 荐书逻辑
 src/economics.py           # 每日经济学逻辑
 src/law.py                 # 每日法学逻辑
+src/business.py            # 每日商业案例逻辑
 main.py
 ```
 
@@ -187,7 +215,7 @@ pytest tests/ -q
 
 ## 说明
 
-- 荐书、经济学、法学内容均依赖 AI，请自行判断准确性
+- 荐书、经济学、法学、商业案例内容均依赖 AI，请自行判断准确性
 - 法学内容不构成法律意见，重要决策请咨询执业律师
 - Gemini 联网搜索需模型支持 `googleSearch` 工具；Cursor 后端无联网，失败时会自动降级为模型自身知识或回退 Gemini
 - 建议私有仓库；`read` 模式书籍文件需自行管理版权

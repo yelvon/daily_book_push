@@ -15,10 +15,12 @@ DEFAULT_CONFIG_PATH = ROOT_DIR / "config" / "books.yaml"
 DEFAULT_RECOMMEND_CONFIG_PATH = ROOT_DIR / "config" / "recommend.yaml"
 DEFAULT_ECONOMICS_CONFIG_PATH = ROOT_DIR / "config" / "economics.yaml"
 DEFAULT_LAW_CONFIG_PATH = ROOT_DIR / "config" / "law.yaml"
+DEFAULT_BUSINESS_CONFIG_PATH = ROOT_DIR / "config" / "business.yaml"
 DEFAULT_PROGRESS_PATH = ROOT_DIR / "state" / "progress.json"
 DEFAULT_RECOMMEND_HISTORY_PATH = ROOT_DIR / "state" / "recommend_history.json"
 DEFAULT_ECONOMICS_PROGRESS_PATH = ROOT_DIR / "state" / "economics_progress.json"
 DEFAULT_LAW_PROGRESS_PATH = ROOT_DIR / "state" / "law_progress.json"
+DEFAULT_BUSINESS_PROGRESS_PATH = ROOT_DIR / "state" / "business_progress.json"
 
 
 @dataclass
@@ -74,6 +76,22 @@ class LawConfig:
 
 
 @dataclass
+class BusinessConfig:
+    language: str = "zh"
+    use_google_search: bool = True
+    history_days: int = 180
+    level_start: str = "beginner"
+    level_progression: str = "gradual"
+    weekday_style: str = "case"
+    weekend_style: str = "case_review"
+    audience: str = "early_stage_founder"
+    company_scope: str = "global_and_china"
+    avoid_news_summary: bool = True
+    syllabus: List[str] = field(default_factory=list)
+    progress_path: Path = DEFAULT_BUSINESS_PROGRESS_PATH
+
+
+@dataclass
 class AppConfig:
     books: List[BookConfig] = field(default_factory=list)
     rotation_mode: str = "round_robin"
@@ -104,6 +122,11 @@ class AppConfig:
     law_feishu_webhook_keyword: Optional[str] = None
     law_wechat_webhook_url: Optional[str] = None
     law_wechat_msg_type: str = "text"
+    business_feishu_webhook_url: Optional[str] = None
+    business_feishu_webhook_secret: Optional[str] = None
+    business_feishu_webhook_keyword: Optional[str] = None
+    business_wechat_webhook_url: Optional[str] = None
+    business_wechat_msg_type: str = "text"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
@@ -263,6 +286,55 @@ def load_law_config(path: Optional[Path] = None) -> LawConfig:
     )
 
 
+def load_business_config(path: Optional[Path] = None) -> BusinessConfig:
+    setup_env()
+    cfg_path = path or DEFAULT_BUSINESS_CONFIG_PATH
+    if not cfg_path.exists():
+        return BusinessConfig(
+            syllabus=[
+                "商业模式基础",
+                "用户需求与价值主张",
+                "定价与收入模型",
+                "获客与增长",
+                "留存与复购",
+                "渠道与分发",
+                "成本结构与效率",
+                "平台、网络效应与生态",
+                "品牌、信任与社区",
+                "竞争策略与护城河",
+                "组织能力与执行",
+                "失败案例与反模式",
+            ]
+        )
+
+    with cfg_path.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+
+    business = raw.get("business") or {}
+    level = business.get("level") or {}
+    schedule = business.get("schedule") or {}
+    preferences = business.get("preferences") or {}
+    use_search = business.get("use_google_search", True)
+    env_search = os.getenv("BUSINESS_USE_SEARCH")
+    if env_search is not None:
+        use_search = env_search.strip().lower() not in {"0", "false", "no", "off"}
+
+    return BusinessConfig(
+        language=str(business.get("language", "zh")),
+        use_google_search=bool(use_search),
+        history_days=int(business.get("history_days", 180)),
+        level_start=str(level.get("start", "beginner")),
+        level_progression=str(level.get("progression", "gradual")),
+        weekday_style=str(schedule.get("weekday_style", "case")),
+        weekend_style=str(schedule.get("weekend_style", "case_review")),
+        audience=str(preferences.get("audience", "early_stage_founder")),
+        company_scope=str(preferences.get("company_scope", "global_and_china")),
+        avoid_news_summary=bool(preferences.get("avoid_news_summary", True)),
+        syllabus=[str(item) for item in business.get("syllabus") or []],
+        progress_path=DEFAULT_BUSINESS_PROGRESS_PATH,
+    )
+
+
 def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
     setup_env()
     path = config_path or DEFAULT_CONFIG_PATH
@@ -310,6 +382,11 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         law_feishu_webhook_keyword=os.getenv("LAW_FEISHU_WEBHOOK_KEYWORD") or None,
         law_wechat_webhook_url=os.getenv("LAW_WECHAT_WEBHOOK_URL") or None,
         law_wechat_msg_type=os.getenv("LAW_WECHAT_MSG_TYPE", "text"),
+        business_feishu_webhook_url=os.getenv("BUSINESS_FEISHU_WEBHOOK_URL") or None,
+        business_feishu_webhook_secret=os.getenv("BUSINESS_FEISHU_WEBHOOK_SECRET") or None,
+        business_feishu_webhook_keyword=os.getenv("BUSINESS_FEISHU_WEBHOOK_KEYWORD") or None,
+        business_wechat_webhook_url=os.getenv("BUSINESS_WECHAT_WEBHOOK_URL") or None,
+        business_wechat_msg_type=os.getenv("BUSINESS_WECHAT_MSG_TYPE", "text"),
         webhook_verify_ssl=verify_ssl,
     )
 
@@ -343,5 +420,16 @@ def select_channel_notifier_config(config: AppConfig, channel: str) -> AppConfig
             wechat_msg_type=config.law_wechat_msg_type,
             wechat_personal_compat=config.wechat_personal_compat,
             notification_title="每日法学",
+        )
+    if channel == "business":
+        return replace(
+            config,
+            feishu_webhook_url=config.business_feishu_webhook_url,
+            feishu_webhook_secret=config.business_feishu_webhook_secret,
+            feishu_webhook_keyword=config.business_feishu_webhook_keyword,
+            wechat_webhook_url=config.business_wechat_webhook_url,
+            wechat_msg_type=config.business_wechat_msg_type,
+            wechat_personal_compat=config.wechat_personal_compat,
+            notification_title="每日商业案例",
         )
     return config

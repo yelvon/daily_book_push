@@ -3,6 +3,8 @@ from argparse import Namespace
 from unittest.mock import patch
 
 from src.config import RecommendConfig
+from src.business import BusinessResult
+from src.business_progress import BusinessRecord
 from src.economics import EconomicsResult
 from src.economics_progress import EconomicsRecord
 from src.law import LawResult
@@ -81,4 +83,37 @@ def test_run_law_dry_run_prints_without_saving(capsys):
 
     assert code == 0
     assert "今日法学" in capsys.readouterr().out
+    mock_save.assert_not_called()
+
+
+def test_run_business_dry_run_prints_without_saving(capsys):
+    from main import run_business
+
+    args = Namespace(dry_run=True)
+    result = BusinessResult(
+        message="## 每日商业案例｜Costco 低毛利会员制",
+        record=BusinessRecord(
+            date="2026-06-24",
+            day=1,
+            case="Costco 低毛利会员制",
+            company="Costco",
+            module="商业模式基础",
+            level="beginner",
+            style="case",
+        ),
+    )
+
+    with patch("main.load_app_config"), patch("main.load_business_config"), patch(
+        "main.load_business_progress"
+    ), patch("main.prune_business_history") as mock_prune, patch(
+        "main.generate_daily_business", return_value=result
+    ), patch(
+        "main.save_business_progress"
+    ) as mock_save:
+        mock_prune.side_effect = lambda state, keep_days: state
+
+        code = run_business(args)
+
+    assert code == 0
+    assert "每日商业案例" in capsys.readouterr().out
     mock_save.assert_not_called()

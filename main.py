@@ -12,11 +12,19 @@ from pathlib import Path
 
 from src.config import (
     load_app_config,
+    load_business_config,
     load_economics_config,
     load_law_config,
     load_recommend_config,
     resolve_book_path,
     select_channel_notifier_config,
+)
+from src.business import generate_daily_business
+from src.business_progress import (
+    append_record as append_business_record,
+    load_business_progress,
+    prune_history as prune_business_history,
+    save_business_progress,
 )
 from src.economics import generate_daily_economics
 from src.economics_progress import (
@@ -170,6 +178,40 @@ def run_law(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_business(args: argparse.Namespace) -> int:
+    config = load_app_config()
+    business = load_business_config()
+
+    state = load_business_progress(business.progress_path)
+    state = prune_business_history(state, business.history_days)
+
+    result = generate_daily_business(config, business, state)
+    if not result:
+        fallback = "## 每日商业案例\n\n今日商业案例生成失败（可能是 Gemini 服务暂时繁忙）。请稍后重试，或配置 CURSOR_API_KEY 作为备用。"
+        if args.dry_run:
+            print(fallback)
+            return 1
+        channel_config = select_channel_notifier_config(config, "business")
+        send_message(channel_config, fallback)
+        return 1
+
+    logger.info("今日商业案例: %s / %s", result.record.case, result.record.company)
+
+    if args.dry_run:
+        print(result.message)
+        return 0
+
+    channel_config = select_channel_notifier_config(config, "business")
+    if not send_message(channel_config, result.message):
+        logger.error("商业案例频道推送失败")
+        return 1
+
+    append_business_record(state, result.record)
+    save_business_progress(business.progress_path, state)
+    logger.info("商业案例推送完成，进度已更新")
+    return 0
+
+
 def _resolve_mode(explicit_mode: str | None) -> str:
     if explicit_mode:
         return explicit_mode
@@ -294,9 +336,11 @@ def run(args: argparse.Namespace) -> int:
         return run_economics(args)
     if mode == "law":
         return run_law(args)
+    if mode == "business":
+        return run_business(args)
     if mode == "read":
         return run_read(args)
-    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics / law）", mode)
+    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics / law / business）", mode)
     return 1
 
 
@@ -305,9 +349,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="每日读书 / AI 荐书推送")
     parser.add_argument(
         "--mode",
-        choices=["recommend", "read", "both", "alternate", "economics", "law"],
+        choices=["recommend", "read", "both", "alternate", "economics", "law", "business"],
         default=None,
-        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学; law=每日法学",
+        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学; law=每日法学; business=每日商业案例",
     )
     parser.add_argument("--dry-run", action="store_true", help="预览消息，不推送、不写状态")
     parser.add_argument("--book", help="[read 模式] 强制指定书籍 id")

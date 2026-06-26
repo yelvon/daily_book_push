@@ -1,0 +1,33 @@
+# 每日商业案例独立频道配置
+
+business:
+  language: zh
+  use_google_search: true
+  history_days: 180
+
+  level:
+    start: beginner
+    progression: gradual
+
+  schedule:
+    weekday_style: case
+    weekend_style: case_review
+
+  preferences:
+    audience: early_stage_founder
+    company_scope: global_and_china
+    avoid_news_summary: true
+
+  syllabus:
+    - 商业模式基础
+    - 用户需求与价值主张
+    - 定价与收入模型
+    - 获客与增长
+    - 留存与复购
+    - 渠道与分发
+    - 成本结构与效率
+    - 平台、网络效应与生态
+    - 品牌、信任与社区
+    - 竞争策略与护城河
+    - 组织能力与执行
+    - 失败案例与反模式
