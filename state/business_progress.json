@@ -1,5 +1,15 @@
 {
-  "current_day": 1,
-  "last_case": "",
-  "history": []
+  "current_day": 2,
+  "last_case": "Spotify 的免费增值模式",
+  "history": [
+    {
+      "date": "2026-06-26",
+      "day": 1,
+      "case": "Spotify 的免费增值模式",
+      "company": "未知公司",
+      "module": "商业模式基础",
+      "level": "beginner",
+      "style": "case"
+    }
+  ]
 }
