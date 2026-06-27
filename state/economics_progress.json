@@ -1,6 +1,6 @@
 {
-  "current_day": 3,
-  "last_topic": "机会成本",
+  "current_day": 4,
+  "last_topic": "热门餐厅的排队之谜",
   "history": [
     {
       "date": "2026-06-25",
@@ -17,6 +17,14 @@
       "module": "基础概念",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-06-27",
+      "day": 3,
+      "topic": "热门餐厅的排队之谜",
+      "module": "基础概念",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
