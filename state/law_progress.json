@@ -1,6 +1,6 @@
 {
-  "current_day": 2,
-  "last_topic": "公司章程",
+  "current_day": 3,
+  "last_topic": "股东出资义务与违约责任",
   "history": [
     {
       "date": "2026-06-26",
@@ -9,6 +9,14 @@
       "module": "创业法律常识",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-06-27",
+      "day": 2,
+      "topic": "股东出资义务与违约责任",
+      "module": "创业法律常识",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
