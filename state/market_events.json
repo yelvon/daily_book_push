@@ -1,9 +1,17 @@
 {
-  "last_run_date": "2026-06-26",
+  "last_run_date": "2026-06-27",
   "history": [
     {
       "date": "2026-06-26",
       "event": "未知事件",
+      "region": "综合",
+      "event_date": "待确认",
+      "status": "watchlist",
+      "risk_level": "medium"
+    },
+    {
+      "date": "2026-06-27",
+      "event": "美国非农就业报告",
       "region": "综合",
       "event_date": "待确认",
       "status": "watchlist",
