@@ -1,6 +1,6 @@
 {
-  "current_day": 4,
-  "last_topic": "热门餐厅的排队之谜",
+  "current_day": 5,
+  "last_topic": "电商限时抢购",
   "history": [
     {
       "date": "2026-06-25",
@@ -22,6 +22,14 @@
       "date": "2026-06-27",
       "day": 3,
       "topic": "热门餐厅的排队之谜",
+      "module": "基础概念",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-06-28",
+      "day": 4,
+      "topic": "电商限时抢购",
       "module": "基础概念",
       "level": "beginner",
       "style": "case_review"
