@@ -1,6 +1,6 @@
 {
-  "current_day": 3,
-  "last_case": "商业模式基础",
+  "current_day": 4,
+  "last_case": "Spotify免费增值模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -16,6 +16,15 @@
       "day": 2,
       "case": "商业模式基础",
       "company": "未知公司",
+      "module": "商业模式基础",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-06-28",
+      "day": 3,
+      "case": "Spotify免费增值模式",
+      "company": "Spotify",
       "module": "商业模式基础",
       "level": "beginner",
       "style": "case_review"
