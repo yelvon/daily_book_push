@@ -1,6 +1,6 @@
 {
-  "current_day": 5,
-  "last_topic": "电商限时抢购",
+  "current_day": 6,
+  "last_topic": "需求",
   "history": [
     {
       "date": "2026-06-25",
@@ -33,6 +33,14 @@
       "module": "基础概念",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-06-29",
+      "day": 5,
+      "topic": "需求",
+      "module": "基础概念",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
