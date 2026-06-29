@@ -1,6 +1,6 @@
 {
-  "current_day": 4,
-  "last_topic": "劳动合同与试用期",
+  "current_day": 5,
+  "last_topic": "商业秘密保护",
   "history": [
     {
       "date": "2026-06-26",
@@ -25,6 +25,14 @@
       "module": "创业法律常识",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-06-29",
+      "day": 4,
+      "topic": "商业秘密保护",
+      "module": "创业法律常识",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
