@@ -1,6 +1,6 @@
 {
-  "current_day": 4,
-  "last_case": "Spotify免费增值模式",
+  "current_day": 5,
+  "last_case": "Airbnb的佣金模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -28,6 +28,15 @@
       "module": "商业模式基础",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-06-29",
+      "day": 4,
+      "case": "Airbnb的佣金模式",
+      "company": "Airbnb",
+      "module": "商业模式基础",
+      "level": "beginner",
+      "style": "case"
     }
   ]
 }
