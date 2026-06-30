@@ -1,6 +1,6 @@
 {
-  "current_day": 5,
-  "last_case": "Airbnb的佣金模式",
+  "current_day": 6,
+  "last_case": "Netflix的订阅模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -34,6 +34,15 @@
       "day": 4,
       "case": "Airbnb的佣金模式",
       "company": "Airbnb",
+      "module": "商业模式基础",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-06-30",
+      "day": 5,
+      "case": "Netflix的订阅模式",
+      "company": "Netflix",
       "module": "商业模式基础",
       "level": "beginner",
       "style": "case"
