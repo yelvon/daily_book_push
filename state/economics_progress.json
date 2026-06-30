@@ -1,6 +1,6 @@
 {
-  "current_day": 6,
-  "last_topic": "需求",
+  "current_day": 7,
+  "last_topic": "供给",
   "history": [
     {
       "date": "2026-06-25",
@@ -38,6 +38,14 @@
       "date": "2026-06-29",
       "day": 5,
       "topic": "需求",
+      "module": "基础概念",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-06-30",
+      "day": 6,
+      "topic": "供给",
       "module": "基础概念",
       "level": "beginner",
       "style": "concept"
