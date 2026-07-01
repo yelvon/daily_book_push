@@ -1,6 +1,6 @@
 {
-  "current_day": 6,
-  "last_topic": "合同的成立与生效",
+  "current_day": 7,
+  "last_topic": "商标注册与保护",
   "history": [
     {
       "date": "2026-06-26",
@@ -38,6 +38,14 @@
       "date": "2026-06-30",
       "day": 5,
       "topic": "合同的成立与生效",
+      "module": "创业法律常识",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-01",
+      "day": 6,
+      "topic": "商标注册与保护",
       "module": "创业法律常识",
       "level": "beginner",
       "style": "concept"
