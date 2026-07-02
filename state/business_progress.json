@@ -1,6 +1,6 @@
 {
-  "current_day": 7,
-  "last_case": "Google 搜索广告",
+  "current_day": 8,
+  "last_case": "亚马逊第三方卖家平台",
   "history": [
     {
       "date": "2026-06-26",
@@ -52,6 +52,15 @@
       "day": 6,
       "case": "Google 搜索广告",
       "company": "Google",
+      "module": "商业模式基础",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-02",
+      "day": 7,
+      "case": "亚马逊第三方卖家平台",
+      "company": "Amazon",
       "module": "商业模式基础",
       "level": "beginner",
       "style": "case"
