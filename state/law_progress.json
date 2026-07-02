@@ -1,6 +1,6 @@
 {
-  "current_day": 7,
-  "last_topic": "商标注册与保护",
+  "current_day": 8,
+  "last_topic": "有限责任与无限责任",
   "history": [
     {
       "date": "2026-06-26",
@@ -46,6 +46,14 @@
       "date": "2026-07-01",
       "day": 6,
       "topic": "商标注册与保护",
+      "module": "创业法律常识",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-02",
+      "day": 7,
+      "topic": "有限责任与无限责任",
       "module": "创业法律常识",
       "level": "beginner",
       "style": "concept"
