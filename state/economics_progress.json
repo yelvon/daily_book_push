@@ -1,6 +1,6 @@
 {
-  "current_day": 8,
-  "last_topic": "价格",
+  "current_day": 9,
+  "last_topic": "消费者选择",
   "history": [
     {
       "date": "2026-06-25",
@@ -55,6 +55,14 @@
       "day": 7,
       "topic": "价格",
       "module": "基础概念",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-02",
+      "day": 8,
+      "topic": "消费者选择",
+      "module": "消费者选择",
       "level": "beginner",
       "style": "concept"
     }
