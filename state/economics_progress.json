@@ -1,6 +1,6 @@
 {
-  "current_day": 9,
-  "last_topic": "消费者选择",
+  "current_day": 10,
+  "last_topic": "边际效用递减规律",
   "history": [
     {
       "date": "2026-06-25",
@@ -62,6 +62,14 @@
       "date": "2026-07-02",
       "day": 8,
       "topic": "消费者选择",
+      "module": "消费者选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-03",
+      "day": 9,
+      "topic": "边际效用递减规律",
       "module": "消费者选择",
       "level": "beginner",
       "style": "concept"
