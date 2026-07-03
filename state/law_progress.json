@@ -1,6 +1,6 @@
 {
-  "current_day": 8,
-  "last_topic": "有限责任与无限责任",
+  "current_day": 9,
+  "last_topic": "公司设立与主体选择",
   "history": [
     {
       "date": "2026-06-26",
@@ -55,6 +55,14 @@
       "day": 7,
       "topic": "有限责任与无限责任",
       "module": "创业法律常识",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-03",
+      "day": 8,
+      "topic": "公司设立与主体选择",
+      "module": "公司设立与主体选择",
       "level": "beginner",
       "style": "concept"
     }
