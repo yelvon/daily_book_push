@@ -1,6 +1,6 @@
 {
-  "current_day": 10,
-  "last_topic": "边际效用递减规律",
+  "current_day": 11,
+  "last_topic": "超市的“买一送一”与“组合套餐”",
   "history": [
     {
       "date": "2026-06-25",
@@ -73,6 +73,14 @@
       "module": "消费者选择",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-04",
+      "day": 10,
+      "topic": "超市的“买一送一”与“组合套餐”",
+      "module": "消费者选择",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
