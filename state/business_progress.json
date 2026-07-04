@@ -1,6 +1,6 @@
 {
-  "current_day": 9,
-  "last_case": "Canva：让设计触手可及",
+  "current_day": 10,
+  "last_case": "用户需求与价值主张",
   "history": [
     {
       "date": "2026-06-26",
@@ -73,6 +73,15 @@
       "module": "用户需求与价值主张",
       "level": "beginner",
       "style": "case"
+    },
+    {
+      "date": "2026-07-04",
+      "day": 9,
+      "case": "用户需求与价值主张",
+      "company": "未知公司",
+      "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
