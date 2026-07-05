@@ -1,6 +1,6 @@
 {
-  "current_day": 10,
-  "last_case": "用户需求与价值主张",
+  "current_day": 11,
+  "last_case": "用户需求与价值主张复盘",
   "history": [
     {
       "date": "2026-06-26",
@@ -79,6 +79,15 @@
       "day": 9,
       "case": "用户需求与价值主张",
       "company": "未知公司",
+      "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-05",
+      "day": 10,
+      "case": "用户需求与价值主张复盘",
+      "company": "N/A",
       "module": "用户需求与价值主张",
       "level": "beginner",
       "style": "case_review"
