@@ -1,6 +1,6 @@
 {
-  "current_day": 10,
-  "last_topic": "“工作室”模式的隐忧与公司设立的必要性",
+  "current_day": 11,
+  "last_topic": "创业主体选择：个体户与公司，责任大不同",
   "history": [
     {
       "date": "2026-06-26",
@@ -70,6 +70,14 @@
       "date": "2026-07-04",
       "day": 9,
       "topic": "“工作室”模式的隐忧与公司设立的必要性",
+      "module": "公司设立与主体选择",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-05",
+      "day": 10,
+      "topic": "创业主体选择：个体户与公司，责任大不同",
       "module": "公司设立与主体选择",
       "level": "beginner",
       "style": "case_review"
