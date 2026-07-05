@@ -1,6 +1,6 @@
 {
-  "current_day": 11,
-  "last_topic": "超市的“买一送一”与“组合套餐”",
+  "current_day": 12,
+  "last_topic": "手机厂商的产品线布局",
   "history": [
     {
       "date": "2026-06-25",
@@ -78,6 +78,14 @@
       "date": "2026-07-04",
       "day": 10,
       "topic": "超市的“买一送一”与“组合套餐”",
+      "module": "消费者选择",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-05",
+      "day": 11,
+      "topic": "手机厂商的产品线布局",
       "module": "消费者选择",
       "level": "beginner",
       "style": "case_review"
