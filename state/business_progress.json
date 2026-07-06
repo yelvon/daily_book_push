@@ -1,6 +1,6 @@
 {
-  "current_day": 11,
-  "last_case": "用户需求与价值主张复盘",
+  "current_day": 12,
+  "last_case": "Dropbox：让文件随处可达",
   "history": [
     {
       "date": "2026-06-26",
@@ -91,6 +91,15 @@
       "module": "用户需求与价值主张",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-06",
+      "day": 11,
+      "case": "Dropbox：让文件随处可达",
+      "company": "Dropbox",
+      "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case"
     }
   ]
 }
