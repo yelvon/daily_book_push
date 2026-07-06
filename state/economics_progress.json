@@ -1,6 +1,6 @@
 {
-  "current_day": 12,
-  "last_topic": "手机厂商的产品线布局",
+  "current_day": 13,
+  "last_topic": "效用最大化",
   "history": [
     {
       "date": "2026-06-25",
@@ -89,6 +89,14 @@
       "module": "消费者选择",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-06",
+      "day": 12,
+      "topic": "效用最大化",
+      "module": "消费者选择",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
