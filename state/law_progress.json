@@ -1,6 +1,6 @@
 {
-  "current_day": 11,
-  "last_topic": "创业主体选择：个体户与公司，责任大不同",
+  "current_day": 12,
+  "last_topic": "有限责任公司：创业最常见的选择",
   "history": [
     {
       "date": "2026-06-26",
@@ -81,6 +81,14 @@
       "module": "公司设立与主体选择",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-06",
+      "day": 11,
+      "topic": "有限责任公司：创业最常见的选择",
+      "module": "公司设立与主体选择",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
