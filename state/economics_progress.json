@@ -1,6 +1,6 @@
 {
-  "current_day": 13,
-  "last_topic": "效用最大化",
+  "current_day": 14,
+  "last_topic": "预算约束",
   "history": [
     {
       "date": "2026-06-25",
@@ -94,6 +94,14 @@
       "date": "2026-07-06",
       "day": 12,
       "topic": "效用最大化",
+      "module": "消费者选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-07",
+      "day": 13,
+      "topic": "预算约束",
       "module": "消费者选择",
       "level": "beginner",
       "style": "concept"
