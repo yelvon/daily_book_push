@@ -1,6 +1,6 @@
 {
-  "current_day": 12,
-  "last_case": "Dropbox：让文件随处可达",
+  "current_day": 13,
+  "last_case": "Calendly",
   "history": [
     {
       "date": "2026-06-26",
@@ -97,6 +97,15 @@
       "day": 11,
       "case": "Dropbox：让文件随处可达",
       "company": "Dropbox",
+      "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-07",
+      "day": 12,
+      "case": "Calendly",
+      "company": "Calendly",
       "module": "用户需求与价值主张",
       "level": "beginner",
       "style": "case"
