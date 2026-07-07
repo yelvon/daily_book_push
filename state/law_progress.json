@@ -1,6 +1,6 @@
 {
-  "current_day": 12,
-  "last_topic": "有限责任公司：创业最常见的选择",
+  "current_day": 13,
+  "last_topic": "注册资本",
   "history": [
     {
       "date": "2026-06-26",
@@ -86,6 +86,14 @@
       "date": "2026-07-06",
       "day": 11,
       "topic": "有限责任公司：创业最常见的选择",
+      "module": "公司设立与主体选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-07",
+      "day": 12,
+      "topic": "注册资本",
       "module": "公司设立与主体选择",
       "level": "beginner",
       "style": "concept"
