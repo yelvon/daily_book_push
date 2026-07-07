@@ -17,12 +17,14 @@ DEFAULT_ECONOMICS_CONFIG_PATH = ROOT_DIR / "config" / "economics.yaml"
 DEFAULT_LAW_CONFIG_PATH = ROOT_DIR / "config" / "law.yaml"
 DEFAULT_BUSINESS_CONFIG_PATH = ROOT_DIR / "config" / "business.yaml"
 DEFAULT_MARKET_CONFIG_PATH = ROOT_DIR / "config" / "market.yaml"
+DEFAULT_FINANCE_CONFIG_PATH = ROOT_DIR / "config" / "finance.yaml"
 DEFAULT_PROGRESS_PATH = ROOT_DIR / "state" / "progress.json"
 DEFAULT_RECOMMEND_HISTORY_PATH = ROOT_DIR / "state" / "recommend_history.json"
 DEFAULT_ECONOMICS_PROGRESS_PATH = ROOT_DIR / "state" / "economics_progress.json"
 DEFAULT_LAW_PROGRESS_PATH = ROOT_DIR / "state" / "law_progress.json"
 DEFAULT_BUSINESS_PROGRESS_PATH = ROOT_DIR / "state" / "business_progress.json"
 DEFAULT_MARKET_EVENTS_PATH = ROOT_DIR / "state" / "market_events.json"
+DEFAULT_FINANCE_PROGRESS_PATH = ROOT_DIR / "state" / "finance_progress.json"
 
 
 @dataclass
@@ -94,6 +96,19 @@ class BusinessConfig:
 
 
 @dataclass
+class FinanceConfig:
+    language: str = "zh"
+    use_google_search: bool = True
+    history_days: int = 180
+    level_start: str = "beginner"
+    level_progression: str = "gradual"
+    weekday_style: str = "concept"
+    weekend_style: str = "case_review"
+    syllabus: List[str] = field(default_factory=list)
+    progress_path: Path = DEFAULT_FINANCE_PROGRESS_PATH
+
+
+@dataclass
 class MarketConfig:
     language: str = "zh"
     use_google_search: bool = True
@@ -149,6 +164,11 @@ class AppConfig:
     market_feishu_webhook_keyword: Optional[str] = None
     market_wechat_webhook_url: Optional[str] = None
     market_wechat_msg_type: str = "text"
+    finance_feishu_webhook_url: Optional[str] = None
+    finance_feishu_webhook_secret: Optional[str] = None
+    finance_feishu_webhook_keyword: Optional[str] = None
+    finance_wechat_webhook_url: Optional[str] = None
+    finance_wechat_msg_type: str = "text"
     webhook_verify_ssl: bool = True
     feishu_max_bytes: int = 20000
     wechat_max_bytes: int = 4000
@@ -357,6 +377,55 @@ def load_business_config(path: Optional[Path] = None) -> BusinessConfig:
     )
 
 
+def load_finance_config(path: Optional[Path] = None) -> FinanceConfig:
+    setup_env()
+    cfg_path = path or DEFAULT_FINANCE_CONFIG_PATH
+    if not cfg_path.exists():
+        return FinanceConfig(
+            syllabus=[
+                "股票基础",
+                "证券市场与交易规则",
+                "基本面分析",
+                "财报研读入门",
+                "财报深度分析",
+                "技术分析",
+                "基金投资",
+                "债券与固定收益",
+                "期权基础",
+                "期权策略",
+                "期货基础",
+                "期货与套期保值",
+                "量化交易入门",
+                "量化策略与回测",
+                "风险管理",
+                "资产配置",
+            ]
+        )
+
+    with cfg_path.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+
+    finance = raw.get("finance") or {}
+    level = finance.get("level") or {}
+    schedule = finance.get("schedule") or {}
+    use_search = finance.get("use_google_search", True)
+    env_search = os.getenv("FINANCE_USE_SEARCH")
+    if env_search is not None:
+        use_search = env_search.strip().lower() not in {"0", "false", "no", "off"}
+
+    return FinanceConfig(
+        language=str(finance.get("language", "zh")),
+        use_google_search=bool(use_search),
+        history_days=int(finance.get("history_days", 180)),
+        level_start=str(level.get("start", "beginner")),
+        level_progression=str(level.get("progression", "gradual")),
+        weekday_style=str(schedule.get("weekday_style", "concept")),
+        weekend_style=str(schedule.get("weekend_style", "case_review")),
+        syllabus=[str(item) for item in finance.get("syllabus") or []],
+        progress_path=DEFAULT_FINANCE_PROGRESS_PATH,
+    )
+
+
 def load_market_config(path: Optional[Path] = None) -> MarketConfig:
     setup_env()
     cfg_path = path or DEFAULT_MARKET_CONFIG_PATH
@@ -461,6 +530,11 @@ def load_app_config(config_path: Optional[Path] = None) -> AppConfig:
         market_feishu_webhook_keyword=os.getenv("MARKET_FEISHU_WEBHOOK_KEYWORD") or None,
         market_wechat_webhook_url=os.getenv("MARKET_WECHAT_WEBHOOK_URL") or None,
         market_wechat_msg_type=os.getenv("MARKET_WECHAT_MSG_TYPE", "text"),
+        finance_feishu_webhook_url=os.getenv("FINANCE_FEISHU_WEBHOOK_URL") or None,
+        finance_feishu_webhook_secret=os.getenv("FINANCE_FEISHU_WEBHOOK_SECRET") or None,
+        finance_feishu_webhook_keyword=os.getenv("FINANCE_FEISHU_WEBHOOK_KEYWORD") or None,
+        finance_wechat_webhook_url=os.getenv("FINANCE_WECHAT_WEBHOOK_URL") or None,
+        finance_wechat_msg_type=os.getenv("FINANCE_WECHAT_MSG_TYPE", "text"),
         webhook_verify_ssl=verify_ssl,
     )
 
@@ -516,5 +590,16 @@ def select_channel_notifier_config(config: AppConfig, channel: str) -> AppConfig
             wechat_msg_type=config.market_wechat_msg_type,
             wechat_personal_compat=config.wechat_personal_compat,
             notification_title="每日市场事件雷达",
+        )
+    if channel == "finance":
+        return replace(
+            config,
+            feishu_webhook_url=config.finance_feishu_webhook_url,
+            feishu_webhook_secret=config.finance_feishu_webhook_secret,
+            feishu_webhook_keyword=config.finance_feishu_webhook_keyword,
+            wechat_webhook_url=config.finance_wechat_webhook_url,
+            wechat_msg_type=config.finance_wechat_msg_type,
+            wechat_personal_compat=config.wechat_personal_compat,
+            notification_title="每日金融投资",
         )
     return config

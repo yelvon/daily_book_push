@@ -7,6 +7,8 @@ from src.business import BusinessResult
 from src.business_progress import BusinessRecord
 from src.economics import EconomicsResult
 from src.economics_progress import EconomicsRecord
+from src.finance import FinanceResult
+from src.finance_progress import FinanceRecord
 from src.law import LawResult
 from src.law_progress import LawRecord
 from src.market import MarketRadarResult, MarketSummaryRecord
@@ -117,6 +119,38 @@ def test_run_business_dry_run_prints_without_saving(capsys):
 
     assert code == 0
     assert "每日商业案例" in capsys.readouterr().out
+    mock_save.assert_not_called()
+
+
+def test_run_finance_dry_run_prints_without_saving(capsys):
+    from main import run_finance
+
+    args = Namespace(dry_run=True)
+    result = FinanceResult(
+        message="## 今日金融投资｜市盈率",
+        record=FinanceRecord(
+            date="2026-06-24",
+            day=1,
+            topic="市盈率",
+            module="股票基础",
+            level="beginner",
+            style="concept",
+        ),
+    )
+
+    with patch("main.load_app_config"), patch("main.load_finance_config"), patch(
+        "main.load_finance_progress"
+    ), patch("main.prune_finance_history") as mock_prune, patch(
+        "main.generate_daily_finance", return_value=result
+    ), patch(
+        "main.save_finance_progress"
+    ) as mock_save:
+        mock_prune.side_effect = lambda state, keep_days: state
+
+        code = run_finance(args)
+
+    assert code == 0
+    assert "今日金融投资" in capsys.readouterr().out
     mock_save.assert_not_called()
 
 

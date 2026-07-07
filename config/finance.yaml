@@ -1,0 +1,33 @@
+# 每日金融投资独立频道配置
+
+finance:
+  language: zh
+  use_google_search: true
+  history_days: 180
+
+  level:
+    start: beginner
+    progression: gradual
+
+  schedule:
+    # 平日学概念，周末做案例/复盘
+    weekday_style: concept
+    weekend_style: case_review
+
+  syllabus:
+    - 股票基础
+    - 证券市场与交易规则
+    - 基本面分析
+    - 财报研读入门
+    - 财报深度分析
+    - 技术分析
+    - 基金投资
+    - 债券与固定收益
+    - 期权基础
+    - 期权策略
+    - 期货基础
+    - 期货与套期保值
+    - 量化交易入门
+    - 量化策略与回测
+    - 风险管理
+    - 资产配置

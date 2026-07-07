@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  读书、市场事件、法学、商业案例、经济学，一天五次，把长期输入自动送到飞书或企业微信。
+  读书、市场事件、法学、商业案例、经济学、金融投资，一天六次，把长期输入自动送到飞书或企业微信。
 </p>
 
 <p align="center">
@@ -14,6 +14,7 @@
   <a href="https://github.com/yelvon/daily_book_push/actions/workflows/daily-law-push.yml"><img alt="law" src="https://img.shields.io/github/actions/workflow/status/yelvon/daily_book_push/daily-law-push.yml?label=law&style=flat-square"></a>
   <a href="https://github.com/yelvon/daily_book_push/actions/workflows/daily-business-push.yml"><img alt="business" src="https://img.shields.io/github/actions/workflow/status/yelvon/daily_book_push/daily-business-push.yml?label=business&style=flat-square"></a>
   <a href="https://github.com/yelvon/daily_book_push/actions/workflows/daily-economics-push.yml"><img alt="economics" src="https://img.shields.io/github/actions/workflow/status/yelvon/daily_book_push/daily-economics-push.yml?label=economics&style=flat-square"></a>
+  <a href="https://github.com/yelvon/daily_book_push/actions/workflows/daily-finance-push.yml"><img alt="finance" src="https://img.shields.io/github/actions/workflow/status/yelvon/daily_book_push/daily-finance-push.yml?label=finance&style=flat-square"></a>
 </p>
 
 ## What It Does
@@ -24,7 +25,7 @@
 
 ## Highlights
 
-- **多频道独立运行**：荐书、市场事件、法学、商业案例、经济学互不干扰。
+- **多频道独立运行**：荐书、市场事件、法学、商业案例、经济学、金融投资互不干扰。
 - **独立群机器人**：每个频道都可以推到不同飞书群或企业微信群，避免消息堆叠。
 - **AI + 历史去重**：每个学习频道都有独立状态文件，尽量避免重复内容。
 - **GitHub Actions 托管**：无需服务器，Fork 后配置 Secrets 即可定时运行。
@@ -40,6 +41,7 @@
 | 12:30 | `daily-law-push.yml` | 创业法律 | 建立创业相关法律常识和风险意识 |
 | 18:00 | `daily-business-push.yml` | 商业案例 | 拆解公司、产品、商业模式和关键决策 |
 | 20:00 | `daily-economics-push.yml` | 经济学 | 从浅到深学习经济学概念和案例 |
+| 21:30 | `daily-finance-push.yml` | 金融投资 | 学习股票、基金、期权、期货、量化交易、财报研读等知识 |
 
 GitHub Actions 使用 UTC 时间，具体 cron 配置在 `.github/workflows/` 目录下。
 
@@ -136,6 +138,19 @@ python main.py --mode economics --dry-run
 配置文件：`config/economics.yaml`  
 状态文件：`state/economics_progress.json`
 
+### Finance
+
+金融投资频道从股票基础开始，逐步覆盖证券、基本面/技术分析、财报研读、基金、期权、期货、量化交易、风险管理和资产配置。
+
+平日学概念；进入财报模块后，平日切换为「财报研读」专用结构；周末做案例或复盘。内容不含具体买卖建议，仅供学习参考。
+
+```bash
+python main.py --mode finance --dry-run
+```
+
+配置文件：`config/finance.yaml`  
+状态文件：`state/finance_progress.json`
+
 ## Quick Start
 
 ### 1. Fork or Clone
@@ -188,6 +203,9 @@ BUSINESS_WECHAT_WEBHOOK_URL=
 
 ECONOMICS_FEISHU_WEBHOOK_URL=
 ECONOMICS_WECHAT_WEBHOOK_URL=
+
+FINANCE_FEISHU_WEBHOOK_URL=
+FINANCE_WECHAT_WEBHOOK_URL=
 ```
 
 每个频道只会使用自己的 webhook，不会回退到书籍群。
@@ -200,6 +218,7 @@ python main.py --mode market --dry-run
 python main.py --mode law --dry-run
 python main.py --mode business --dry-run
 python main.py --mode economics --dry-run
+python main.py --mode finance --dry-run
 ```
 
 ## GitHub Actions Setup
@@ -220,6 +239,8 @@ python main.py --mode economics --dry-run
 | `BUSINESS_WECHAT_WEBHOOK_URL` | 商业案例频道企业微信机器人 |
 | `ECONOMICS_FEISHU_WEBHOOK_URL` | 经济学频道飞书机器人 |
 | `ECONOMICS_WECHAT_WEBHOOK_URL` | 经济学频道企业微信机器人 |
+| `FINANCE_FEISHU_WEBHOOK_URL` | 金融投资频道飞书机器人 |
+| `FINANCE_WECHAT_WEBHOOK_URL` | 金融投资频道企业微信机器人 |
 
 可选配置：
 
@@ -245,6 +266,7 @@ WEBHOOK_VERIFY_SSL=true
 | `law` | 每日法学 |
 | `business` | 每日商业案例 |
 | `economics` | 每日经济学 |
+| `finance` | 每日金融投资 |
 
 默认模式由 `config/recommend.yaml` 的 `mode` 决定；也可以通过 CLI 或 GitHub Actions 手动选择。
 
@@ -257,6 +279,7 @@ WEBHOOK_VERIFY_SSL=true
   daily-law-push.yml
   daily-business-push.yml
   daily-economics-push.yml
+  daily-finance-push.yml
 
 config/
   recommend.yaml
@@ -265,6 +288,7 @@ config/
   law.yaml
   business.yaml
   economics.yaml
+  finance.yaml
 
 state/
   recommend_history.json
@@ -273,6 +297,7 @@ state/
   law_progress.json
   business_progress.json
   economics_progress.json
+  finance_progress.json
 
 src/
   recommender.py
@@ -280,6 +305,7 @@ src/
   law.py
   business.py
   economics.py
+  finance.py
   notifier/
 ```
 
@@ -292,6 +318,7 @@ pytest tests/ -q
 ## Notes
 
 - 市场事件雷达仅供事件观察，不构成投资建议。
+- 金融投资内容仅供学习参考，不构成投资建议；投资有风险，决策请谨慎。
 - 法学内容仅供学习参考，不构成法律意见；重要决策请咨询执业律师。
 - AI 生成内容可能有遗漏或错误，关键事实请自行核验。
 - Gemini 联网搜索需要模型支持 `googleSearch` 工具。

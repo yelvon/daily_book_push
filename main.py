@@ -14,6 +14,7 @@ from src.config import (
     load_app_config,
     load_business_config,
     load_economics_config,
+    load_finance_config,
     load_law_config,
     load_market_config,
     load_recommend_config,
@@ -33,6 +34,13 @@ from src.economics_progress import (
     load_economics_progress,
     prune_history as prune_economics_history,
     save_economics_progress,
+)
+from src.finance import generate_daily_finance
+from src.finance_progress import (
+    append_record as append_finance_record,
+    load_finance_progress,
+    prune_history as prune_finance_history,
+    save_finance_progress,
 )
 from src.law import generate_daily_law
 from src.law_progress import (
@@ -221,6 +229,40 @@ def run_business(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_finance(args: argparse.Namespace) -> int:
+    config = load_app_config()
+    finance = load_finance_config()
+
+    state = load_finance_progress(finance.progress_path)
+    state = prune_finance_history(state, finance.history_days)
+
+    result = generate_daily_finance(config, finance, state)
+    if not result:
+        fallback = "## 今日金融投资\n\n今日金融投资内容生成失败（可能是 Gemini 服务暂时繁忙）。请稍后重试，或配置 CURSOR_API_KEY 作为备用。"
+        if args.dry_run:
+            print(fallback)
+            return 1
+        channel_config = select_channel_notifier_config(config, "finance")
+        send_message(channel_config, fallback)
+        return 1
+
+    logger.info("今日金融投资: %s / %s", result.record.topic, result.record.module)
+
+    if args.dry_run:
+        print(result.message)
+        return 0
+
+    channel_config = select_channel_notifier_config(config, "finance")
+    if not send_message(channel_config, result.message):
+        logger.error("金融投资频道推送失败")
+        return 1
+
+    append_finance_record(state, result.record)
+    save_finance_progress(finance.progress_path, state)
+    logger.info("金融投资推送完成，进度已更新")
+    return 0
+
+
 def run_market(args: argparse.Namespace) -> int:
     config = load_app_config()
     market = load_market_config()
@@ -393,9 +435,11 @@ def run(args: argparse.Namespace) -> int:
         return run_business(args)
     if mode == "market":
         return run_market(args)
+    if mode == "finance":
+        return run_finance(args)
     if mode == "read":
         return run_read(args)
-    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics / law / business / market）", mode)
+    logger.error("未知模式: %s（可选: recommend / read / both / alternate / economics / law / business / market / finance）", mode)
     return 1
 
 
@@ -404,9 +448,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="每日读书 / AI 荐书推送")
     parser.add_argument(
         "--mode",
-        choices=["recommend", "read", "both", "alternate", "economics", "law", "business", "market"],
+        choices=["recommend", "read", "both", "alternate", "economics", "law", "business", "market", "finance"],
         default=None,
-        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学; law=每日法学; business=每日商业案例; market=市场事件雷达",
+        help="recommend=AI荐书; read=本地读书; both=两条都推; alternate=按日轮换; economics=每日经济学; law=每日法学; business=每日商业案例; market=市场事件雷达; finance=每日金融投资",
     )
     parser.add_argument("--dry-run", action="store_true", help="预览消息，不推送、不写状态")
     parser.add_argument("--book", help="[read 模式] 强制指定书籍 id")
