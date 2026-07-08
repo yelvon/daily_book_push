@@ -1,6 +1,6 @@
 {
-  "current_day": 14,
-  "last_topic": "预算约束",
+  "current_day": 15,
+  "last_topic": "消费者偏好",
   "history": [
     {
       "date": "2026-06-25",
@@ -102,6 +102,14 @@
       "date": "2026-07-07",
       "day": 13,
       "topic": "预算约束",
+      "module": "消费者选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-08",
+      "day": 14,
+      "topic": "消费者偏好",
       "module": "消费者选择",
       "level": "beginner",
       "style": "concept"
