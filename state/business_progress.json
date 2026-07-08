@@ -1,6 +1,6 @@
 {
-  "current_day": 13,
-  "last_case": "Calendly",
+  "current_day": 14,
+  "last_case": "Duolingo：让语言学习变得有趣和免费",
   "history": [
     {
       "date": "2026-06-26",
@@ -106,6 +106,15 @@
       "day": 12,
       "case": "Calendly",
       "company": "Calendly",
+      "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-08",
+      "day": 13,
+      "case": "Duolingo：让语言学习变得有趣和免费",
+      "company": "Duolingo",
       "module": "用户需求与价值主张",
       "level": "beginner",
       "style": "case"
