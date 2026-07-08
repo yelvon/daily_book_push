@@ -1,6 +1,6 @@
 {
-  "current_day": 13,
-  "last_topic": "注册资本",
+  "current_day": 14,
+  "last_topic": "公司设立的流程与基本要求",
   "history": [
     {
       "date": "2026-06-26",
@@ -94,6 +94,14 @@
       "date": "2026-07-07",
       "day": 12,
       "topic": "注册资本",
+      "module": "公司设立与主体选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-08",
+      "day": 13,
+      "topic": "公司设立的流程与基本要求",
       "module": "公司设立与主体选择",
       "level": "beginner",
       "style": "concept"
