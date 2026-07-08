@@ -1,5 +1,14 @@
 {
-  "current_day": 1,
-  "last_topic": "",
-  "history": []
+  "current_day": 2,
+  "last_topic": "股票是什么",
+  "history": [
+    {
+      "date": "2026-07-08",
+      "day": 1,
+      "topic": "股票是什么",
+      "module": "股票基础",
+      "level": "beginner",
+      "style": "concept"
+    }
+  ]
 }
