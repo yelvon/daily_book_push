@@ -1,6 +1,6 @@
 {
-  "current_day": 14,
-  "last_topic": "公司设立的流程与基本要求",
+  "current_day": 15,
+  "last_topic": "法人的独立性",
   "history": [
     {
       "date": "2026-06-26",
@@ -102,6 +102,14 @@
       "date": "2026-07-08",
       "day": 13,
       "topic": "公司设立的流程与基本要求",
+      "module": "公司设立与主体选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-09",
+      "day": 14,
+      "topic": "法人的独立性",
       "module": "公司设立与主体选择",
       "level": "beginner",
       "style": "concept"
