@@ -1,6 +1,6 @@
 {
-  "current_day": 15,
-  "last_topic": "消费者偏好",
+  "current_day": 16,
+  "last_topic": "市场均衡",
   "history": [
     {
       "date": "2026-06-25",
@@ -111,6 +111,14 @@
       "day": 14,
       "topic": "消费者偏好",
       "module": "消费者选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-09",
+      "day": 15,
+      "topic": "市场均衡",
+      "module": "供给与需求",
       "level": "beginner",
       "style": "concept"
     }
