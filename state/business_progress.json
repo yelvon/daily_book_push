@@ -1,6 +1,6 @@
 {
-  "current_day": 14,
-  "last_case": "Duolingo：让语言学习变得有趣和免费",
+  "current_day": 15,
+  "last_case": "Zoom：让远程协作简单高效",
   "history": [
     {
       "date": "2026-06-26",
@@ -115,6 +115,15 @@
       "day": 13,
       "case": "Duolingo：让语言学习变得有趣和免费",
       "company": "Duolingo",
+      "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-09",
+      "day": 14,
+      "case": "Zoom：让远程协作简单高效",
+      "company": "未知公司",
       "module": "用户需求与价值主张",
       "level": "beginner",
       "style": "case"
