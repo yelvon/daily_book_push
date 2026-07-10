@@ -1,6 +1,6 @@
 {
-  "current_day": 3,
-  "last_topic": "股票价格",
+  "current_day": 4,
+  "last_topic": "股票交易",
   "history": [
     {
       "date": "2026-07-08",
@@ -14,6 +14,14 @@
       "date": "2026-07-10",
       "day": 2,
       "topic": "股票价格",
+      "module": "股票基础",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-10",
+      "day": 3,
+      "topic": "股票交易",
       "module": "股票基础",
       "level": "beginner",
       "style": "concept"
