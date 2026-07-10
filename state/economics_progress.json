@@ -1,6 +1,6 @@
 {
-  "current_day": 16,
-  "last_topic": "市场均衡",
+  "current_day": 17,
+  "last_topic": "供求变动与市场价格",
   "history": [
     {
       "date": "2026-06-25",
@@ -118,6 +118,14 @@
       "date": "2026-07-09",
       "day": 15,
       "topic": "市场均衡",
+      "module": "供给与需求",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-10",
+      "day": 16,
+      "topic": "供求变动与市场价格",
       "module": "供给与需求",
       "level": "beginner",
       "style": "concept"
