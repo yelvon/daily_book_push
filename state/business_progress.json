@@ -1,6 +1,6 @@
 {
-  "current_day": 15,
-  "last_case": "Zoom：让远程协作简单高效",
+  "current_day": 16,
+  "last_case": "Notion：灵活工作空间的定价策略",
   "history": [
     {
       "date": "2026-06-26",
@@ -125,6 +125,15 @@
       "case": "Zoom：让远程协作简单高效",
       "company": "未知公司",
       "module": "用户需求与价值主张",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-10",
+      "day": 15,
+      "case": "Notion：灵活工作空间的定价策略",
+      "company": "未知公司",
+      "module": "定价与收入模型",
       "level": "beginner",
       "style": "case"
     }
