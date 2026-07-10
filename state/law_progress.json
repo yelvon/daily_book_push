@@ -1,6 +1,6 @@
 {
-  "current_day": 15,
-  "last_topic": "法人的独立性",
+  "current_day": 16,
+  "last_topic": "股权结构与股东权利",
   "history": [
     {
       "date": "2026-06-26",
@@ -111,6 +111,14 @@
       "day": 14,
       "topic": "法人的独立性",
       "module": "公司设立与主体选择",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-10",
+      "day": 15,
+      "topic": "股权结构与股东权利",
+      "module": "股权结构与股东权利",
       "level": "beginner",
       "style": "concept"
     }
