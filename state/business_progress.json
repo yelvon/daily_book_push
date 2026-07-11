@@ -1,6 +1,6 @@
 {
-  "current_day": 16,
-  "last_case": "Notion：灵活工作空间的定价策略",
+  "current_day": 17,
+  "last_case": "定价与收入模型的选择",
   "history": [
     {
       "date": "2026-06-26",
@@ -136,6 +136,15 @@
       "module": "定价与收入模型",
       "level": "beginner",
       "style": "case"
+    },
+    {
+      "date": "2026-07-11",
+      "day": 16,
+      "case": "定价与收入模型的选择",
+      "company": "未知公司",
+      "module": "定价与收入模型",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
