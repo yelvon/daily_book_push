@@ -1,6 +1,6 @@
 {
-  "current_day": 16,
-  "last_topic": "股权结构与股东权利",
+  "current_day": 17,
+  "last_topic": "主题名",
   "history": [
     {
       "date": "2026-06-26",
@@ -121,6 +121,14 @@
       "module": "股权结构与股东权利",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-11",
+      "day": 16,
+      "topic": "主题名",
+      "module": "股权结构与股东权利",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
