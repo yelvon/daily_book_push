@@ -1,6 +1,6 @@
 {
-  "current_day": 4,
-  "last_topic": "股票交易",
+  "current_day": 5,
+  "last_topic": "公司公告与股价波动",
   "history": [
     {
       "date": "2026-07-08",
@@ -25,6 +25,14 @@
       "module": "股票基础",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-11",
+      "day": 4,
+      "topic": "公司公告与股价波动",
+      "module": "股票基础",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
