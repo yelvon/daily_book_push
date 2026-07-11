@@ -1,6 +1,6 @@
 {
-  "current_day": 17,
-  "last_topic": "供求变动与市场价格",
+  "current_day": 18,
+  "last_topic": "热门旅游目的地机票酒店价格暴涨之谜",
   "history": [
     {
       "date": "2026-06-25",
@@ -129,6 +129,14 @@
       "module": "供给与需求",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-11",
+      "day": 17,
+      "topic": "热门旅游目的地机票酒店价格暴涨之谜",
+      "module": "供给与需求",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
