@@ -1,6 +1,6 @@
 {
-  "current_day": 17,
-  "last_topic": "主题名",
+  "current_day": 18,
+  "last_topic": "小股东的困境：我还有投票权吗？",
   "history": [
     {
       "date": "2026-06-26",
@@ -126,6 +126,14 @@
       "date": "2026-07-11",
       "day": 16,
       "topic": "主题名",
+      "module": "股权结构与股东权利",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-12",
+      "day": 17,
+      "topic": "小股东的困境：我还有投票权吗？",
       "module": "股权结构与股东权利",
       "level": "beginner",
       "style": "case_review"
