@@ -1,6 +1,6 @@
 {
-  "current_day": 18,
-  "last_topic": "热门旅游目的地机票酒店价格暴涨之谜",
+  "current_day": 19,
+  "last_topic": "雨天雨伞涨价之谜",
   "history": [
     {
       "date": "2026-06-25",
@@ -134,6 +134,14 @@
       "date": "2026-07-11",
       "day": 17,
       "topic": "热门旅游目的地机票酒店价格暴涨之谜",
+      "module": "供给与需求",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-12",
+      "day": 18,
+      "topic": "雨天雨伞涨价之谜",
       "module": "供给与需求",
       "level": "beginner",
       "style": "case_review"
