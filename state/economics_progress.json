@@ -1,6 +1,6 @@
 {
-  "current_day": 19,
-  "last_topic": "雨天雨伞涨价之谜",
+  "current_day": 20,
+  "last_topic": "需求弹性",
   "history": [
     {
       "date": "2026-06-25",
@@ -145,6 +145,14 @@
       "module": "供给与需求",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-13",
+      "day": 19,
+      "topic": "需求弹性",
+      "module": "供给与需求",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
