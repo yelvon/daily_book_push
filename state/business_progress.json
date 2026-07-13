@@ -1,6 +1,6 @@
 {
-  "current_day": 18,
-  "last_case": "从免费到付费的路径设计",
+  "current_day": 19,
+  "last_case": "Stripe：按交易收费的简单与高效",
   "history": [
     {
       "date": "2026-06-26",
@@ -154,6 +154,15 @@
       "module": "定价与收入模型",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-13",
+      "day": 18,
+      "case": "Stripe：按交易收费的简单与高效",
+      "company": "未知公司",
+      "module": "定价与收入模型",
+      "level": "beginner",
+      "style": "case"
     }
   ]
 }
