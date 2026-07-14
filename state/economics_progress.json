@@ -1,6 +1,6 @@
 {
-  "current_day": 20,
-  "last_topic": "需求弹性",
+  "current_day": 21,
+  "last_topic": "供给弹性",
   "history": [
     {
       "date": "2026-06-25",
@@ -150,6 +150,14 @@
       "date": "2026-07-13",
       "day": 19,
       "topic": "需求弹性",
+      "module": "供给与需求",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-14",
+      "day": 20,
+      "topic": "供给弹性",
       "module": "供给与需求",
       "level": "beginner",
       "style": "concept"
