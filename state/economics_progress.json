@@ -1,6 +1,6 @@
 {
-  "current_day": 21,
-  "last_topic": "供给弹性",
+  "current_day": 22,
+  "last_topic": "价格上限",
   "history": [
     {
       "date": "2026-06-25",
@@ -158,6 +158,14 @@
       "date": "2026-07-14",
       "day": 20,
       "topic": "供给弹性",
+      "module": "供给与需求",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-15",
+      "day": 21,
+      "topic": "价格上限",
       "module": "供给与需求",
       "level": "beginner",
       "style": "concept"
