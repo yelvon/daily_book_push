@@ -1,6 +1,6 @@
 {
-  "current_day": 7,
-  "last_topic": "股票分红",
+  "current_day": 8,
+  "last_topic": "股票指数",
   "history": [
     {
       "date": "2026-07-08",
@@ -46,6 +46,14 @@
       "date": "2026-07-14",
       "day": 6,
       "topic": "股票分红",
+      "module": "股票基础",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-15",
+      "day": 7,
+      "topic": "股票指数",
       "module": "股票基础",
       "level": "beginner",
       "style": "concept"
