@@ -1,6 +1,6 @@
 {
-  "current_day": 22,
-  "last_topic": "价格上限",
+  "current_day": 23,
+  "last_topic": "价格下限",
   "history": [
     {
       "date": "2026-06-25",
@@ -167,6 +167,14 @@
       "day": 21,
       "topic": "价格上限",
       "module": "供给与需求",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-16",
+      "day": 22,
+      "topic": "价格下限",
+      "module": "市场与价格",
       "level": "beginner",
       "style": "concept"
     }
