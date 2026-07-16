@@ -1,6 +1,6 @@
 {
-  "current_day": 20,
-  "last_topic": "股东会与董事会：谁是公司的决策者？",
+  "current_day": 21,
+  "last_topic": "股东的信息权",
   "history": [
     {
       "date": "2026-06-26",
@@ -150,6 +150,14 @@
       "date": "2026-07-15",
       "day": 19,
       "topic": "股东会与董事会：谁是公司的决策者？",
+      "module": "股权结构与股东权利",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-16",
+      "day": 20,
+      "topic": "股东的信息权",
       "module": "股权结构与股东权利",
       "level": "beginner",
       "style": "concept"
