@@ -1,6 +1,6 @@
 {
-  "current_day": 9,
-  "last_topic": "涨跌停板制度",
+  "current_day": 10,
+  "last_topic": "交易时间",
   "history": [
     {
       "date": "2026-07-08",
@@ -62,6 +62,14 @@
       "date": "2026-07-16",
       "day": 8,
       "topic": "涨跌停板制度",
+      "module": "证券市场与交易规则",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-17",
+      "day": 9,
+      "topic": "交易时间",
       "module": "证券市场与交易规则",
       "level": "beginner",
       "style": "concept"
