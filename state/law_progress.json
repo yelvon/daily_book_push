@@ -1,6 +1,6 @@
 {
-  "current_day": 21,
-  "last_topic": "股东的信息权",
+  "current_day": 22,
+  "last_topic": "股东的利润分配权",
   "history": [
     {
       "date": "2026-06-26",
@@ -158,6 +158,14 @@
       "date": "2026-07-16",
       "day": 20,
       "topic": "股东的信息权",
+      "module": "股权结构与股东权利",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-17",
+      "day": 21,
+      "topic": "股东的利润分配权",
       "module": "股权结构与股东权利",
       "level": "beginner",
       "style": "concept"
