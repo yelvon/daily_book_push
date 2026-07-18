@@ -1,6 +1,6 @@
 {
-  "current_day": 24,
-  "last_topic": "市场结构",
+  "current_day": 25,
+  "last_topic": "电影票的差异定价",
   "history": [
     {
       "date": "2026-06-25",
@@ -185,6 +185,14 @@
       "module": "市场与价格",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-18",
+      "day": 24,
+      "topic": "电影票的差异定价",
+      "module": "市场与价格",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
