@@ -1,6 +1,6 @@
 {
-  "current_day": 10,
-  "last_topic": "交易时间",
+  "current_day": 11,
+  "last_topic": "证券市场与交易规则",
   "history": [
     {
       "date": "2026-07-08",
@@ -73,6 +73,14 @@
       "module": "证券市场与交易规则",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-18",
+      "day": 10,
+      "topic": "证券市场与交易规则",
+      "module": "证券市场与交易规则",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
