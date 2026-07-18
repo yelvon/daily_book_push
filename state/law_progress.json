@@ -1,6 +1,6 @@
 {
-  "current_day": 22,
-  "last_topic": "股东的利润分配权",
+  "current_day": 23,
+  "last_topic": "股权不低，为何我却说了不算？——股东协议缺失的控制权困境",
   "history": [
     {
       "date": "2026-06-26",
@@ -169,6 +169,14 @@
       "module": "股权结构与股东权利",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-18",
+      "day": 22,
+      "topic": "股权不低，为何我却说了不算？——股东协议缺失的控制权困境",
+      "module": "股东协议与控制权",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
