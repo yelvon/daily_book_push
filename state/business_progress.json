@@ -1,6 +1,6 @@
 {
-  "current_day": 23,
-  "last_case": "Hotmail：邮件底部签名带来的病毒式增长",
+  "current_day": 24,
+  "last_case": "病毒式增长与产品自传播",
   "history": [
     {
       "date": "2026-06-26",
@@ -199,6 +199,15 @@
       "module": "获客与增长",
       "level": "beginner",
       "style": "case"
+    },
+    {
+      "date": "2026-07-18",
+      "day": 23,
+      "case": "病毒式增长与产品自传播",
+      "company": "未知公司",
+      "module": "获客与增长",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
