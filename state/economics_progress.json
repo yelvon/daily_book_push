@@ -1,6 +1,6 @@
 {
-  "current_day": 25,
-  "last_topic": "电影票的差异定价",
+  "current_day": 26,
+  "last_topic": "外卖比堂食贵？平台抽成如何影响你的餐桌",
   "history": [
     {
       "date": "2026-06-25",
@@ -190,6 +190,14 @@
       "date": "2026-07-18",
       "day": 24,
       "topic": "电影票的差异定价",
+      "module": "市场与价格",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-19",
+      "day": 25,
+      "topic": "外卖比堂食贵？平台抽成如何影响你的餐桌",
       "module": "市场与价格",
       "level": "beginner",
       "style": "case_review"
