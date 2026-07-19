@@ -1,6 +1,6 @@
 {
-  "current_day": 24,
-  "last_case": "病毒式增长与产品自传播",
+  "current_day": 25,
+  "last_case": "产品驱动的增长",
   "history": [
     {
       "date": "2026-06-26",
@@ -205,6 +205,15 @@
       "day": 23,
       "case": "病毒式增长与产品自传播",
       "company": "未知公司",
+      "module": "获客与增长",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-19",
+      "day": 24,
+      "case": "产品驱动的增长",
+      "company": "Hotmail, Dropbox, Calendly, Zoom",
       "module": "获客与增长",
       "level": "beginner",
       "style": "case_review"
