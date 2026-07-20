@@ -1,6 +1,6 @@
 {
-  "current_day": 24,
-  "last_topic": "股东协议与控制权",
+  "current_day": 25,
+  "last_topic": "股东协议与控制权：不仅仅是股权比例",
   "history": [
     {
       "date": "2026-06-26",
@@ -185,6 +185,14 @@
       "module": "股东协议与控制权",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-20",
+      "day": 24,
+      "topic": "股东协议与控制权：不仅仅是股权比例",
+      "module": "股东协议与控制权",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
