@@ -1,6 +1,6 @@
 {
-  "current_day": 11,
-  "last_topic": "证券市场与交易规则",
+  "current_day": 12,
+  "last_topic": "证券市场的基本功能与监管",
   "history": [
     {
       "date": "2026-07-08",
@@ -81,6 +81,14 @@
       "module": "证券市场与交易规则",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-20",
+      "day": 11,
+      "topic": "证券市场的基本功能与监管",
+      "module": "证券市场与交易规则",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
