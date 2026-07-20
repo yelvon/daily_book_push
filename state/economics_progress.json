@@ -1,6 +1,6 @@
 {
-  "current_day": 26,
-  "last_topic": "外卖比堂食贵？平台抽成如何影响你的餐桌",
+  "current_day": 27,
+  "last_topic": "信息不对称",
   "history": [
     {
       "date": "2026-06-25",
@@ -201,6 +201,14 @@
       "module": "市场与价格",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-20",
+      "day": 26,
+      "topic": "信息不对称",
+      "module": "市场与价格",
+      "level": "beginner",
+      "style": "concept"
     }
   ]
 }
