@@ -1,6 +1,6 @@
 {
-  "current_day": 25,
-  "last_case": "产品驱动的增长",
+  "current_day": 26,
+  "last_case": "PayPal的早期推荐奖励",
   "history": [
     {
       "date": "2026-06-26",
@@ -217,6 +217,15 @@
       "module": "获客与增长",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-20",
+      "day": 25,
+      "case": "PayPal的早期推荐奖励",
+      "company": "未知公司",
+      "module": "获客与增长",
+      "level": "beginner",
+      "style": "case"
     }
   ]
 }
