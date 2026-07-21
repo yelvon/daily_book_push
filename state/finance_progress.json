@@ -1,6 +1,6 @@
 {
-  "current_day": 12,
-  "last_topic": "证券市场的基本功能与监管",
+  "current_day": 13,
+  "last_topic": "限价委托与市价委托",
   "history": [
     {
       "date": "2026-07-08",
@@ -86,6 +86,14 @@
       "date": "2026-07-20",
       "day": 11,
       "topic": "证券市场的基本功能与监管",
+      "module": "证券市场与交易规则",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-21",
+      "day": 12,
+      "topic": "限价委托与市价委托",
       "module": "证券市场与交易规则",
       "level": "beginner",
       "style": "concept"
