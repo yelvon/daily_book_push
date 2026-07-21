@@ -1,6 +1,6 @@
 {
-  "current_day": 27,
-  "last_topic": "信息不对称",
+  "current_day": 28,
+  "last_topic": "交易成本",
   "history": [
     {
       "date": "2026-06-25",
@@ -206,6 +206,14 @@
       "date": "2026-07-20",
       "day": 26,
       "topic": "信息不对称",
+      "module": "市场与价格",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-21",
+      "day": 27,
+      "topic": "交易成本",
       "module": "市场与价格",
       "level": "beginner",
       "style": "concept"
