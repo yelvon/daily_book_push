@@ -1,6 +1,6 @@
 {
-  "current_day": 13,
-  "last_topic": "限价委托与市价委托",
+  "current_day": 14,
+  "last_topic": "集合竞价与连续竞价",
   "history": [
     {
       "date": "2026-07-08",
@@ -94,6 +94,14 @@
       "date": "2026-07-21",
       "day": 12,
       "topic": "限价委托与市价委托",
+      "module": "证券市场与交易规则",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-22",
+      "day": 13,
+      "topic": "集合竞价与连续竞价",
       "module": "证券市场与交易规则",
       "level": "beginner",
       "style": "concept"
