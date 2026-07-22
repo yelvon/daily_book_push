@@ -1,6 +1,6 @@
 {
-  "current_day": 28,
-  "last_topic": "交易成本",
+  "current_day": 29,
+  "last_topic": "价格机制",
   "history": [
     {
       "date": "2026-06-25",
@@ -214,6 +214,14 @@
       "date": "2026-07-21",
       "day": 27,
       "topic": "交易成本",
+      "module": "市场与价格",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-22",
+      "day": 28,
+      "topic": "价格机制",
       "module": "市场与价格",
       "level": "beginner",
       "style": "concept"
