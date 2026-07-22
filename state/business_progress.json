@@ -1,6 +1,6 @@
 {
-  "current_day": 27,
-  "last_case": "Airbnb的“搭便车”获客：利用Craigslist获取早期房源",
+  "current_day": 28,
+  "last_case": "LinkedIn的联系人邀请增长",
   "history": [
     {
       "date": "2026-06-26",
@@ -231,6 +231,15 @@
       "date": "2026-07-21",
       "day": 26,
       "case": "Airbnb的“搭便车”获客：利用Craigslist获取早期房源",
+      "company": "未知公司",
+      "module": "获客与增长",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-22",
+      "day": 27,
+      "case": "LinkedIn的联系人邀请增长",
       "company": "未知公司",
       "module": "获客与增长",
       "level": "beginner",
