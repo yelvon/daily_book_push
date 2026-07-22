@@ -1,6 +1,6 @@
 {
-  "current_day": 26,
-  "last_topic": "股东协议与控制权：提前约定，避免内耗",
+  "current_day": 27,
+  "last_topic": "股东协议：创业者的“婚姻”契约",
   "history": [
     {
       "date": "2026-06-26",
@@ -198,6 +198,14 @@
       "date": "2026-07-21",
       "day": 25,
       "topic": "股东协议与控制权：提前约定，避免内耗",
+      "module": "股东协议与控制权",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-22",
+      "day": 26,
+      "topic": "股东协议：创业者的“婚姻”契约",
       "module": "股东协议与控制权",
       "level": "beginner",
       "style": "concept"
