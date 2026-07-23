@@ -1,6 +1,6 @@
 {
-  "current_day": 29,
-  "last_topic": "价格机制",
+  "current_day": 30,
+  "last_topic": "企业与成本：显性成本与隐性成本",
   "history": [
     {
       "date": "2026-06-25",
@@ -223,6 +223,14 @@
       "day": 28,
       "topic": "价格机制",
       "module": "市场与价格",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-23",
+      "day": 29,
+      "topic": "企业与成本：显性成本与隐性成本",
+      "module": "企业与成本",
       "level": "beginner",
       "style": "concept"
     }
