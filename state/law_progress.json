@@ -1,6 +1,6 @@
 {
-  "current_day": 27,
-  "last_topic": "股东协议：创业者的“婚姻”契约",
+  "current_day": 28,
+  "last_topic": "一致行动人协议",
   "history": [
     {
       "date": "2026-06-26",
@@ -206,6 +206,14 @@
       "date": "2026-07-22",
       "day": 26,
       "topic": "股东协议：创业者的“婚姻”契约",
+      "module": "股东协议与控制权",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-23",
+      "day": 27,
+      "topic": "一致行动人协议",
       "module": "股东协议与控制权",
       "level": "beginner",
       "style": "concept"
