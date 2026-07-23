@@ -1,6 +1,6 @@
 {
-  "current_day": 14,
-  "last_topic": "集合竞价与连续竞价",
+  "current_day": 15,
+  "last_topic": "经纪商与券商的角色",
   "history": [
     {
       "date": "2026-07-08",
@@ -102,6 +102,14 @@
       "date": "2026-07-22",
       "day": 13,
       "topic": "集合竞价与连续竞价",
+      "module": "证券市场与交易规则",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-23",
+      "day": 14,
+      "topic": "经纪商与券商的角色",
       "module": "证券市场与交易规则",
       "level": "beginner",
       "style": "concept"
