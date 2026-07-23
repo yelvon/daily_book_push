@@ -1,6 +1,6 @@
 {
-  "current_day": 28,
-  "last_case": "LinkedIn的联系人邀请增长",
+  "current_day": 29,
+  "last_case": "Slack的内部病毒式传播",
   "history": [
     {
       "date": "2026-06-26",
@@ -241,6 +241,15 @@
       "day": 27,
       "case": "LinkedIn的联系人邀请增长",
       "company": "未知公司",
+      "module": "获客与增长",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-23",
+      "day": 28,
+      "case": "Slack的内部病毒式传播",
+      "company": "Slack",
       "module": "获客与增长",
       "level": "beginner",
       "style": "case"
