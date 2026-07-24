@@ -1,6 +1,6 @@
 {
-  "current_day": 30,
-  "last_topic": "企业与成本：显性成本与隐性成本",
+  "current_day": 31,
+  "last_topic": "固定成本与可变成本",
   "history": [
     {
       "date": "2026-06-25",
@@ -230,6 +230,14 @@
       "date": "2026-07-23",
       "day": 29,
       "topic": "企业与成本：显性成本与隐性成本",
+      "module": "企业与成本",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 30,
+      "topic": "固定成本与可变成本",
       "module": "企业与成本",
       "level": "beginner",
       "style": "concept"
