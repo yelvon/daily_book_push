@@ -1,6 +1,6 @@
 {
-  "current_day": 29,
-  "last_case": "Slack的内部病毒式传播",
+  "current_day": 30,
+  "last_case": "星巴克忠诚度计划",
   "history": [
     {
       "date": "2026-06-26",
@@ -251,6 +251,15 @@
       "case": "Slack的内部病毒式传播",
       "company": "Slack",
       "module": "获客与增长",
+      "level": "beginner",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 29,
+      "case": "星巴克忠诚度计划",
+      "company": "Starbucks",
+      "module": "留存与复购",
       "level": "beginner",
       "style": "case"
     }
