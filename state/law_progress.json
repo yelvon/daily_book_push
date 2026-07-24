@@ -1,6 +1,6 @@
 {
-  "current_day": 28,
-  "last_topic": "一致行动人协议",
+  "current_day": 29,
+  "last_topic": "股东协议如何调整投票权",
   "history": [
     {
       "date": "2026-06-26",
@@ -214,6 +214,14 @@
       "date": "2026-07-23",
       "day": 27,
       "topic": "一致行动人协议",
+      "module": "股东协议与控制权",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 28,
+      "topic": "股东协议如何调整投票权",
       "module": "股东协议与控制权",
       "level": "beginner",
       "style": "concept"
