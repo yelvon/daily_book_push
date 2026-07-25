@@ -1,6 +1,6 @@
 {
-  "current_day": 16,
-  "last_topic": "基本面分析",
+  "current_day": 17,
+  "last_topic": "突发负面新闻与企业价值",
   "history": [
     {
       "date": "2026-07-08",
@@ -121,6 +121,14 @@
       "module": "基本面分析",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 16,
+      "topic": "突发负面新闻与企业价值",
+      "module": "基本面分析",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
