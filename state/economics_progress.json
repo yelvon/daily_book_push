@@ -1,6 +1,6 @@
 {
-  "current_day": 31,
-  "last_topic": "固定成本与可变成本",
+  "current_day": 32,
+  "last_topic": "咖啡馆的“空窗期”之谜",
   "history": [
     {
       "date": "2026-06-25",
@@ -241,6 +241,14 @@
       "module": "企业与成本",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 31,
+      "topic": "咖啡馆的“空窗期”之谜",
+      "module": "企业与成本",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
