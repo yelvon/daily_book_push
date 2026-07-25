@@ -1,6 +1,6 @@
 {
-  "current_day": 30,
-  "last_case": "星巴克忠诚度计划",
+  "current_day": 31,
+  "last_case": "产品粘性与用户习惯的养成",
   "history": [
     {
       "date": "2026-06-26",
@@ -262,6 +262,15 @@
       "module": "留存与复购",
       "level": "beginner",
       "style": "case"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 30,
+      "case": "产品粘性与用户习惯的养成",
+      "company": "未知公司",
+      "module": "留存与复购",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
