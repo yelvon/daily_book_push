@@ -1,6 +1,6 @@
 {
-  "current_day": 17,
-  "last_topic": "突发负面新闻与企业价值",
+  "current_day": 18,
+  "last_topic": "负面新闻冲击下的股价波动",
   "history": [
     {
       "date": "2026-07-08",
@@ -126,6 +126,14 @@
       "date": "2026-07-25",
       "day": 16,
       "topic": "突发负面新闻与企业价值",
+      "module": "基本面分析",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 17,
+      "topic": "负面新闻冲击下的股价波动",
       "module": "基本面分析",
       "level": "beginner",
       "style": "case_review"
