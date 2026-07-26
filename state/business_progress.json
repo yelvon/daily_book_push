@@ -1,6 +1,6 @@
 {
-  "current_day": 31,
-  "last_case": "产品粘性与用户习惯的养成",
+  "current_day": 32,
+  "last_case": "留存与复购的核心机制",
   "history": [
     {
       "date": "2026-06-26",
@@ -270,6 +270,15 @@
       "company": "未知公司",
       "module": "留存与复购",
       "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 31,
+      "case": "留存与复购的核心机制",
+      "company": "未知公司",
+      "module": "留存与复购",
+      "level": "intermediate",
       "style": "case_review"
     }
   ]
