@@ -1,6 +1,6 @@
 {
-  "current_day": 30,
-  "last_topic": "“兼职”变“全职”，创业公司里的用工隐患",
+  "current_day": 31,
+  "last_topic": "试用期不签合同的法律风险",
   "history": [
     {
       "date": "2026-06-26",
@@ -230,6 +230,14 @@
       "date": "2026-07-25",
       "day": 29,
       "topic": "“兼职”变“全职”，创业公司里的用工隐患",
+      "module": "劳动合同与用工合规",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 30,
+      "topic": "试用期不签合同的法律风险",
       "module": "劳动合同与用工合规",
       "level": "beginner",
       "style": "case_review"
