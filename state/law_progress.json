@@ -1,6 +1,6 @@
 {
-  "current_day": 31,
-  "last_topic": "试用期不签合同的法律风险",
+  "current_day": 32,
+  "last_topic": "劳动合同的解除与终止",
   "history": [
     {
       "date": "2026-06-26",
@@ -241,6 +241,14 @@
       "module": "劳动合同与用工合规",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 31,
+      "topic": "劳动合同的解除与终止",
+      "module": "劳动合同与用工合规",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
