@@ -1,6 +1,6 @@
 {
-  "current_day": 32,
-  "last_case": "留存与复购的核心机制",
+  "current_day": 33,
+  "last_case": "Costco的会员制",
   "history": [
     {
       "date": "2026-06-26",
@@ -280,6 +280,15 @@
       "module": "留存与复购",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 32,
+      "case": "Costco的会员制",
+      "company": "Costco",
+      "module": "留存与复购",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
