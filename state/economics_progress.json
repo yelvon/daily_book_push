@@ -1,6 +1,6 @@
 {
-  "current_day": 33,
-  "last_topic": "市中心店铺的“短命”之谜",
+  "current_day": 34,
+  "last_topic": "沉没成本",
   "history": [
     {
       "date": "2026-06-25",
@@ -257,6 +257,14 @@
       "module": "企业与成本",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 33,
+      "topic": "沉没成本",
+      "module": "企业与成本",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
