@@ -1,6 +1,6 @@
 {
-  "current_day": 34,
-  "last_topic": "沉没成本",
+  "current_day": 35,
+  "last_topic": "边际成本",
   "history": [
     {
       "date": "2026-06-25",
@@ -262,6 +262,14 @@
       "date": "2026-07-27",
       "day": 33,
       "topic": "沉没成本",
+      "module": "企业与成本",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-28",
+      "day": 34,
+      "topic": "边际成本",
       "module": "企业与成本",
       "level": "intermediate",
       "style": "concept"
