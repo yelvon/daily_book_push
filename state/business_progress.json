@@ -1,6 +1,6 @@
 {
-  "current_day": 33,
-  "last_case": "Costco的会员制",
+  "current_day": 34,
+  "last_case": "Supercell的游戏留存秘诀",
   "history": [
     {
       "date": "2026-06-26",
@@ -286,6 +286,15 @@
       "day": 32,
       "case": "Costco的会员制",
       "company": "Costco",
+      "module": "留存与复购",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-28",
+      "day": 33,
+      "case": "Supercell的游戏留存秘诀",
+      "company": "未知公司",
       "module": "留存与复购",
       "level": "intermediate",
       "style": "case"
