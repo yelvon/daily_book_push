@@ -1,6 +1,6 @@
 {
-  "current_day": 34,
-  "last_case": "Supercell的游戏留存秘诀",
+  "current_day": 35,
+  "last_case": "Duolingo的习惯养成机制",
   "history": [
     {
       "date": "2026-06-26",
@@ -294,6 +294,15 @@
       "date": "2026-07-28",
       "day": 33,
       "case": "Supercell的游戏留存秘诀",
+      "company": "未知公司",
+      "module": "留存与复购",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 34,
+      "case": "Duolingo的习惯养成机制",
       "company": "未知公司",
       "module": "留存与复购",
       "level": "intermediate",
