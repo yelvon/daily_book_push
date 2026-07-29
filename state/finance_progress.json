@@ -1,6 +1,6 @@
 {
-  "current_day": 19,
-  "last_topic": "基本面分析：理解公司价值的钥匙",
+  "current_day": 20,
+  "last_topic": "基本面分析：从了解公司业务开始",
   "history": [
     {
       "date": "2026-07-08",
@@ -142,6 +142,14 @@
       "date": "2026-07-28",
       "day": 18,
       "topic": "基本面分析：理解公司价值的钥匙",
+      "module": "基本面分析",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 19,
+      "topic": "基本面分析：从了解公司业务开始",
       "module": "基本面分析",
       "level": "beginner",
       "style": "concept"
