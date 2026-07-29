@@ -1,6 +1,6 @@
 {
-  "current_day": 33,
-  "last_topic": "竞业限制",
+  "current_day": 34,
+  "last_topic": "社会保险与住房公积金合规",
   "history": [
     {
       "date": "2026-06-26",
@@ -254,6 +254,14 @@
       "date": "2026-07-28",
       "day": 32,
       "topic": "竞业限制",
+      "module": "劳动合同与用工合规",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 33,
+      "topic": "社会保险与住房公积金合规",
       "module": "劳动合同与用工合规",
       "level": "intermediate",
       "style": "concept"
