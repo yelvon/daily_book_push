@@ -1,6 +1,6 @@
 {
-  "current_day": 35,
-  "last_case": "Duolingo的习惯养成机制",
+  "current_day": 36,
+  "last_case": "Fortnite的战斗通行证",
   "history": [
     {
       "date": "2026-06-26",
@@ -303,6 +303,15 @@
       "date": "2026-07-29",
       "day": 34,
       "case": "Duolingo的习惯养成机制",
+      "company": "未知公司",
+      "module": "留存与复购",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 35,
+      "case": "Fortnite的战斗通行证",
       "company": "未知公司",
       "module": "留存与复购",
       "level": "intermediate",
