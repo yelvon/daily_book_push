@@ -1,6 +1,6 @@
 {
-  "current_day": 20,
-  "last_topic": "基本面分析：从了解公司业务开始",
+  "current_day": 21,
+  "last_topic": "公司盈利模式",
   "history": [
     {
       "date": "2026-07-08",
@@ -150,6 +150,14 @@
       "date": "2026-07-29",
       "day": 19,
       "topic": "基本面分析：从了解公司业务开始",
+      "module": "基本面分析",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 20,
+      "topic": "公司盈利模式",
       "module": "基本面分析",
       "level": "beginner",
       "style": "concept"
