@@ -1,6 +1,6 @@
 {
-  "current_day": 36,
-  "last_case": "Fortnite的战斗通行证",
+  "current_day": 37,
+  "last_case": "Dollar Shave Club 的 DTC 渠道创新",
   "history": [
     {
       "date": "2026-06-26",
@@ -314,6 +314,15 @@
       "case": "Fortnite的战斗通行证",
       "company": "未知公司",
       "module": "留存与复购",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 36,
+      "case": "Dollar Shave Club 的 DTC 渠道创新",
+      "company": "Dollar Shave Club",
+      "module": "渠道与分发",
       "level": "intermediate",
       "style": "case"
     }
