@@ -1,6 +1,6 @@
 {
-  "current_day": 37,
-  "last_topic": "完全竞争",
+  "current_day": 38,
+  "last_topic": "垄断市场",
   "history": [
     {
       "date": "2026-06-25",
@@ -286,6 +286,14 @@
       "date": "2026-07-30",
       "day": 36,
       "topic": "完全竞争",
+      "module": "竞争与垄断",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 37,
+      "topic": "垄断市场",
       "module": "竞争与垄断",
       "level": "intermediate",
       "style": "concept"
