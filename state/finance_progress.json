@@ -1,6 +1,6 @@
 {
-  "current_day": 21,
-  "last_topic": "公司盈利模式",
+  "current_day": 22,
+  "last_topic": "公司护城河",
   "history": [
     {
       "date": "2026-07-08",
@@ -158,6 +158,14 @@
       "date": "2026-07-30",
       "day": 20,
       "topic": "公司盈利模式",
+      "module": "基本面分析",
+      "level": "beginner",
+      "style": "concept"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 21,
+      "topic": "公司护城河",
       "module": "基本面分析",
       "level": "beginner",
       "style": "concept"
