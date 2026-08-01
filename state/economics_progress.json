@@ -1,6 +1,6 @@
 {
-  "current_day": 38,
-  "last_topic": "垄断市场",
+  "current_day": 39,
+  "last_topic": "你的App更贵，是平台“垄断”的锅吗？",
   "history": [
     {
       "date": "2026-06-25",
@@ -297,6 +297,14 @@
       "module": "竞争与垄断",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-01",
+      "day": 38,
+      "topic": "你的App更贵，是平台“垄断”的锅吗？",
+      "module": "竞争与垄断",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
