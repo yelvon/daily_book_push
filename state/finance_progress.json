@@ -1,6 +1,6 @@
 {
-  "current_day": 22,
-  "last_topic": "公司护城河",
+  "current_day": 23,
+  "last_topic": "财报研读入门",
   "history": [
     {
       "date": "2026-07-08",
@@ -169,6 +169,14 @@
       "module": "基本面分析",
       "level": "beginner",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-01",
+      "day": 22,
+      "topic": "财报研读入门",
+      "module": "财报研读入门",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
