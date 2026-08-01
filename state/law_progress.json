@@ -1,6 +1,6 @@
 {
-  "current_day": 36,
-  "last_topic": "规章制度的制定与公示",
+  "current_day": 37,
+  "last_topic": "合同风险：当“没想到”变成“大麻烦”",
   "history": [
     {
       "date": "2026-06-26",
@@ -281,6 +281,14 @@
       "module": "劳动合同与用工合规",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-01",
+      "day": 36,
+      "topic": "合同风险：当“没想到”变成“大麻烦”",
+      "module": "合同管理与风险条款",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
