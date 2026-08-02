@@ -1,6 +1,6 @@
 {
-  "current_day": 37,
-  "last_topic": "合同风险：当“没想到”变成“大麻烦”",
+  "current_day": 38,
+  "last_topic": "合同管理与风险条款",
   "history": [
     {
       "date": "2026-06-26",
@@ -286,6 +286,14 @@
       "date": "2026-08-01",
       "day": 36,
       "topic": "合同风险：当“没想到”变成“大麻烦”",
+      "module": "合同管理与风险条款",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-02",
+      "day": 37,
+      "topic": "合同管理与风险条款",
       "module": "合同管理与风险条款",
       "level": "intermediate",
       "style": "case_review"
