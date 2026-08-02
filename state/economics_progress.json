@@ -1,6 +1,6 @@
 {
-  "current_day": 39,
-  "last_topic": "你的App更贵，是平台“垄断”的锅吗？",
+  "current_day": 40,
+  "last_topic": "流媒体大战：传统电视的“垄断”挑战",
   "history": [
     {
       "date": "2026-06-25",
@@ -302,6 +302,14 @@
       "date": "2026-08-01",
       "day": 38,
       "topic": "你的App更贵，是平台“垄断”的锅吗？",
+      "module": "竞争与垄断",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-02",
+      "day": 39,
+      "topic": "流媒体大战：传统电视的“垄断”挑战",
       "module": "竞争与垄断",
       "level": "intermediate",
       "style": "case_review"
