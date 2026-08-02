@@ -1,6 +1,6 @@
 {
-  "current_day": 38,
-  "last_case": "早期增长的“渠道”创新",
+  "current_day": 39,
+  "last_case": "早期增长的渠道创新",
   "history": [
     {
       "date": "2026-06-26",
@@ -331,6 +331,15 @@
       "day": 37,
       "case": "早期增长的“渠道”创新",
       "company": "未知公司",
+      "module": "渠道与分发",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-02",
+      "day": 38,
+      "case": "早期增长的渠道创新",
+      "company": "Hotmail, Airbnb, Dollar Shave Club等",
       "module": "渠道与分发",
       "level": "intermediate",
       "style": "case_review"
