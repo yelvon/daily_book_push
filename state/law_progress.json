@@ -1,6 +1,6 @@
 {
-  "current_day": 38,
-  "last_topic": "合同管理与风险条款",
+  "current_day": 39,
+  "last_topic": "合同风险条款：未雨绸缪的商业智慧",
   "history": [
     {
       "date": "2026-06-26",
@@ -297,6 +297,14 @@
       "module": "合同管理与风险条款",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-03",
+      "day": 38,
+      "topic": "合同风险条款：未雨绸缪的商业智慧",
+      "module": "合同管理与风险条款",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
