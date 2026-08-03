@@ -1,6 +1,6 @@
 {
-  "current_day": 39,
-  "last_case": "早期增长的渠道创新",
+  "current_day": 40,
+  "last_case": "Stripe的开发者优先分发策略",
   "history": [
     {
       "date": "2026-06-26",
@@ -343,6 +343,15 @@
       "module": "渠道与分发",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-03",
+      "day": 39,
+      "case": "Stripe的开发者优先分发策略",
+      "company": "未知公司",
+      "module": "渠道与分发",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
