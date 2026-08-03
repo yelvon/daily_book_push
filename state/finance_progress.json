@@ -1,6 +1,6 @@
 {
-  "current_day": 24,
-  "last_topic": "营收增长与股价波动",
+  "current_day": 25,
+  "last_topic": "财务报表概览：认识三大报表",
   "history": [
     {
       "date": "2026-07-08",
@@ -185,6 +185,14 @@
       "module": "财报研读入门",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-04",
+      "day": 24,
+      "topic": "财务报表概览：认识三大报表",
+      "module": "财报研读入门",
+      "level": "beginner",
+      "style": "report_reading"
     }
   ]
 }
