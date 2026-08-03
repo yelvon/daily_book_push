@@ -1,6 +1,6 @@
 {
-  "current_day": 40,
-  "last_topic": "流媒体大战：传统电视的“垄断”挑战",
+  "current_day": 41,
+  "last_topic": "垄断竞争",
   "history": [
     {
       "date": "2026-06-25",
@@ -313,6 +313,14 @@
       "module": "竞争与垄断",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-03",
+      "day": 40,
+      "topic": "垄断竞争",
+      "module": "竞争与垄断",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
