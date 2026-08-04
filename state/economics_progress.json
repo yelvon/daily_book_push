@@ -1,6 +1,6 @@
 {
-  "current_day": 41,
-  "last_topic": "垄断竞争",
+  "current_day": 42,
+  "last_topic": "进入壁垒",
   "history": [
     {
       "date": "2026-06-25",
@@ -318,6 +318,14 @@
       "date": "2026-08-03",
       "day": 40,
       "topic": "垄断竞争",
+      "module": "竞争与垄断",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-04",
+      "day": 41,
+      "topic": "进入壁垒",
       "module": "竞争与垄断",
       "level": "intermediate",
       "style": "concept"
