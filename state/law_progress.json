@@ -1,6 +1,6 @@
 {
-  "current_day": 40,
-  "last_topic": "违约责任条款：给合同加一道“安全锁”",
+  "current_day": 41,
+  "last_topic": "不可抗力条款",
   "history": [
     {
       "date": "2026-06-26",
@@ -310,6 +310,14 @@
       "date": "2026-08-04",
       "day": 39,
       "topic": "违约责任条款：给合同加一道“安全锁”",
+      "module": "合同管理与风险条款",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-05",
+      "day": 40,
+      "topic": "不可抗力条款",
       "module": "合同管理与风险条款",
       "level": "intermediate",
       "style": "concept"
