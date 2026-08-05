@@ -1,6 +1,6 @@
 {
-  "current_day": 26,
-  "last_topic": "利润表",
+  "current_day": 27,
+  "last_topic": "资产负债表",
   "history": [
     {
       "date": "2026-07-08",
@@ -198,6 +198,14 @@
       "date": "2026-08-04",
       "day": 25,
       "topic": "利润表",
+      "module": "财报研读入门",
+      "level": "beginner",
+      "style": "report_reading"
+    },
+    {
+      "date": "2026-08-05",
+      "day": 26,
+      "topic": "资产负债表",
       "module": "财报研读入门",
       "level": "beginner",
       "style": "report_reading"
