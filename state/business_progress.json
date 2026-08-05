@@ -1,6 +1,6 @@
 {
-  "current_day": 41,
-  "last_case": "Shopify的合作伙伴生态系统：增长的飞轮",
+  "current_day": 42,
+  "last_case": "Figma社区内容驱动的增长",
   "history": [
     {
       "date": "2026-06-26",
@@ -358,6 +358,15 @@
       "day": 40,
       "case": "Shopify的合作伙伴生态系统：增长的飞轮",
       "company": "未知公司",
+      "module": "渠道与分发",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-05",
+      "day": 41,
+      "case": "Figma社区内容驱动的增长",
+      "company": "Figma",
       "module": "渠道与分发",
       "level": "intermediate",
       "style": "case"
