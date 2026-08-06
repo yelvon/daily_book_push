@@ -1,6 +1,6 @@
 {
-  "current_day": 43,
-  "last_topic": "寡头垄断",
+  "current_day": 44,
+  "last_topic": "国内生产总值",
   "history": [
     {
       "date": "2026-06-25",
@@ -335,6 +335,14 @@
       "day": 42,
       "topic": "寡头垄断",
       "module": "竞争与垄断",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-06",
+      "day": 43,
+      "topic": "国内生产总值",
+      "module": "宏观经济",
       "level": "intermediate",
       "style": "concept"
     }
