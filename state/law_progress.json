@@ -1,6 +1,6 @@
 {
-  "current_day": 41,
-  "last_topic": "不可抗力条款",
+  "current_day": 42,
+  "last_topic": "合同风险条款：免责条款与责任限制",
   "history": [
     {
       "date": "2026-06-26",
@@ -318,6 +318,14 @@
       "date": "2026-08-05",
       "day": 40,
       "topic": "不可抗力条款",
+      "module": "合同管理与风险条款",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-06",
+      "day": 41,
+      "topic": "合同风险条款：免责条款与责任限制",
       "module": "合同管理与风险条款",
       "level": "intermediate",
       "style": "concept"
