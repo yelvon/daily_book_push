@@ -1,6 +1,6 @@
 {
-  "current_day": 44,
-  "last_topic": "国内生产总值",
+  "current_day": 45,
+  "last_topic": "通货膨胀",
   "history": [
     {
       "date": "2026-06-25",
@@ -342,6 +342,14 @@
       "date": "2026-08-06",
       "day": 43,
       "topic": "国内生产总值",
+      "module": "宏观经济",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-07",
+      "day": 44,
+      "topic": "通货膨胀",
       "module": "宏观经济",
       "level": "intermediate",
       "style": "concept"
