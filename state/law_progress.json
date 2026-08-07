@@ -1,6 +1,6 @@
 {
-  "current_day": 42,
-  "last_topic": "合同风险条款：免责条款与责任限制",
+  "current_day": 43,
+  "last_topic": "合同解除权：不是想解就能解",
   "history": [
     {
       "date": "2026-06-26",
@@ -326,6 +326,14 @@
       "date": "2026-08-06",
       "day": 41,
       "topic": "合同风险条款：免责条款与责任限制",
+      "module": "合同管理与风险条款",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-07",
+      "day": 42,
+      "topic": "合同解除权：不是想解就能解",
       "module": "合同管理与风险条款",
       "level": "intermediate",
       "style": "concept"
