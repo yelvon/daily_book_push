@@ -1,6 +1,6 @@
 {
-  "current_day": 29,
-  "last_topic": "综合分析三大报表",
+  "current_day": 30,
+  "last_topic": "营收增长下的现金流陷阱",
   "history": [
     {
       "date": "2026-07-08",
@@ -225,6 +225,14 @@
       "module": "财报研读入门",
       "level": "beginner",
       "style": "report_reading"
+    },
+    {
+      "date": "2026-08-08",
+      "day": 29,
+      "topic": "营收增长下的现金流陷阱",
+      "module": "财报深度分析",
+      "level": "beginner",
+      "style": "case_review"
     }
   ]
 }
