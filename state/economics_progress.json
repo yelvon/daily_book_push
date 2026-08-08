@@ -1,6 +1,6 @@
 {
-  "current_day": 45,
-  "last_topic": "通货膨胀",
+  "current_day": 46,
+  "last_topic": "经济周期与就业市场",
   "history": [
     {
       "date": "2026-06-25",
@@ -353,6 +353,14 @@
       "module": "宏观经济",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-08",
+      "day": 45,
+      "topic": "经济周期与就业市场",
+      "module": "宏观经济",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
