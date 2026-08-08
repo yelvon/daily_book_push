@@ -1,6 +1,6 @@
 {
-  "current_day": 43,
-  "last_topic": "合同解除权：不是想解就能解",
+  "current_day": 44,
+  "last_topic": "融资尽调中的“隐形炸弹”",
   "history": [
     {
       "date": "2026-06-26",
@@ -337,6 +337,14 @@
       "module": "合同管理与风险条款",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-08",
+      "day": 43,
+      "topic": "融资尽调中的“隐形炸弹”",
+      "module": "融资与尽调要点",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
