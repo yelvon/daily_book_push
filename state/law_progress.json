@@ -1,6 +1,6 @@
 {
-  "current_day": 44,
-  "last_topic": "融资尽调中的“隐形炸弹”",
+  "current_day": 45,
+  "last_topic": "融资与尽调要点",
   "history": [
     {
       "date": "2026-06-26",
@@ -342,6 +342,14 @@
       "date": "2026-08-08",
       "day": 43,
       "topic": "融资尽调中的“隐形炸弹”",
+      "module": "融资与尽调要点",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-09",
+      "day": 44,
+      "topic": "融资与尽调要点",
       "module": "融资与尽调要点",
       "level": "intermediate",
       "style": "case_review"
