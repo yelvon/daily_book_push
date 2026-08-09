@@ -1,6 +1,6 @@
 {
-  "current_day": 46,
-  "last_topic": "经济周期与就业市场",
+  "current_day": 47,
+  "last_topic": "通胀感知与就业结构性差异",
   "history": [
     {
       "date": "2026-06-25",
@@ -358,6 +358,14 @@
       "date": "2026-08-08",
       "day": 45,
       "topic": "经济周期与就业市场",
+      "module": "宏观经济",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-09",
+      "day": 46,
+      "topic": "通胀感知与就业结构性差异",
       "module": "宏观经济",
       "level": "intermediate",
       "style": "case_review"
