@@ -1,6 +1,6 @@
 {
-  "current_day": 30,
-  "last_topic": "营收增长下的现金流陷阱",
+  "current_day": 31,
+  "last_topic": "增收不增利",
   "history": [
     {
       "date": "2026-07-08",
@@ -230,6 +230,14 @@
       "date": "2026-08-08",
       "day": 29,
       "topic": "营收增长下的现金流陷阱",
+      "module": "财报深度分析",
+      "level": "beginner",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-09",
+      "day": 30,
+      "topic": "增收不增利",
       "module": "财报深度分析",
       "level": "beginner",
       "style": "case_review"
