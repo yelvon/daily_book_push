@@ -1,6 +1,6 @@
 {
-  "current_day": 31,
-  "last_topic": "增收不增利",
+  "current_day": 32,
+  "last_topic": "资产质量分析",
   "history": [
     {
       "date": "2026-07-08",
@@ -241,6 +241,14 @@
       "module": "财报深度分析",
       "level": "beginner",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-10",
+      "day": 31,
+      "topic": "资产质量分析",
+      "module": "财报深度分析",
+      "level": "intermediate",
+      "style": "report_reading"
     }
   ]
 }
