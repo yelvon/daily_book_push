@@ -1,6 +1,6 @@
 {
-  "current_day": 47,
-  "last_topic": "通胀感知与就业结构性差异",
+  "current_day": 48,
+  "last_topic": "财政政策",
   "history": [
     {
       "date": "2026-06-25",
@@ -369,6 +369,14 @@
       "module": "宏观经济",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-10",
+      "day": 47,
+      "topic": "财政政策",
+      "module": "宏观经济",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
