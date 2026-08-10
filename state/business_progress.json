@@ -1,6 +1,6 @@
 {
-  "current_day": 45,
-  "last_case": "成本结构与效率：从消耗到杠杆",
+  "current_day": 46,
+  "last_case": "Amazon Web Services的成本效率飞轮",
   "history": [
     {
       "date": "2026-06-26",
@@ -397,6 +397,15 @@
       "module": "成本结构与效率",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-10",
+      "day": 45,
+      "case": "Amazon Web Services的成本效率飞轮",
+      "company": "Amazon",
+      "module": "成本结构与效率",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
