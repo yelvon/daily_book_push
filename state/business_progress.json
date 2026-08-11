@@ -1,6 +1,6 @@
 {
-  "current_day": 46,
-  "last_case": "Amazon Web Services的成本效率飞轮",
+  "current_day": 47,
+  "last_case": "拼多多：极致成本效率下的“多实惠”",
   "history": [
     {
       "date": "2026-06-26",
@@ -403,6 +403,15 @@
       "day": 45,
       "case": "Amazon Web Services的成本效率飞轮",
       "company": "Amazon",
+      "module": "成本结构与效率",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-11",
+      "day": 46,
+      "case": "拼多多：极致成本效率下的“多实惠”",
+      "company": "拼多多",
       "module": "成本结构与效率",
       "level": "intermediate",
       "style": "case"
