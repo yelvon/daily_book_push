@@ -1,6 +1,6 @@
 {
-  "current_day": 32,
-  "last_topic": "资产质量分析",
+  "current_day": 33,
+  "last_topic": "财务比率分析：洞察公司经营效率与风险",
   "history": [
     {
       "date": "2026-07-08",
@@ -246,6 +246,14 @@
       "date": "2026-08-10",
       "day": 31,
       "topic": "资产质量分析",
+      "module": "财报深度分析",
+      "level": "intermediate",
+      "style": "report_reading"
+    },
+    {
+      "date": "2026-08-11",
+      "day": 32,
+      "topic": "财务比率分析：洞察公司经营效率与风险",
       "module": "财报深度分析",
       "level": "intermediate",
       "style": "report_reading"
