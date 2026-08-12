@@ -1,6 +1,6 @@
 {
-  "current_day": 49,
-  "last_topic": "货币政策",
+  "current_day": 50,
+  "last_topic": "总需求与总供给",
   "history": [
     {
       "date": "2026-06-25",
@@ -382,6 +382,14 @@
       "date": "2026-08-11",
       "day": 48,
       "topic": "货币政策",
+      "module": "宏观经济",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-12",
+      "day": 49,
+      "topic": "总需求与总供给",
       "module": "宏观经济",
       "level": "intermediate",
       "style": "concept"
