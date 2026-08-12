@@ -1,6 +1,6 @@
 {
-  "current_day": 47,
-  "last_case": "拼多多：极致成本效率下的“多实惠”",
+  "current_day": 48,
+  "last_case": "瑞安航空：极致成本效率下的“廉价”飞轮",
   "history": [
     {
       "date": "2026-06-26",
@@ -412,6 +412,15 @@
       "day": 46,
       "case": "拼多多：极致成本效率下的“多实惠”",
       "company": "拼多多",
+      "module": "成本结构与效率",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-12",
+      "day": 47,
+      "case": "瑞安航空：极致成本效率下的“廉价”飞轮",
+      "company": "Ryanair",
       "module": "成本结构与效率",
       "level": "intermediate",
       "style": "case"
