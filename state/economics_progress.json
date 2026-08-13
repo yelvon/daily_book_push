@@ -1,6 +1,6 @@
 {
-  "current_day": 50,
-  "last_topic": "总需求与总供给",
+  "current_day": 51,
+  "last_topic": "通货紧缩",
   "history": [
     {
       "date": "2026-06-25",
@@ -391,6 +391,14 @@
       "day": 49,
       "topic": "总需求与总供给",
       "module": "宏观经济",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-13",
+      "day": 50,
+      "topic": "通货紧缩",
+      "module": "货币与通胀",
       "level": "intermediate",
       "style": "concept"
     }
