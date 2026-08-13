@@ -1,6 +1,6 @@
 {
-  "current_day": 48,
-  "last_case": "瑞安航空：极致成本效率下的“廉价”飞轮",
+  "current_day": 49,
+  "last_case": "宜家：让顾客成为“共同生产者”来优化成本",
   "history": [
     {
       "date": "2026-06-26",
@@ -421,6 +421,15 @@
       "day": 47,
       "case": "瑞安航空：极致成本效率下的“廉价”飞轮",
       "company": "Ryanair",
+      "module": "成本结构与效率",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-13",
+      "day": 48,
+      "case": "宜家：让顾客成为“共同生产者”来优化成本",
+      "company": "未知公司",
       "module": "成本结构与效率",
       "level": "intermediate",
       "style": "case"
