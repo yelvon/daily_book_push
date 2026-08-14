@@ -1,6 +1,6 @@
 {
-  "current_day": 49,
-  "last_case": "宜家：让顾客成为“共同生产者”来优化成本",
+  "current_day": 50,
+  "last_case": "SHEIN的极致柔性供应链",
   "history": [
     {
       "date": "2026-06-26",
@@ -430,6 +430,15 @@
       "day": 48,
       "case": "宜家：让顾客成为“共同生产者”来优化成本",
       "company": "未知公司",
+      "module": "成本结构与效率",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-14",
+      "day": 49,
+      "case": "SHEIN的极致柔性供应链",
+      "company": "SHEIN",
       "module": "成本结构与效率",
       "level": "intermediate",
       "style": "case"
