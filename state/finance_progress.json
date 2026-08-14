@@ -1,6 +1,6 @@
 {
-  "current_day": 34,
-  "last_topic": "盈利能力分析",
+  "current_day": 35,
+  "last_topic": "偿债能力分析",
   "history": [
     {
       "date": "2026-07-08",
@@ -262,6 +262,14 @@
       "date": "2026-08-12",
       "day": 33,
       "topic": "盈利能力分析",
+      "module": "财报深度分析",
+      "level": "intermediate",
+      "style": "report_reading"
+    },
+    {
+      "date": "2026-08-14",
+      "day": 34,
+      "topic": "偿债能力分析",
       "module": "财报深度分析",
       "level": "intermediate",
       "style": "report_reading"
