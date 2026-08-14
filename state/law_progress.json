@@ -1,6 +1,6 @@
 {
-  "current_day": 49,
-  "last_topic": "融资尽调中的财务与税务合规",
+  "current_day": 50,
+  "last_topic": "尽职调查中的商业秘密保护",
   "history": [
     {
       "date": "2026-06-26",
@@ -382,6 +382,14 @@
       "date": "2026-08-13",
       "day": 48,
       "topic": "融资尽调中的财务与税务合规",
+      "module": "融资与尽调要点",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-14",
+      "day": 49,
+      "topic": "尽职调查中的商业秘密保护",
       "module": "融资与尽调要点",
       "level": "intermediate",
       "style": "concept"
