@@ -1,6 +1,6 @@
 {
-  "current_day": 35,
-  "last_topic": "偿债能力分析",
+  "current_day": 36,
+  "last_topic": "财报深度分析案例",
   "history": [
     {
       "date": "2026-07-08",
@@ -273,6 +273,14 @@
       "module": "财报深度分析",
       "level": "intermediate",
       "style": "report_reading"
+    },
+    {
+      "date": "2026-08-15",
+      "day": 35,
+      "topic": "财报深度分析案例",
+      "module": "财报深度分析",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
