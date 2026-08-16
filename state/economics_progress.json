@@ -1,6 +1,6 @@
 {
-  "current_day": 53,
-  "last_topic": "全球通胀，美元为何偏偏走强？",
+  "current_day": 54,
+  "last_topic": "高通胀下，为什么我的存款跑不赢物价？",
   "history": [
     {
       "date": "2026-06-25",
@@ -414,6 +414,14 @@
       "date": "2026-08-15",
       "day": 52,
       "topic": "全球通胀，美元为何偏偏走强？",
+      "module": "货币与通胀",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-16",
+      "day": 53,
+      "topic": "高通胀下，为什么我的存款跑不赢物价？",
       "module": "货币与通胀",
       "level": "intermediate",
       "style": "case_review"
