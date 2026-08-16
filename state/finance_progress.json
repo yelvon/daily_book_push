@@ -1,6 +1,6 @@
 {
-  "current_day": 36,
-  "last_topic": "财报深度分析案例",
+  "current_day": 37,
+  "last_topic": "支撑与阻力",
   "history": [
     {
       "date": "2026-07-08",
@@ -279,6 +279,14 @@
       "day": 35,
       "topic": "财报深度分析案例",
       "module": "财报深度分析",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-16",
+      "day": 36,
+      "topic": "支撑与阻力",
+      "module": "技术分析",
       "level": "intermediate",
       "style": "case_review"
     }
