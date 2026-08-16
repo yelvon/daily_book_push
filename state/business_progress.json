@@ -1,6 +1,6 @@
 {
-  "current_day": 51,
-  "last_case": "平台、网络效应与生态",
+  "current_day": 52,
+  "last_case": "平台、网络效应与生态复盘",
   "history": [
     {
       "date": "2026-06-26",
@@ -447,6 +447,15 @@
       "date": "2026-08-15",
       "day": 50,
       "case": "平台、网络效应与生态",
+      "company": "N/A",
+      "module": "平台、网络效应与生态",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-16",
+      "day": 51,
+      "case": "平台、网络效应与生态复盘",
       "company": "N/A",
       "module": "平台、网络效应与生态",
       "level": "intermediate",
