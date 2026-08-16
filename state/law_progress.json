@@ -1,6 +1,6 @@
 {
-  "current_day": 51,
-  "last_topic": "离职员工的“新创意”：是巧合还是侵权？",
+  "current_day": 52,
+  "last_topic": "知识产权与商业秘密",
   "history": [
     {
       "date": "2026-06-26",
@@ -398,6 +398,14 @@
       "date": "2026-08-15",
       "day": 50,
       "topic": "离职员工的“新创意”：是巧合还是侵权？",
+      "module": "知识产权与商业秘密",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-16",
+      "day": 51,
+      "topic": "知识产权与商业秘密",
       "module": "知识产权与商业秘密",
       "level": "intermediate",
       "style": "case_review"
