@@ -1,6 +1,6 @@
 {
-  "current_day": 37,
-  "last_topic": "支撑与阻力",
+  "current_day": 38,
+  "last_topic": "移动平均线",
   "history": [
     {
       "date": "2026-07-08",
@@ -289,6 +289,14 @@
       "module": "技术分析",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-17",
+      "day": 37,
+      "topic": "移动平均线",
+      "module": "技术分析",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
