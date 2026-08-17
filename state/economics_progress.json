@@ -1,6 +1,6 @@
 {
-  "current_day": 54,
-  "last_topic": "高通胀下，为什么我的存款跑不赢物价？",
+  "current_day": 55,
+  "last_topic": "铸币税",
   "history": [
     {
       "date": "2026-06-25",
@@ -425,6 +425,14 @@
       "module": "货币与通胀",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-17",
+      "day": 54,
+      "topic": "铸币税",
+      "module": "货币与通胀",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
