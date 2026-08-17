@@ -1,6 +1,6 @@
 {
-  "current_day": 52,
-  "last_case": "平台、网络效应与生态复盘",
+  "current_day": 53,
+  "last_case": "Steam的平台与网络效应",
   "history": [
     {
       "date": "2026-06-26",
@@ -460,6 +460,15 @@
       "module": "平台、网络效应与生态",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-17",
+      "day": 52,
+      "case": "Steam的平台与网络效应",
+      "company": "未知公司",
+      "module": "平台、网络效应与生态",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
