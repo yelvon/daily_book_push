@@ -1,6 +1,6 @@
 {
-  "current_day": 55,
-  "last_topic": "铸币税",
+  "current_day": 56,
+  "last_topic": "通胀预期",
   "history": [
     {
       "date": "2026-06-25",
@@ -430,6 +430,14 @@
       "date": "2026-08-17",
       "day": 54,
       "topic": "铸币税",
+      "module": "货币与通胀",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-18",
+      "day": 55,
+      "topic": "通胀预期",
       "module": "货币与通胀",
       "level": "intermediate",
       "style": "concept"
