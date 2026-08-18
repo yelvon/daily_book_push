@@ -1,6 +1,6 @@
 {
-  "current_day": 53,
-  "last_topic": "知识产权 vs. 商业秘密：保护策略的选择",
+  "current_day": 54,
+  "last_topic": "商业秘密的构成要件",
   "history": [
     {
       "date": "2026-06-26",
@@ -414,6 +414,14 @@
       "date": "2026-08-17",
       "day": 52,
       "topic": "知识产权 vs. 商业秘密：保护策略的选择",
+      "module": "知识产权与商业秘密",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-18",
+      "day": 53,
+      "topic": "商业秘密的构成要件",
       "module": "知识产权与商业秘密",
       "level": "intermediate",
       "style": "concept"
