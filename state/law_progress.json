@@ -1,6 +1,6 @@
 {
-  "current_day": 54,
-  "last_topic": "商业秘密的构成要件",
+  "current_day": 55,
+  "last_topic": "商业秘密的保护措施",
   "history": [
     {
       "date": "2026-06-26",
@@ -422,6 +422,14 @@
       "date": "2026-08-18",
       "day": 53,
       "topic": "商业秘密的构成要件",
+      "module": "知识产权与商业秘密",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-19",
+      "day": 54,
+      "topic": "商业秘密的保护措施",
       "module": "知识产权与商业秘密",
       "level": "intermediate",
       "style": "concept"
