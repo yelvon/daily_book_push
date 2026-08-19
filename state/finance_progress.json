@@ -1,6 +1,6 @@
 {
-  "current_day": 39,
-  "last_topic": "蜡烛图（K线图）基础",
+  "current_day": 40,
+  "last_topic": "趋势线",
   "history": [
     {
       "date": "2026-07-08",
@@ -302,6 +302,14 @@
       "date": "2026-08-18",
       "day": 38,
       "topic": "蜡烛图（K线图）基础",
+      "module": "技术分析",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-19",
+      "day": 39,
+      "topic": "趋势线",
       "module": "技术分析",
       "level": "intermediate",
       "style": "concept"
