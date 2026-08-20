@@ -1,6 +1,6 @@
 {
-  "current_day": 55,
-  "last_topic": "商业秘密的保护措施",
+  "current_day": 56,
+  "last_topic": "员工离职后的保密义务",
   "history": [
     {
       "date": "2026-06-26",
@@ -430,6 +430,14 @@
       "date": "2026-08-19",
       "day": 54,
       "topic": "商业秘密的保护措施",
+      "module": "知识产权与商业秘密",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-20",
+      "day": 55,
+      "topic": "员工离职后的保密义务",
       "module": "知识产权与商业秘密",
       "level": "intermediate",
       "style": "concept"
