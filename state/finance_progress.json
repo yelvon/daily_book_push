@@ -1,6 +1,6 @@
 {
-  "current_day": 40,
-  "last_topic": "趋势线",
+  "current_day": 41,
+  "last_topic": "成交量：量价关系的基础",
   "history": [
     {
       "date": "2026-07-08",
@@ -310,6 +310,14 @@
       "date": "2026-08-19",
       "day": 39,
       "topic": "趋势线",
+      "module": "技术分析",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-20",
+      "day": 40,
+      "topic": "成交量：量价关系的基础",
       "module": "技术分析",
       "level": "intermediate",
       "style": "concept"
