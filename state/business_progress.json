@@ -1,6 +1,6 @@
 {
-  "current_day": 55,
-  "last_case": "Airbnb：如何从零建立信任与两端网络效应",
+  "current_day": 56,
+  "last_case": "Salesforce AppExchange",
   "history": [
     {
       "date": "2026-06-26",
@@ -484,6 +484,15 @@
       "day": 54,
       "case": "Airbnb：如何从零建立信任与两端网络效应",
       "company": "未知公司",
+      "module": "平台、网络效应与生态",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-20",
+      "day": 55,
+      "case": "Salesforce AppExchange",
+      "company": "Salesforce",
       "module": "平台、网络效应与生态",
       "level": "intermediate",
       "style": "case"
