@@ -1,6 +1,6 @@
 {
-  "current_day": 56,
-  "last_case": "Salesforce AppExchange",
+  "current_day": 57,
+  "last_case": "YouTube的内容生态与飞轮效应",
   "history": [
     {
       "date": "2026-06-26",
@@ -493,6 +493,15 @@
       "day": 55,
       "case": "Salesforce AppExchange",
       "company": "Salesforce",
+      "module": "平台、网络效应与生态",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-21",
+      "day": 56,
+      "case": "YouTube的内容生态与飞轮效应",
+      "company": "YouTube",
       "module": "平台、网络效应与生态",
       "level": "intermediate",
       "style": "case"
