@@ -1,6 +1,6 @@
 {
-  "current_day": 58,
-  "last_topic": "金融市场",
+  "current_day": 59,
+  "last_topic": "流动性：资金的“变现能力”",
   "history": [
     {
       "date": "2026-06-25",
@@ -454,6 +454,14 @@
       "date": "2026-08-20",
       "day": 57,
       "topic": "金融市场",
+      "module": "金融市场",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-21",
+      "day": 58,
+      "topic": "流动性：资金的“变现能力”",
       "module": "金融市场",
       "level": "intermediate",
       "style": "concept"
