@@ -1,6 +1,6 @@
 {
-  "current_day": 42,
-  "last_topic": "双重顶/底形态",
+  "current_day": 43,
+  "last_topic": "假突破与真突破",
   "history": [
     {
       "date": "2026-07-08",
@@ -329,6 +329,14 @@
       "module": "技术分析",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-22",
+      "day": 42,
+      "topic": "假突破与真突破",
+      "module": "技术分析",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
