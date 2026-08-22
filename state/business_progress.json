@@ -1,6 +1,6 @@
 {
-  "current_day": 57,
-  "last_case": "YouTube的内容生态与飞轮效应",
+  "current_day": 58,
+  "last_case": "品牌、信任与社区：构建平台的核心驱动力",
   "history": [
     {
       "date": "2026-06-26",
@@ -505,6 +505,15 @@
       "module": "平台、网络效应与生态",
       "level": "intermediate",
       "style": "case"
+    },
+    {
+      "date": "2026-08-22",
+      "day": 57,
+      "case": "品牌、信任与社区：构建平台的核心驱动力",
+      "company": "未知公司",
+      "module": "品牌、信任与社区",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
