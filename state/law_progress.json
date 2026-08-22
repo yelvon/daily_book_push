@@ -1,6 +1,6 @@
 {
-  "current_day": 57,
-  "last_topic": "商业秘密侵权：如何判定我的秘密被“偷”了？",
+  "current_day": 58,
+  "last_topic": "广告合规与消费者权益",
   "history": [
     {
       "date": "2026-06-26",
@@ -449,6 +449,14 @@
       "module": "知识产权与商业秘密",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-22",
+      "day": 57,
+      "topic": "广告合规与消费者权益",
+      "module": "广告合规与消费者权益",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
