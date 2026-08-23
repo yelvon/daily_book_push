@@ -1,6 +1,6 @@
 {
-  "current_day": 43,
-  "last_topic": "假突破与真突破",
+  "current_day": 44,
+  "last_topic": "基金投资中的“追涨杀跌”",
   "history": [
     {
       "date": "2026-07-08",
@@ -335,6 +335,14 @@
       "day": 42,
       "topic": "假突破与真突破",
       "module": "技术分析",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-23",
+      "day": 43,
+      "topic": "基金投资中的“追涨杀跌”",
+      "module": "基金投资",
       "level": "intermediate",
       "style": "case_review"
     }
