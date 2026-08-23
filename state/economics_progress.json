@@ -1,6 +1,6 @@
 {
-  "current_day": 60,
-  "last_topic": "金融市场中的流动性差异",
+  "current_day": 61,
+  "last_topic": "金融市场中的流动性",
   "history": [
     {
       "date": "2026-06-25",
@@ -470,6 +470,14 @@
       "date": "2026-08-22",
       "day": 59,
       "topic": "金融市场中的流动性差异",
+      "module": "金融市场",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-23",
+      "day": 60,
+      "topic": "金融市场中的流动性",
       "module": "金融市场",
       "level": "intermediate",
       "style": "case_review"
