@@ -1,5 +1,5 @@
 {
-  "last_run_date": "2026-08-22",
+  "last_run_date": "2026-08-23",
   "history": [
     {
       "date": "2026-06-26",
@@ -16,6 +16,14 @@
       "event_date": "待确认",
       "status": "watchlist",
       "risk_level": "medium"
+    },
+    {
+      "date": "2026-08-23",
+      "event": "美联储FOMC利率决议及经济预测",
+      "region": "综合",
+      "event_date": "待确认",
+      "status": "watchlist",
+      "risk_level": "high"
     }
   ]
 }
