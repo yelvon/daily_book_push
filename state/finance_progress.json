@@ -1,6 +1,6 @@
 {
-  "current_day": 44,
-  "last_topic": "基金投资中的“追涨杀跌”",
+  "current_day": 45,
+  "last_topic": "主动型与被动型基金",
   "history": [
     {
       "date": "2026-07-08",
@@ -345,6 +345,14 @@
       "module": "基金投资",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-24",
+      "day": 44,
+      "topic": "主动型与被动型基金",
+      "module": "基金投资",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
