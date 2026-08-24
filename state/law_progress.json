@@ -1,6 +1,6 @@
 {
-  "current_day": 59,
-  "last_topic": "“效果立竿见影”的广告陷阱",
+  "current_day": 60,
+  "last_topic": "广告中的禁止性内容",
   "history": [
     {
       "date": "2026-06-26",
@@ -465,6 +465,14 @@
       "module": "广告合规与消费者权益",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-24",
+      "day": 59,
+      "topic": "广告中的禁止性内容",
+      "module": "广告合规与消费者权益",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
