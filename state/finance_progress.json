@@ -1,6 +1,6 @@
 {
-  "current_day": 45,
-  "last_topic": "主动型与被动型基金",
+  "current_day": 46,
+  "last_topic": "基金的费率与成本",
   "history": [
     {
       "date": "2026-07-08",
@@ -350,6 +350,14 @@
       "date": "2026-08-24",
       "day": 44,
       "topic": "主动型与被动型基金",
+      "module": "基金投资",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-25",
+      "day": 45,
+      "topic": "基金的费率与成本",
       "module": "基金投资",
       "level": "intermediate",
       "style": "concept"
