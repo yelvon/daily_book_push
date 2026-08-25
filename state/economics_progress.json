@@ -1,6 +1,6 @@
 {
-  "current_day": 62,
-  "last_topic": "金融市场的功能",
+  "current_day": 63,
+  "last_topic": "股票市场",
   "history": [
     {
       "date": "2026-06-25",
@@ -486,6 +486,14 @@
       "date": "2026-08-24",
       "day": 61,
       "topic": "金融市场的功能",
+      "module": "金融市场",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-25",
+      "day": 62,
+      "topic": "股票市场",
       "module": "金融市场",
       "level": "intermediate",
       "style": "concept"
