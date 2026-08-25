@@ -1,6 +1,6 @@
 {
-  "current_day": 59,
-  "last_case": "Glossier：从社区到品牌的增长飞轮",
+  "current_day": 60,
+  "last_case": "乐高 Ideas：从社区创意到品牌共建",
   "history": [
     {
       "date": "2026-06-26",
@@ -520,6 +520,15 @@
       "day": 58,
       "case": "Glossier：从社区到品牌的增长飞轮",
       "company": "Glossier",
+      "module": "品牌、信任与社区",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-25",
+      "day": 59,
+      "case": "乐高 Ideas：从社区创意到品牌共建",
+      "company": "未知公司",
       "module": "品牌、信任与社区",
       "level": "intermediate",
       "style": "case"
