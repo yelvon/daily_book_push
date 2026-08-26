@@ -1,6 +1,6 @@
 {
-  "current_day": 63,
-  "last_topic": "股票市场",
+  "current_day": 64,
+  "last_topic": "债券市场",
   "history": [
     {
       "date": "2026-06-25",
@@ -494,6 +494,14 @@
       "date": "2026-08-25",
       "day": 62,
       "topic": "股票市场",
+      "module": "金融市场",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-26",
+      "day": 63,
+      "topic": "债券市场",
       "module": "金融市场",
       "level": "intermediate",
       "style": "concept"
