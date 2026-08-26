@@ -1,6 +1,6 @@
 {
-  "current_day": 60,
-  "last_case": "乐高 Ideas：从社区创意到品牌共建",
+  "current_day": 61,
+  "last_case": "Patagonia：以价值观驱动的品牌与社区",
   "history": [
     {
       "date": "2026-06-26",
@@ -529,6 +529,15 @@
       "day": 59,
       "case": "乐高 Ideas：从社区创意到品牌共建",
       "company": "未知公司",
+      "module": "品牌、信任与社区",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-26",
+      "day": 60,
+      "case": "Patagonia：以价值观驱动的品牌与社区",
+      "company": "Patagonia",
       "module": "品牌、信任与社区",
       "level": "intermediate",
       "style": "case"
