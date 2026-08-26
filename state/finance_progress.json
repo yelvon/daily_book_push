@@ -1,6 +1,6 @@
 {
-  "current_day": 46,
-  "last_topic": "基金的费率与成本",
+  "current_day": 47,
+  "last_topic": "基金的投资策略：价值投资与成长投资",
   "history": [
     {
       "date": "2026-07-08",
@@ -358,6 +358,14 @@
       "date": "2026-08-25",
       "day": 45,
       "topic": "基金的费率与成本",
+      "module": "基金投资",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-26",
+      "day": 46,
+      "topic": "基金的投资策略：价值投资与成长投资",
       "module": "基金投资",
       "level": "intermediate",
       "style": "concept"
