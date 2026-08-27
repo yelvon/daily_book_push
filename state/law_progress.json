@@ -1,6 +1,6 @@
 {
-  "current_day": 62,
-  "last_topic": "广告虚假宣传的认定与责任",
+  "current_day": 63,
+  "last_topic": "广告链条上的责任",
   "history": [
     {
       "date": "2026-06-26",
@@ -486,6 +486,14 @@
       "date": "2026-08-26",
       "day": 61,
       "topic": "广告虚假宣传的认定与责任",
+      "module": "广告合规与消费者权益",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-27",
+      "day": 62,
+      "topic": "广告链条上的责任",
       "module": "广告合规与消费者权益",
       "level": "intermediate",
       "style": "concept"
