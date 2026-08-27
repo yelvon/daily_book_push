@@ -1,6 +1,6 @@
 {
-  "current_day": 61,
-  "last_case": "Patagonia：以价值观驱动的品牌与社区",
+  "current_day": 62,
+  "last_case": "Lululemon：从瑜伽裤到生活方式社区",
   "history": [
     {
       "date": "2026-06-26",
@@ -538,6 +538,15 @@
       "day": 60,
       "case": "Patagonia：以价值观驱动的品牌与社区",
       "company": "Patagonia",
+      "module": "品牌、信任与社区",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-08-28",
+      "day": 61,
+      "case": "Lululemon：从瑜伽裤到生活方式社区",
+      "company": "Lululemon",
       "module": "品牌、信任与社区",
       "level": "intermediate",
       "style": "case"
