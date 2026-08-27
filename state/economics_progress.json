@@ -1,6 +1,6 @@
 {
-  "current_day": 64,
-  "last_topic": "债券市场",
+  "current_day": 65,
+  "last_topic": "比较优势",
   "history": [
     {
       "date": "2026-06-25",
@@ -503,6 +503,14 @@
       "day": 63,
       "topic": "债券市场",
       "module": "金融市场",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-28",
+      "day": 64,
+      "topic": "比较优势",
+      "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
     }
