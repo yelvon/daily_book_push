@@ -1,6 +1,6 @@
 {
-  "current_day": 47,
-  "last_topic": "基金的投资策略：价值投资与成长投资",
+  "current_day": 48,
+  "last_topic": "基金定投",
   "history": [
     {
       "date": "2026-07-08",
@@ -366,6 +366,14 @@
       "date": "2026-08-26",
       "day": 46,
       "topic": "基金的投资策略：价值投资与成长投资",
+      "module": "基金投资",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-08-28",
+      "day": 47,
+      "topic": "基金定投",
       "module": "基金投资",
       "level": "intermediate",
       "style": "concept"
