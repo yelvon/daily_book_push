@@ -1,6 +1,6 @@
 {
-  "current_day": 48,
-  "last_topic": "基金定投",
+  "current_day": 49,
+  "last_topic": "追逐明星基金的陷阱",
   "history": [
     {
       "date": "2026-07-08",
@@ -377,6 +377,14 @@
       "module": "基金投资",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-29",
+      "day": 48,
+      "topic": "追逐明星基金的陷阱",
+      "module": "基金投资",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
