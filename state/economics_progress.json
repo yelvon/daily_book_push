@@ -1,6 +1,6 @@
 {
-  "current_day": 65,
-  "last_topic": "比较优势",
+  "current_day": 66,
+  "last_topic": "跨国企业的“搬家”潮：全球化与制度的交织",
   "history": [
     {
       "date": "2026-06-25",
@@ -513,6 +513,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-29",
+      "day": 65,
+      "topic": "跨国企业的“搬家”潮：全球化与制度的交织",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
