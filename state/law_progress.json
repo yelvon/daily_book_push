@@ -1,6 +1,6 @@
 {
-  "current_day": 63,
-  "last_topic": "广告链条上的责任",
+  "current_day": 64,
+  "last_topic": "夸大宣传与代言人责任",
   "history": [
     {
       "date": "2026-06-26",
@@ -497,6 +497,14 @@
       "module": "广告合规与消费者权益",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-08-29",
+      "day": 63,
+      "topic": "夸大宣传与代言人责任",
+      "module": "广告合规与消费者权益",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
