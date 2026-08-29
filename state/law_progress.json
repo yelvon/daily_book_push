@@ -1,6 +1,6 @@
 {
-  "current_day": 64,
-  "last_topic": "夸大宣传与代言人责任",
+  "current_day": 65,
+  "last_topic": "用户数据共享合规",
   "history": [
     {
       "date": "2026-06-26",
@@ -503,6 +503,14 @@
       "day": 63,
       "topic": "夸大宣传与代言人责任",
       "module": "广告合规与消费者权益",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-29",
+      "day": 64,
+      "topic": "用户数据共享合规",
+      "module": "数据合规与隐私",
       "level": "intermediate",
       "style": "case_review"
     }
