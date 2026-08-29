@@ -1,6 +1,6 @@
 {
-  "current_day": 49,
-  "last_topic": "追逐明星基金的陷阱",
+  "current_day": 50,
+  "last_topic": "基金净值波动与“短期主义”陷阱",
   "history": [
     {
       "date": "2026-07-08",
@@ -382,6 +382,14 @@
       "date": "2026-08-29",
       "day": 48,
       "topic": "追逐明星基金的陷阱",
+      "module": "基金投资",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-30",
+      "day": 49,
+      "topic": "基金净值波动与“短期主义”陷阱",
       "module": "基金投资",
       "level": "intermediate",
       "style": "case_review"
