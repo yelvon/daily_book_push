@@ -1,6 +1,6 @@
 {
-  "current_day": 67,
-  "last_topic": "全球产业链的再布局：制度如何影响企业去留",
+  "current_day": 68,
+  "last_topic": "跨国投资与制度",
   "history": [
     {
       "date": "2026-06-25",
@@ -526,6 +526,14 @@
       "date": "2026-08-29",
       "day": 66,
       "topic": "全球产业链的再布局：制度如何影响企业去留",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-30",
+      "day": 67,
+      "topic": "跨国投资与制度",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "case_review"
