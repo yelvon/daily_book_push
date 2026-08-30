@@ -1,5 +1,5 @@
 {
-  "current_day": 63,
+  "current_day": 64,
   "last_case": "品牌、信任与社区的共生飞轮",
   "history": [
     {
@@ -556,6 +556,15 @@
       "day": 62,
       "case": "品牌、信任与社区的共生飞轮",
       "company": "N/A",
+      "module": "品牌、信任与社区",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-30",
+      "day": 63,
+      "case": "品牌、信任与社区的共生飞轮",
+      "company": "未知公司",
       "module": "品牌、信任与社区",
       "level": "intermediate",
       "style": "case_review"
