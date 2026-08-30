@@ -1,6 +1,6 @@
 {
-  "current_day": 50,
-  "last_topic": "基金净值波动与“短期主义”陷阱",
+  "current_day": 51,
+  "last_topic": "债券的票面利率与到期收益率",
   "history": [
     {
       "date": "2026-07-08",
@@ -393,6 +393,14 @@
       "module": "基金投资",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-31",
+      "day": 50,
+      "topic": "债券的票面利率与到期收益率",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
