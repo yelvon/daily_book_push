@@ -1,6 +1,6 @@
 {
-  "current_day": 65,
-  "last_topic": "用户数据共享合规",
+  "current_day": 66,
+  "last_topic": "大数据“懂你”的边界",
   "history": [
     {
       "date": "2026-06-26",
@@ -510,6 +510,14 @@
       "date": "2026-08-29",
       "day": 64,
       "topic": "用户数据共享合规",
+      "module": "数据合规与隐私",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-08-30",
+      "day": 65,
+      "topic": "大数据“懂你”的边界",
       "module": "数据合规与隐私",
       "level": "intermediate",
       "style": "case_review"
