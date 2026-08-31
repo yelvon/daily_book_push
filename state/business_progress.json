@@ -1,6 +1,6 @@
 {
-  "current_day": 64,
-  "last_case": "品牌、信任与社区的共生飞轮",
+  "current_day": 65,
+  "last_case": "Adobe的转换成本护城河",
   "history": [
     {
       "date": "2026-06-26",
@@ -568,6 +568,15 @@
       "module": "品牌、信任与社区",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-01",
+      "day": 64,
+      "case": "Adobe的转换成本护城河",
+      "company": "未知公司",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
