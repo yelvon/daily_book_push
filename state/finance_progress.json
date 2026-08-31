@@ -1,6 +1,6 @@
 {
-  "current_day": 51,
-  "last_topic": "债券的票面利率与到期收益率",
+  "current_day": 52,
+  "last_topic": "债券久期",
   "history": [
     {
       "date": "2026-07-08",
@@ -398,6 +398,14 @@
       "date": "2026-08-31",
       "day": 50,
       "topic": "债券的票面利率与到期收益率",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-01",
+      "day": 51,
+      "topic": "债券久期",
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "concept"
