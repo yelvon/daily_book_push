@@ -1,6 +1,6 @@
 {
-  "current_day": 66,
-  "last_topic": "大数据“懂你”的边界",
+  "current_day": 67,
+  "last_topic": "个人信息出境合规",
   "history": [
     {
       "date": "2026-06-26",
@@ -521,6 +521,14 @@
       "module": "数据合规与隐私",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-08-31",
+      "day": 66,
+      "topic": "个人信息出境合规",
+      "module": "数据合规与隐私",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
