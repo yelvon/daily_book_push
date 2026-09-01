@@ -1,6 +1,6 @@
 {
-  "current_day": 67,
-  "last_topic": "个人信息出境合规",
+  "current_day": 68,
+  "last_topic": "数据分类分级保护",
   "history": [
     {
       "date": "2026-06-26",
@@ -526,6 +526,14 @@
       "date": "2026-08-31",
       "day": 66,
       "topic": "个人信息出境合规",
+      "module": "数据合规与隐私",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-01",
+      "day": 67,
+      "topic": "数据分类分级保护",
       "module": "数据合规与隐私",
       "level": "intermediate",
       "style": "concept"
