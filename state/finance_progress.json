@@ -1,6 +1,6 @@
 {
-  "current_day": 52,
-  "last_topic": "债券久期",
+  "current_day": 53,
+  "last_topic": "债券的信用风险与评级",
   "history": [
     {
       "date": "2026-07-08",
@@ -406,6 +406,14 @@
       "date": "2026-09-01",
       "day": 51,
       "topic": "债券久期",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-02",
+      "day": 52,
+      "topic": "债券的信用风险与评级",
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "concept"
