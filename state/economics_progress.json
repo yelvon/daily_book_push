@@ -1,6 +1,6 @@
 {
-  "current_day": 69,
-  "last_topic": "制度如何塑造全球化",
+  "current_day": 70,
+  "last_topic": "制度套利",
   "history": [
     {
       "date": "2026-06-25",
@@ -542,6 +542,14 @@
       "date": "2026-09-01",
       "day": 68,
       "topic": "制度如何塑造全球化",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-01",
+      "day": 69,
+      "topic": "制度套利",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
