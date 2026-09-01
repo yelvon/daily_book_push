@@ -1,6 +1,6 @@
 {
-  "current_day": 65,
-  "last_case": "Adobe的转换成本护城河",
+  "current_day": 66,
+  "last_case": "Costco的会员制与成本护城河",
   "history": [
     {
       "date": "2026-06-26",
@@ -573,6 +573,15 @@
       "date": "2026-09-01",
       "day": 64,
       "case": "Adobe的转换成本护城河",
+      "company": "未知公司",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-01",
+      "day": 65,
+      "case": "Costco的会员制与成本护城河",
       "company": "未知公司",
       "module": "竞争策略与护城河",
       "level": "intermediate",
