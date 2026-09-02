@@ -1,6 +1,6 @@
 {
-  "current_day": 70,
-  "last_topic": "制度套利",
+  "current_day": 71,
+  "last_topic": "制度竞争",
   "history": [
     {
       "date": "2026-06-25",
@@ -550,6 +550,14 @@
       "date": "2026-09-01",
       "day": 69,
       "topic": "制度套利",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-02",
+      "day": 70,
+      "topic": "制度竞争",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
