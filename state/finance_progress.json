@@ -1,6 +1,6 @@
 {
-  "current_day": 53,
-  "last_topic": "债券的信用风险与评级",
+  "current_day": 54,
+  "last_topic": "可转换债券",
   "history": [
     {
       "date": "2026-07-08",
@@ -414,6 +414,14 @@
       "date": "2026-09-02",
       "day": 52,
       "topic": "债券的信用风险与评级",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-03",
+      "day": 53,
+      "topic": "可转换债券",
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "concept"
