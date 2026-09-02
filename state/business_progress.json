@@ -1,6 +1,6 @@
 {
-  "current_day": 66,
-  "last_case": "Costco的会员制与成本护城河",
+  "current_day": 67,
+  "last_case": "台积电：重资产技术与规模铸就的护城河",
   "history": [
     {
       "date": "2026-06-26",
@@ -582,6 +582,15 @@
       "date": "2026-09-01",
       "day": 65,
       "case": "Costco的会员制与成本护城河",
+      "company": "未知公司",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-02",
+      "day": 66,
+      "case": "台积电：重资产技术与规模铸就的护城河",
       "company": "未知公司",
       "module": "竞争策略与护城河",
       "level": "intermediate",
