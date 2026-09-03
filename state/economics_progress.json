@@ -1,6 +1,6 @@
 {
-  "current_day": 71,
-  "last_topic": "制度竞争",
+  "current_day": 72,
+  "last_topic": "国际组织",
   "history": [
     {
       "date": "2026-06-25",
@@ -558,6 +558,14 @@
       "date": "2026-09-02",
       "day": 70,
       "topic": "制度竞争",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-03",
+      "day": 71,
+      "topic": "国际组织",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
