@@ -1,6 +1,6 @@
 {
-  "current_day": 69,
-  "last_topic": "数据安全保护义务",
+  "current_day": 70,
+  "last_topic": "个人信息保护影响评估",
   "history": [
     {
       "date": "2026-06-26",
@@ -542,6 +542,14 @@
       "date": "2026-09-02",
       "day": 68,
       "topic": "数据安全保护义务",
+      "module": "数据合规与隐私",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-03",
+      "day": 69,
+      "topic": "个人信息保护影响评估",
       "module": "数据合规与隐私",
       "level": "intermediate",
       "style": "concept"
