@@ -1,6 +1,6 @@
 {
-  "current_day": 67,
-  "last_case": "台积电：重资产技术与规模铸就的护城河",
+  "current_day": 68,
+  "last_case": "ASML：深耕技术，铸就不可替代的芯片制造“卖铲人”",
   "history": [
     {
       "date": "2026-06-26",
@@ -591,6 +591,15 @@
       "date": "2026-09-02",
       "day": 66,
       "case": "台积电：重资产技术与规模铸就的护城河",
+      "company": "未知公司",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-03",
+      "day": 67,
+      "case": "ASML：深耕技术，铸就不可替代的芯片制造“卖铲人”",
       "company": "未知公司",
       "module": "竞争策略与护城河",
       "level": "intermediate",
