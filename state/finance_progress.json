@@ -1,6 +1,6 @@
 {
-  "current_day": 54,
-  "last_topic": "可转换债券",
+  "current_day": 55,
+  "last_topic": "债券的再投资风险",
   "history": [
     {
       "date": "2026-07-08",
@@ -422,6 +422,14 @@
       "date": "2026-09-03",
       "day": 53,
       "topic": "可转换债券",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-04",
+      "day": 54,
+      "topic": "债券的再投资风险",
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "concept"
