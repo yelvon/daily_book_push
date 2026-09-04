@@ -1,6 +1,6 @@
 {
-  "current_day": 72,
-  "last_topic": "国际组织",
+  "current_day": 73,
+  "last_topic": "国际贸易协定",
   "history": [
     {
       "date": "2026-06-25",
@@ -566,6 +566,14 @@
       "date": "2026-09-03",
       "day": 71,
       "topic": "国际组织",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-04",
+      "day": 72,
+      "topic": "国际贸易协定",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
