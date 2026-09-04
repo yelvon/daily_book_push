@@ -1,6 +1,6 @@
 {
-  "current_day": 55,
-  "last_topic": "债券的再投资风险",
+  "current_day": 56,
+  "last_topic": "利率变动与债券价格",
   "history": [
     {
       "date": "2026-07-08",
@@ -433,6 +433,14 @@
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-05",
+      "day": 55,
+      "topic": "利率变动与债券价格",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
