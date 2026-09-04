@@ -1,6 +1,6 @@
 {
-  "current_day": 68,
-  "last_case": "ASML：深耕技术，铸就不可替代的芯片制造“卖铲人”",
+  "current_day": 69,
+  "last_case": "拼多多的“社交+低价”飞轮",
   "history": [
     {
       "date": "2026-06-26",
@@ -600,6 +600,15 @@
       "date": "2026-09-03",
       "day": 67,
       "case": "ASML：深耕技术，铸就不可替代的芯片制造“卖铲人”",
+      "company": "未知公司",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-04",
+      "day": 68,
+      "case": "拼多多的“社交+低价”飞轮",
       "company": "未知公司",
       "module": "竞争策略与护城河",
       "level": "intermediate",
