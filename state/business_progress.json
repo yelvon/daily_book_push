@@ -1,6 +1,6 @@
 {
-  "current_day": 69,
-  "last_case": "拼多多的“社交+低价”飞轮",
+  "current_day": 70,
+  "last_case": "竞争策略与护城河的多元构建",
   "history": [
     {
       "date": "2026-06-26",
@@ -613,6 +613,15 @@
       "module": "竞争策略与护城河",
       "level": "intermediate",
       "style": "case"
+    },
+    {
+      "date": "2026-09-05",
+      "day": 69,
+      "case": "竞争策略与护城河的多元构建",
+      "company": "未知公司",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
