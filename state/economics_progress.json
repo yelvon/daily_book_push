@@ -1,6 +1,6 @@
 {
-  "current_day": 73,
-  "last_topic": "国际贸易协定",
+  "current_day": 74,
+  "last_topic": "跨国企业如何“制度选址”",
   "history": [
     {
       "date": "2026-06-25",
@@ -577,6 +577,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-05",
+      "day": 73,
+      "topic": "跨国企业如何“制度选址”",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
