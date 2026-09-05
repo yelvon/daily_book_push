@@ -1,6 +1,6 @@
 {
-  "current_day": 71,
-  "last_topic": "自动化决策与算法歧视",
+  "current_day": 72,
+  "last_topic": "合同争议与违约",
   "history": [
     {
       "date": "2026-06-26",
@@ -561,6 +561,14 @@
       "module": "数据合规与隐私",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-05",
+      "day": 71,
+      "topic": "合同争议与违约",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
