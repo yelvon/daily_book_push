@@ -1,6 +1,6 @@
 {
-  "current_day": 56,
-  "last_topic": "利率变动与债券价格",
+  "current_day": 57,
+  "last_topic": "债券信用评级下调",
   "history": [
     {
       "date": "2026-07-08",
@@ -438,6 +438,14 @@
       "date": "2026-09-05",
       "day": 55,
       "topic": "利率变动与债券价格",
+      "module": "债券与固定收益",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-06",
+      "day": 56,
+      "topic": "债券信用评级下调",
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "case_review"
