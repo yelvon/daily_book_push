@@ -1,6 +1,6 @@
 {
-  "current_day": 74,
-  "last_topic": "跨国企业如何“制度选址”",
+  "current_day": 75,
+  "last_topic": "跨国企业生产线调整；全球化与制度",
   "history": [
     {
       "date": "2026-06-25",
@@ -582,6 +582,14 @@
       "date": "2026-09-05",
       "day": 73,
       "topic": "跨国企业如何“制度选址”",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-06",
+      "day": 74,
+      "topic": "跨国企业生产线调整；全球化与制度",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "case_review"
