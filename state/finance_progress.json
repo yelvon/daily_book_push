@@ -1,6 +1,6 @@
 {
-  "current_day": 57,
-  "last_topic": "债券信用评级下调",
+  "current_day": 58,
+  "last_topic": "期权基础：权利与义务",
   "history": [
     {
       "date": "2026-07-08",
@@ -449,6 +449,14 @@
       "module": "债券与固定收益",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-07",
+      "day": 57,
+      "topic": "期权基础：权利与义务",
+      "module": "期权基础",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
