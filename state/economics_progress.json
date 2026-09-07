@@ -1,6 +1,6 @@
 {
-  "current_day": 75,
-  "last_topic": "跨国企业生产线调整；全球化与制度",
+  "current_day": 76,
+  "last_topic": "制度趋同与趋异",
   "history": [
     {
       "date": "2026-06-25",
@@ -593,6 +593,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-08",
+      "day": 75,
+      "topic": "制度趋同与趋异",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
