@@ -1,6 +1,6 @@
 {
-  "current_day": 73,
-  "last_topic": "创始合伙人股权纠纷：仲裁还是诉讼？",
+  "current_day": 74,
+  "last_topic": "争议解决中的“调解”",
   "history": [
     {
       "date": "2026-06-26",
@@ -577,6 +577,14 @@
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-07",
+      "day": 73,
+      "topic": "争议解决中的“调解”",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
