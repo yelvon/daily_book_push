@@ -1,6 +1,6 @@
 {
-  "current_day": 70,
-  "last_case": "竞争策略与护城河的多元构建",
+  "current_day": 71,
+  "last_case": "Intuit：用“数据粘性”构建不可撼动的软件护城河",
   "history": [
     {
       "date": "2026-06-26",
@@ -622,6 +622,15 @@
       "module": "竞争策略与护城河",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-07",
+      "day": 70,
+      "case": "Intuit：用“数据粘性”构建不可撼动的软件护城河",
+      "company": "Intuit",
+      "module": "竞争策略与护城河",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
