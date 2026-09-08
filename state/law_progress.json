@@ -1,6 +1,6 @@
 {
-  "current_day": 74,
-  "last_topic": "争议解决中的“调解”",
+  "current_day": 75,
+  "last_topic": "诉讼时效：你的权利有“保质期”",
   "history": [
     {
       "date": "2026-06-26",
@@ -582,6 +582,14 @@
       "date": "2026-09-07",
       "day": 73,
       "topic": "争议解决中的“调解”",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-08",
+      "day": 74,
+      "topic": "诉讼时效：你的权利有“保质期”",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
