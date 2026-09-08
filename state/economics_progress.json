@@ -1,6 +1,6 @@
 {
-  "current_day": 76,
-  "last_topic": "制度趋同与趋异",
+  "current_day": 77,
+  "last_topic": "制度的非正式约束",
   "history": [
     {
       "date": "2026-06-25",
@@ -598,6 +598,14 @@
       "date": "2026-09-08",
       "day": 75,
       "topic": "制度趋同与趋异",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-08",
+      "day": 76,
+      "topic": "制度的非正式约束",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
