@@ -1,6 +1,6 @@
 {
-  "current_day": 59,
-  "last_topic": "期权的买方与卖方",
+  "current_day": 60,
+  "last_topic": "期权的行权价与到期日",
   "history": [
     {
       "date": "2026-07-08",
@@ -462,6 +462,14 @@
       "date": "2026-09-08",
       "day": 58,
       "topic": "期权的买方与卖方",
+      "module": "期权基础",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-09",
+      "day": 59,
+      "topic": "期权的行权价与到期日",
       "module": "期权基础",
       "level": "intermediate",
       "style": "concept"
