@@ -1,6 +1,6 @@
 {
-  "current_day": 60,
-  "last_topic": "期权的行权价与到期日",
+  "current_day": 61,
+  "last_topic": "期权的“价内、价平、价外”",
   "history": [
     {
       "date": "2026-07-08",
@@ -470,6 +470,14 @@
       "date": "2026-09-09",
       "day": 59,
       "topic": "期权的行权价与到期日",
+      "module": "期权基础",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-10",
+      "day": 60,
+      "topic": "期权的“价内、价平、价外”",
       "module": "期权基础",
       "level": "intermediate",
       "style": "concept"
