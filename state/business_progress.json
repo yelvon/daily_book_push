@@ -1,6 +1,6 @@
 {
-  "current_day": 73,
-  "last_case": "Netflix的“自由与责任”文化",
+  "current_day": 74,
+  "last_case": "Zara的敏捷供应链与快时尚飞轮",
   "history": [
     {
       "date": "2026-06-26",
@@ -646,6 +646,15 @@
       "day": 72,
       "case": "Netflix的“自由与责任”文化",
       "company": "Netflix",
+      "module": "组织能力与执行",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-10",
+      "day": 73,
+      "case": "Zara的敏捷供应链与快时尚飞轮",
+      "company": "未知公司",
       "module": "组织能力与执行",
       "level": "intermediate",
       "style": "case"
