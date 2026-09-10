@@ -1,6 +1,6 @@
 {
-  "current_day": 76,
-  "last_topic": "诉前保全",
+  "current_day": 77,
+  "last_topic": "判决和仲裁裁决的执行",
   "history": [
     {
       "date": "2026-06-26",
@@ -598,6 +598,14 @@
       "date": "2026-09-09",
       "day": 75,
       "topic": "诉前保全",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-10",
+      "day": 76,
+      "topic": "判决和仲裁裁决的执行",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
