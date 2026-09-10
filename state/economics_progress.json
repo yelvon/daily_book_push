@@ -1,6 +1,6 @@
 {
-  "current_day": 78,
-  "last_topic": "制度距离",
+  "current_day": 79,
+  "last_topic": "制度扩散",
   "history": [
     {
       "date": "2026-06-25",
@@ -614,6 +614,14 @@
       "date": "2026-09-09",
       "day": 77,
       "topic": "制度距离",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-10",
+      "day": 78,
+      "topic": "制度扩散",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
