@@ -1,6 +1,6 @@
 {
-  "current_day": 61,
-  "last_topic": "期权的“价内、价平、价外”",
+  "current_day": 62,
+  "last_topic": "期权费的构成",
   "history": [
     {
       "date": "2026-07-08",
@@ -478,6 +478,14 @@
       "date": "2026-09-10",
       "day": 60,
       "topic": "期权的“价内、价平、价外”",
+      "module": "期权基础",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-11",
+      "day": 61,
+      "topic": "期权费的构成",
       "module": "期权基础",
       "level": "intermediate",
       "style": "concept"
