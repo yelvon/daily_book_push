@@ -1,6 +1,6 @@
 {
-  "current_day": 79,
-  "last_topic": "制度扩散",
+  "current_day": 80,
+  "last_topic": "制度的有效性",
   "history": [
     {
       "date": "2026-06-25",
@@ -622,6 +622,14 @@
       "date": "2026-09-10",
       "day": 78,
       "topic": "制度扩散",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-11",
+      "day": 79,
+      "topic": "制度的有效性",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
