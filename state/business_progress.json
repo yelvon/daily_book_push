@@ -1,6 +1,6 @@
 {
-  "current_day": 74,
-  "last_case": "Zara的敏捷供应链与快时尚飞轮",
+  "current_day": 75,
+  "last_case": "Morning Star的“自我管理”模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -655,6 +655,15 @@
       "day": 73,
       "case": "Zara的敏捷供应链与快时尚飞轮",
       "company": "未知公司",
+      "module": "组织能力与执行",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-11",
+      "day": 74,
+      "case": "Morning Star的“自我管理”模式",
+      "company": "Morning Star",
       "module": "组织能力与执行",
       "level": "intermediate",
       "style": "case"
