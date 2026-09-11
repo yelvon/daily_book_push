@@ -1,6 +1,6 @@
 {
-  "current_day": 77,
-  "last_topic": "判决和仲裁裁决的执行",
+  "current_day": 78,
+  "last_topic": "争议解决中的证据：如何收集与提交？",
   "history": [
     {
       "date": "2026-06-26",
@@ -606,6 +606,14 @@
       "date": "2026-09-10",
       "day": 76,
       "topic": "判决和仲裁裁决的执行",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-11",
+      "day": 77,
+      "topic": "争议解决中的证据：如何收集与提交？",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
