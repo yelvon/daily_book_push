@@ -1,6 +1,6 @@
 {
-  "current_day": 75,
-  "last_case": "Morning Star的“自我管理”模式",
+  "current_day": 76,
+  "last_case": "组织能力的构建：从授权到执行",
   "history": [
     {
       "date": "2026-06-26",
@@ -667,6 +667,15 @@
       "module": "组织能力与执行",
       "level": "intermediate",
       "style": "case"
+    },
+    {
+      "date": "2026-09-12",
+      "day": 75,
+      "case": "组织能力的构建：从授权到执行",
+      "company": "未知公司",
+      "module": "组织能力与执行",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
