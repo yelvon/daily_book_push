@@ -1,6 +1,6 @@
 {
-  "current_day": 63,
-  "last_topic": "期权费的波动与价内价外转换",
+  "current_day": 64,
+  "last_topic": "期权费波动与事件驱动",
   "history": [
     {
       "date": "2026-07-08",
@@ -494,6 +494,14 @@
       "date": "2026-09-12",
       "day": 62,
       "topic": "期权费的波动与价内价外转换",
+      "module": "期权基础",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-13",
+      "day": 63,
+      "topic": "期权费波动与事件驱动",
       "module": "期权基础",
       "level": "intermediate",
       "style": "case_review"
