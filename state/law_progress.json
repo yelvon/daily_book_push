@@ -1,6 +1,6 @@
 {
-  "current_day": 78,
-  "last_topic": "争议解决中的证据：如何收集与提交？",
+  "current_day": 79,
+  "last_topic": "离职员工“带走”的秘密，公司如何追回？",
   "history": [
     {
       "date": "2026-06-26",
@@ -617,6 +617,14 @@
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-12",
+      "day": 78,
+      "topic": "离职员工“带走”的秘密，公司如何追回？",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
