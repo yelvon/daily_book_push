@@ -1,6 +1,6 @@
 {
-  "current_day": 80,
-  "last_topic": "制度的有效性",
+  "current_day": 81,
+  "last_topic": "供应链重塑与“近岸外包”",
   "history": [
     {
       "date": "2026-06-25",
@@ -633,6 +633,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-12",
+      "day": 80,
+      "topic": "供应链重塑与“近岸外包”",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
