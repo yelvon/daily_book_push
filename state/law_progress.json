@@ -1,6 +1,6 @@
 {
-  "current_day": 79,
-  "last_topic": "离职员工“带走”的秘密，公司如何追回？",
+  "current_day": 80,
+  "last_topic": "执行异议",
   "history": [
     {
       "date": "2026-06-26",
@@ -622,6 +622,14 @@
       "date": "2026-09-12",
       "day": 78,
       "topic": "离职员工“带走”的秘密，公司如何追回？",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-13",
+      "day": 79,
+      "topic": "执行异议",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "case_review"
