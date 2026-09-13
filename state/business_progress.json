@@ -1,6 +1,6 @@
 {
-  "current_day": 76,
-  "last_case": "组织能力的构建：从授权到执行",
+  "current_day": 77,
+  "last_case": "高效组织与执行的多元路径",
   "history": [
     {
       "date": "2026-06-26",
@@ -672,6 +672,15 @@
       "date": "2026-09-12",
       "day": 75,
       "case": "组织能力的构建：从授权到执行",
+      "company": "未知公司",
+      "module": "组织能力与执行",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-13",
+      "day": 76,
+      "case": "高效组织与执行的多元路径",
       "company": "未知公司",
       "module": "组织能力与执行",
       "level": "intermediate",
