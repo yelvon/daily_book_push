@@ -1,6 +1,6 @@
 {
-  "current_day": 64,
-  "last_topic": "期权费波动与事件驱动",
+  "current_day": 65,
+  "last_topic": "备兑看涨期权",
   "history": [
     {
       "date": "2026-07-08",
@@ -505,6 +505,14 @@
       "module": "期权基础",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-14",
+      "day": 64,
+      "topic": "备兑看涨期权",
+      "module": "期权策略",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
