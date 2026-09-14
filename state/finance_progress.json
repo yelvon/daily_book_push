@@ -1,6 +1,6 @@
 {
-  "current_day": 65,
-  "last_topic": "备兑看涨期权",
+  "current_day": 66,
+  "last_topic": "保护性看跌期权",
   "history": [
     {
       "date": "2026-07-08",
@@ -510,6 +510,14 @@
       "date": "2026-09-14",
       "day": 64,
       "topic": "备兑看涨期权",
+      "module": "期权策略",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-15",
+      "day": 65,
+      "topic": "保护性看跌期权",
       "module": "期权策略",
       "level": "intermediate",
       "style": "concept"
