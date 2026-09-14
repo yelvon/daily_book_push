@@ -1,6 +1,6 @@
 {
-  "current_day": 80,
-  "last_topic": "执行异议",
+  "current_day": 81,
+  "last_topic": "诉讼中的财产保全与行为保全",
   "history": [
     {
       "date": "2026-06-26",
@@ -633,6 +633,14 @@
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-14",
+      "day": 80,
+      "topic": "诉讼中的财产保全与行为保全",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
