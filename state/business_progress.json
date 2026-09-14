@@ -1,6 +1,6 @@
 {
-  "current_day": 77,
-  "last_case": "高效组织与执行的多元路径",
+  "current_day": 78,
+  "last_case": "海尔的“人单合一”模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -685,6 +685,15 @@
       "module": "组织能力与执行",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-15",
+      "day": 77,
+      "case": "海尔的“人单合一”模式",
+      "company": "未知公司",
+      "module": "组织能力与执行",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
