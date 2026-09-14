@@ -1,6 +1,6 @@
 {
-  "current_day": 82,
-  "last_topic": "跨国数据流动的制度壁垒",
+  "current_day": 83,
+  "last_topic": "制度同构",
   "history": [
     {
       "date": "2026-06-25",
@@ -649,6 +649,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-15",
+      "day": 82,
+      "topic": "制度同构",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
