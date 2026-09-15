@@ -1,6 +1,6 @@
 {
-  "current_day": 66,
-  "last_topic": "保护性看跌期权",
+  "current_day": 67,
+  "last_topic": "牛市看涨价差（Bull Call Spread）",
   "history": [
     {
       "date": "2026-07-08",
@@ -518,6 +518,14 @@
       "date": "2026-09-15",
       "day": 65,
       "topic": "保护性看跌期权",
+      "module": "期权策略",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-16",
+      "day": 66,
+      "topic": "牛市看涨价差（Bull Call Spread）",
       "module": "期权策略",
       "level": "intermediate",
       "style": "concept"
