@@ -1,6 +1,6 @@
 {
-  "current_day": 82,
-  "last_topic": "律师函",
+  "current_day": 83,
+  "last_topic": "管辖权异议",
   "history": [
     {
       "date": "2026-06-26",
@@ -646,6 +646,14 @@
       "date": "2026-09-15",
       "day": 81,
       "topic": "律师函",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-16",
+      "day": 82,
+      "topic": "管辖权异议",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
