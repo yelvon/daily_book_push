@@ -1,6 +1,6 @@
 {
-  "current_day": 79,
-  "last_case": "Quibi",
+  "current_day": 80,
+  "last_case": "Theranos：技术造假与信任崩塌",
   "history": [
     {
       "date": "2026-06-26",
@@ -700,6 +700,15 @@
       "day": 78,
       "case": "Quibi",
       "company": "Quibi",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-16",
+      "day": 79,
+      "case": "Theranos：技术造假与信任崩塌",
+      "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "intermediate",
       "style": "case"
