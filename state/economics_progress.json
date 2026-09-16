@@ -1,6 +1,6 @@
 {
-  "current_day": 84,
-  "last_topic": "全球治理",
+  "current_day": 85,
+  "last_topic": "制度合法性",
   "history": [
     {
       "date": "2026-06-25",
@@ -662,6 +662,14 @@
       "date": "2026-09-15",
       "day": 83,
       "topic": "全球治理",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-16",
+      "day": 84,
+      "topic": "制度合法性",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
