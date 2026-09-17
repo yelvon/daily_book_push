@@ -1,6 +1,6 @@
 {
-  "current_day": 85,
-  "last_topic": "制度合法性",
+  "current_day": 86,
+  "last_topic": "制度的路径依赖",
   "history": [
     {
       "date": "2026-06-25",
@@ -670,6 +670,14 @@
       "date": "2026-09-16",
       "day": 84,
       "topic": "制度合法性",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-17",
+      "day": 85,
+      "topic": "制度的路径依赖",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
