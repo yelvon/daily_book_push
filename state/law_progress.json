@@ -1,6 +1,6 @@
 {
-  "current_day": 83,
-  "last_topic": "管辖权异议",
+  "current_day": 84,
+  "last_topic": "反诉与反请求：从被动到主动",
   "history": [
     {
       "date": "2026-06-26",
@@ -654,6 +654,14 @@
       "date": "2026-09-16",
       "day": 82,
       "topic": "管辖权异议",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-17",
+      "day": 83,
+      "topic": "反诉与反请求：从被动到主动",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
