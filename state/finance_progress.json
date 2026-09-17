@@ -1,6 +1,6 @@
 {
-  "current_day": 68,
-  "last_topic": "熊市看跌价差",
+  "current_day": 69,
+  "last_topic": "跨式组合",
   "history": [
     {
       "date": "2026-07-08",
@@ -534,6 +534,14 @@
       "date": "2026-09-17",
       "day": 67,
       "topic": "熊市看跌价差",
+      "module": "期权策略",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-18",
+      "day": 68,
+      "topic": "跨式组合",
       "module": "期权策略",
       "level": "intermediate",
       "style": "concept"
