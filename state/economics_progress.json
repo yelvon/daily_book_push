@@ -1,6 +1,6 @@
 {
-  "current_day": 86,
-  "last_topic": "制度的路径依赖",
+  "current_day": 87,
+  "last_topic": "制度性空缺",
   "history": [
     {
       "date": "2026-06-25",
@@ -678,6 +678,14 @@
       "date": "2026-09-17",
       "day": 85,
       "topic": "制度的路径依赖",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-18",
+      "day": 86,
+      "topic": "制度性空缺",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
