@@ -1,6 +1,6 @@
 {
-  "current_day": 69,
-  "last_topic": "跨式组合",
+  "current_day": 70,
+  "last_topic": "事件驱动下的期权波动策略",
   "history": [
     {
       "date": "2026-07-08",
@@ -545,6 +545,14 @@
       "module": "期权策略",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-19",
+      "day": 69,
+      "topic": "事件驱动下的期权波动策略",
+      "module": "期权策略",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
