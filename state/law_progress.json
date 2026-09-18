@@ -1,6 +1,6 @@
 {
-  "current_day": 84,
-  "last_topic": "反诉与反请求：从被动到主动",
+  "current_day": 85,
+  "last_topic": "证据保全",
   "history": [
     {
       "date": "2026-06-26",
@@ -662,6 +662,14 @@
       "date": "2026-09-17",
       "day": 83,
       "topic": "反诉与反请求：从被动到主动",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-18",
+      "day": 84,
+      "topic": "证据保全",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
