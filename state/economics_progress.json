@@ -1,6 +1,6 @@
 {
-  "current_day": 87,
-  "last_topic": "制度性空缺",
+  "current_day": 88,
+  "last_topic": "绿色壁垒下的全球供应链调整",
   "history": [
     {
       "date": "2026-06-25",
@@ -689,6 +689,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-19",
+      "day": 87,
+      "topic": "绿色壁垒下的全球供应链调整",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
