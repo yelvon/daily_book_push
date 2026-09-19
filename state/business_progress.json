@@ -1,6 +1,6 @@
 {
-  "current_day": 82,
-  "last_case": "Google Glass",
+  "current_day": 83,
+  "last_case": "识别创业陷阱与反模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -730,6 +730,15 @@
       "module": "失败案例与反模式",
       "level": "intermediate",
       "style": "case"
+    },
+    {
+      "date": "2026-09-19",
+      "day": 82,
+      "case": "识别创业陷阱与反模式",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
