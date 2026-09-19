@@ -1,6 +1,6 @@
 {
-  "current_day": 70,
-  "last_topic": "事件驱动下的期权波动策略",
+  "current_day": 71,
+  "last_topic": "财报发布与期权波动率挤压",
   "history": [
     {
       "date": "2026-07-08",
@@ -550,6 +550,14 @@
       "date": "2026-09-19",
       "day": 69,
       "topic": "事件驱动下的期权波动策略",
+      "module": "期权策略",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-20",
+      "day": 70,
+      "topic": "财报发布与期权波动率挤压",
       "module": "期权策略",
       "level": "intermediate",
       "style": "case_review"
