@@ -1,6 +1,6 @@
 {
-  "current_day": 83,
-  "last_case": "识别创业陷阱与反模式",
+  "current_day": 84,
+  "last_case": "高估与错配：创业失败的常见陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -735,6 +735,15 @@
       "date": "2026-09-19",
       "day": 82,
       "case": "识别创业陷阱与反模式",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-20",
+      "day": 83,
+      "case": "高估与错配：创业失败的常见陷阱",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "intermediate",
