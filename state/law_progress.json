@@ -1,6 +1,6 @@
 {
-  "current_day": 86,
-  "last_topic": "仲裁裁决的撤销",
+  "current_day": 87,
+  "last_topic": "股东知情权的边界与行使",
   "history": [
     {
       "date": "2026-06-26",
@@ -678,6 +678,14 @@
       "date": "2026-09-19",
       "day": 85,
       "topic": "仲裁裁决的撤销",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-20",
+      "day": 86,
+      "topic": "股东知情权的边界与行使",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "case_review"
