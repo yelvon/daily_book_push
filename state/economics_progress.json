@@ -1,6 +1,6 @@
 {
-  "current_day": 88,
-  "last_topic": "绿色壁垒下的全球供应链调整",
+  "current_day": 89,
+  "last_topic": "跨国企业“去风险化”的全球布局",
   "history": [
     {
       "date": "2026-06-25",
@@ -694,6 +694,14 @@
       "date": "2026-09-19",
       "day": 87,
       "topic": "绿色壁垒下的全球供应链调整",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-20",
+      "day": 88,
+      "topic": "跨国企业“去风险化”的全球布局",
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "case_review"
