@@ -1,6 +1,6 @@
 {
-  "current_day": 71,
-  "last_topic": "财报发布与期权波动率挤压",
+  "current_day": 72,
+  "last_topic": "期货的保证金制度",
   "history": [
     {
       "date": "2026-07-08",
@@ -561,6 +561,14 @@
       "module": "期权策略",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-21",
+      "day": 71,
+      "topic": "期货的保证金制度",
+      "module": "期货基础",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
