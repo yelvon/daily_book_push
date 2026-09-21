@@ -1,6 +1,6 @@
 {
-  "current_day": 84,
-  "last_case": "高估与错配：创业失败的常见陷阱",
+  "current_day": 85,
+  "last_case": "Pets.com：烧钱扩张的幻象",
   "history": [
     {
       "date": "2026-06-26",
@@ -748,6 +748,15 @@
       "module": "失败案例与反模式",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-22",
+      "day": 84,
+      "case": "Pets.com：烧钱扩张的幻象",
+      "company": "Pets.com",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
