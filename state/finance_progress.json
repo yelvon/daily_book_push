@@ -1,6 +1,6 @@
 {
-  "current_day": 72,
-  "last_topic": "期货的保证金制度",
+  "current_day": 73,
+  "last_topic": "期货合约的标准化",
   "history": [
     {
       "date": "2026-07-08",
@@ -566,6 +566,14 @@
       "date": "2026-09-21",
       "day": 71,
       "topic": "期货的保证金制度",
+      "module": "期货基础",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-22",
+      "day": 72,
+      "topic": "期货合约的标准化",
       "module": "期货基础",
       "level": "intermediate",
       "style": "concept"
