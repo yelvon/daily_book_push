@@ -1,6 +1,6 @@
 {
-  "current_day": 89,
-  "last_topic": "跨国企业“去风险化”的全球布局",
+  "current_day": 90,
+  "last_topic": "国际生产网络中的制度协调",
   "history": [
     {
       "date": "2026-06-25",
@@ -705,6 +705,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-22",
+      "day": 89,
+      "topic": "国际生产网络中的制度协调",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
