@@ -1,6 +1,6 @@
 {
-  "current_day": 87,
-  "last_topic": "股东知情权的边界与行使",
+  "current_day": 88,
+  "last_topic": "国际商事仲裁",
   "history": [
     {
       "date": "2026-06-26",
@@ -689,6 +689,14 @@
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-21",
+      "day": 87,
+      "topic": "国际商事仲裁",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
