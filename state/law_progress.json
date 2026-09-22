@@ -1,6 +1,6 @@
 {
-  "current_day": 88,
-  "last_topic": "国际商事仲裁",
+  "current_day": 89,
+  "last_topic": "强制执行中的执行和解",
   "history": [
     {
       "date": "2026-06-26",
@@ -694,6 +694,14 @@
       "date": "2026-09-21",
       "day": 87,
       "topic": "国际商事仲裁",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-22",
+      "day": 88,
+      "topic": "强制执行中的执行和解",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
