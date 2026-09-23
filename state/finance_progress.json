@@ -1,6 +1,6 @@
 {
-  "current_day": 74,
-  "last_topic": "期货的杠杆效应",
+  "current_day": 75,
+  "last_topic": "期货的每日无负债结算",
   "history": [
     {
       "date": "2026-07-08",
@@ -582,6 +582,14 @@
       "date": "2026-09-23",
       "day": 73,
       "topic": "期货的杠杆效应",
+      "module": "期货基础",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-24",
+      "day": 74,
+      "topic": "期货的每日无负债结算",
       "module": "期货基础",
       "level": "intermediate",
       "style": "concept"
