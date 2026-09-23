@@ -1,6 +1,6 @@
 {
-  "current_day": 89,
-  "last_topic": "强制执行中的执行和解",
+  "current_day": 90,
+  "last_topic": "诉讼费用：打官司要花多少钱，谁来出？",
   "history": [
     {
       "date": "2026-06-26",
@@ -702,6 +702,14 @@
       "date": "2026-09-22",
       "day": 88,
       "topic": "强制执行中的执行和解",
+      "module": "争议解决与维权",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-23",
+      "day": 89,
+      "topic": "诉讼费用：打官司要花多少钱，谁来出？",
       "module": "争议解决与维权",
       "level": "intermediate",
       "style": "concept"
