@@ -1,6 +1,6 @@
 {
-  "current_day": 75,
-  "last_topic": "期货的每日无负债结算",
+  "current_day": 76,
+  "last_topic": "期货的套期保值",
   "history": [
     {
       "date": "2026-07-08",
@@ -590,6 +590,14 @@
       "date": "2026-09-24",
       "day": 74,
       "topic": "期货的每日无负债结算",
+      "module": "期货基础",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-25",
+      "day": 75,
+      "topic": "期货的套期保值",
       "module": "期货基础",
       "level": "intermediate",
       "style": "concept"
