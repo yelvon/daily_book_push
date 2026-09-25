@@ -1,6 +1,6 @@
 {
-  "current_day": 87,
-  "last_case": "Color：巨额融资下的产品迷失",
+  "current_day": 88,
+  "last_case": "黑莓：固守辉煌，错失智能手机浪潮",
   "history": [
     {
       "date": "2026-06-26",
@@ -772,6 +772,15 @@
       "day": 86,
       "case": "Color：巨额融资下的产品迷失",
       "company": "Color Labs",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-25",
+      "day": 87,
+      "case": "黑莓：固守辉煌，错失智能手机浪潮",
+      "company": "BlackBerry",
       "module": "失败案例与反模式",
       "level": "intermediate",
       "style": "case"
