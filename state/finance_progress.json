@@ -1,6 +1,6 @@
 {
-  "current_day": 76,
-  "last_topic": "期货的套期保值",
+  "current_day": 77,
+  "last_topic": "原材料价格波动与企业的“定心丸”",
   "history": [
     {
       "date": "2026-07-08",
@@ -601,6 +601,14 @@
       "module": "期货基础",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-26",
+      "day": 76,
+      "topic": "原材料价格波动与企业的“定心丸”",
+      "module": "期货基础",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
