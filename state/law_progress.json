@@ -1,6 +1,6 @@
 {
-  "current_day": 91,
-  "last_topic": "举证责任：打官司，谁来证明？",
+  "current_day": 92,
+  "last_topic": "承认与执行外国判决和仲裁裁决",
   "history": [
     {
       "date": "2026-06-26",
@@ -720,6 +720,14 @@
       "topic": "举证责任：打官司，谁来证明？",
       "module": "争议解决与维权",
       "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-25",
+      "day": 91,
+      "topic": "承认与执行外国判决和仲裁裁决",
+      "module": "争议解决与维权",
+      "level": "advanced",
       "style": "concept"
     }
   ]
