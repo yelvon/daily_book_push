@@ -1,6 +1,6 @@
 {
-  "current_day": 90,
-  "last_topic": "制度套利",
+  "current_day": 91,
+  "last_topic": "服装巨头的“绿色”新考量",
   "history": [
     {
       "date": "2026-06-25",
@@ -713,6 +713,14 @@
       "module": "全球化与制度",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-26",
+      "day": 90,
+      "topic": "服装巨头的“绿色”新考量",
+      "module": "全球化与制度",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
