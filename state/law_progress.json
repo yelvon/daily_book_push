@@ -1,6 +1,6 @@
 {
-  "current_day": 92,
-  "last_topic": "承认与执行外国判决和仲裁裁决",
+  "current_day": 93,
+  "last_topic": "股东会决议效力与股权转让争议",
   "history": [
     {
       "date": "2026-06-26",
@@ -729,6 +729,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-09-26",
+      "day": 92,
+      "topic": "股东会决议效力与股权转让争议",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
