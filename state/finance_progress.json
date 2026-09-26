@@ -1,6 +1,6 @@
 {
-  "current_day": 77,
-  "last_topic": "原材料价格波动与企业的“定心丸”",
+  "current_day": 78,
+  "last_topic": "突发事件如何影响期货价格",
   "history": [
     {
       "date": "2026-07-08",
@@ -606,6 +606,14 @@
       "date": "2026-09-26",
       "day": 76,
       "topic": "原材料价格波动与企业的“定心丸”",
+      "module": "期货基础",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-27",
+      "day": 77,
+      "topic": "突发事件如何影响期货价格",
       "module": "期货基础",
       "level": "intermediate",
       "style": "case_review"
