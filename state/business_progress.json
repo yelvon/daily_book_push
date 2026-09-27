@@ -1,6 +1,6 @@
 {
-  "current_day": 89,
-  "last_case": "失败案例中的共性陷阱",
+  "current_day": 90,
+  "last_case": "警惕创业陷阱：从失败中学习",
   "history": [
     {
       "date": "2026-06-26",
@@ -790,6 +790,15 @@
       "day": 88,
       "case": "失败案例中的共性陷阱",
       "company": "多公司",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-27",
+      "day": 89,
+      "case": "警惕创业陷阱：从失败中学习",
+      "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "intermediate",
       "style": "case_review"
