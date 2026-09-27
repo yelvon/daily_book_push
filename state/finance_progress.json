@@ -1,6 +1,6 @@
 {
-  "current_day": 78,
-  "last_topic": "突发事件如何影响期货价格",
+  "current_day": 79,
+  "last_topic": "期货套期保值的策略与目标",
   "history": [
     {
       "date": "2026-07-08",
@@ -617,6 +617,14 @@
       "module": "期货基础",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-28",
+      "day": 78,
+      "topic": "期货套期保值的策略与目标",
+      "module": "期货与套期保值",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
