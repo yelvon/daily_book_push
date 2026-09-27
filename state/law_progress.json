@@ -1,6 +1,6 @@
 {
-  "current_day": 93,
-  "last_topic": "股东会决议效力与股权转让争议",
+  "current_day": 94,
+  "last_topic": "商业秘密侵权：没有“偷盗录像”，如何证明“秘密被盗”？",
   "history": [
     {
       "date": "2026-06-26",
@@ -734,6 +734,14 @@
       "date": "2026-09-26",
       "day": 92,
       "topic": "股东会决议效力与股权转让争议",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-09-27",
+      "day": 93,
+      "topic": "商业秘密侵权：没有“偷盗录像”，如何证明“秘密被盗”？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
