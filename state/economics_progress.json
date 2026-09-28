@@ -1,6 +1,6 @@
 {
-  "current_day": 92,
-  "last_topic": "“友岸外包”：地缘政治下的全球供应链重塑",
+  "current_day": 93,
+  "last_topic": "制度混合",
   "history": [
     {
       "date": "2026-06-25",
@@ -729,6 +729,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-29",
+      "day": 92,
+      "topic": "制度混合",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
