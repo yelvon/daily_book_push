@@ -1,6 +1,6 @@
 {
-  "current_day": 79,
-  "last_topic": "期货套期保值的策略与目标",
+  "current_day": 80,
+  "last_topic": "交叉套期保值",
   "history": [
     {
       "date": "2026-07-08",
@@ -622,6 +622,14 @@
       "date": "2026-09-28",
       "day": 78,
       "topic": "期货套期保值的策略与目标",
+      "module": "期货与套期保值",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-29",
+      "day": 79,
+      "topic": "交叉套期保值",
       "module": "期货与套期保值",
       "level": "intermediate",
       "style": "concept"
