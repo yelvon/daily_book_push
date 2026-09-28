@@ -1,6 +1,6 @@
 {
-  "current_day": 90,
-  "last_case": "警惕创业陷阱：从失败中学习",
+  "current_day": 91,
+  "last_case": "AOL Time Warner 合并失败案",
   "history": [
     {
       "date": "2026-06-26",
@@ -802,6 +802,15 @@
       "module": "失败案例与反模式",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-09-29",
+      "day": 90,
+      "case": "AOL Time Warner 合并失败案",
+      "company": "AOL Time Warner",
+      "module": "失败案例与反模式",
+      "level": "intermediate",
+      "style": "case"
     }
   ]
 }
