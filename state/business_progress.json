@@ -1,6 +1,6 @@
 {
-  "current_day": 91,
-  "last_case": "AOL Time Warner 合并失败案",
+  "current_day": 92,
+  "last_case": "柯达：数字时代的视而不见",
   "history": [
     {
       "date": "2026-06-26",
@@ -810,6 +810,15 @@
       "company": "AOL Time Warner",
       "module": "失败案例与反模式",
       "level": "intermediate",
+      "style": "case"
+    },
+    {
+      "date": "2026-09-30",
+      "day": 91,
+      "case": "柯达：数字时代的视而不见",
+      "company": "Eastman Kodak Company",
+      "module": "失败案例与反模式",
+      "level": "advanced",
       "style": "case"
     }
   ]
