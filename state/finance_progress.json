@@ -1,6 +1,6 @@
 {
-  "current_day": 80,
-  "last_topic": "交叉套期保值",
+  "current_day": 81,
+  "last_topic": "基差风险与套期保值效果",
   "history": [
     {
       "date": "2026-07-08",
@@ -630,6 +630,14 @@
       "date": "2026-09-29",
       "day": 79,
       "topic": "交叉套期保值",
+      "module": "期货与套期保值",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-30",
+      "day": 80,
+      "topic": "基差风险与套期保值效果",
       "module": "期货与套期保值",
       "level": "intermediate",
       "style": "concept"
