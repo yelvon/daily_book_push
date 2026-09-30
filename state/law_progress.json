@@ -1,6 +1,6 @@
 {
-  "current_day": 96,
-  "last_topic": "涉外民商事案件的法律适用",
+  "current_day": 97,
+  "last_topic": "诉讼时效与除斥期间：权利行使的“保质期”",
   "history": [
     {
       "date": "2026-06-26",
@@ -758,6 +758,14 @@
       "date": "2026-09-29",
       "day": 95,
       "topic": "涉外民商事案件的法律适用",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-09-30",
+      "day": 96,
+      "topic": "诉讼时效与除斥期间：权利行使的“保质期”",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
