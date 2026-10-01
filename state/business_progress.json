@@ -1,6 +1,6 @@
 {
-  "current_day": 93,
-  "last_case": "Pebble：小众创新者的困境与巨头绞杀",
+  "current_day": 94,
+  "last_case": "Webvan：超前布局与物流黑洞",
   "history": [
     {
       "date": "2026-06-26",
@@ -826,6 +826,15 @@
       "day": 92,
       "case": "Pebble：小众创新者的困境与巨头绞杀",
       "company": "Pebble Technology",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-02",
+      "day": 93,
+      "case": "Webvan：超前布局与物流黑洞",
+      "company": "Webvan",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
