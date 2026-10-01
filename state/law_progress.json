@@ -1,6 +1,6 @@
 {
-  "current_day": 97,
-  "last_topic": "诉讼时效与除斥期间：权利行使的“保质期”",
+  "current_day": 98,
+  "last_topic": "司法调解协议",
   "history": [
     {
       "date": "2026-06-26",
@@ -766,6 +766,14 @@
       "date": "2026-09-30",
       "day": 96,
       "topic": "诉讼时效与除斥期间：权利行使的“保质期”",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-01",
+      "day": 97,
+      "topic": "司法调解协议",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
