@@ -1,6 +1,6 @@
 {
-  "current_day": 82,
-  "last_topic": "套期保值中的成本与收益权衡",
+  "current_day": 83,
+  "last_topic": "套期保值的有效性",
   "history": [
     {
       "date": "2026-07-08",
@@ -646,6 +646,14 @@
       "date": "2026-10-01",
       "day": 81,
       "topic": "套期保值中的成本与收益权衡",
+      "module": "期货与套期保值",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-02",
+      "day": 82,
+      "topic": "套期保值的有效性",
       "module": "期货与套期保值",
       "level": "intermediate",
       "style": "concept"
