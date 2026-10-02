@@ -1,6 +1,6 @@
 {
-  "current_day": 94,
-  "last_case": "Webvan：超前布局与物流黑洞",
+  "current_day": 95,
+  "last_case": "烧钱陷阱与市场脱节：创业失败的结构性原因",
   "history": [
     {
       "date": "2026-06-26",
@@ -838,6 +838,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
+    },
+    {
+      "date": "2026-10-03",
+      "day": 94,
+      "case": "烧钱陷阱与市场脱节：创业失败的结构性原因",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
