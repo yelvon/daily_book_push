@@ -1,6 +1,6 @@
 {
-  "current_day": 98,
-  "last_topic": "司法调解协议",
+  "current_day": 99,
+  "last_topic": "平行诉讼与管辖冲突",
   "history": [
     {
       "date": "2026-06-26",
@@ -774,6 +774,14 @@
       "date": "2026-10-01",
       "day": 97,
       "topic": "司法调解协议",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-02",
+      "day": 98,
+      "topic": "平行诉讼与管辖冲突",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
