@@ -1,6 +1,6 @@
 {
-  "current_day": 84,
-  "last_topic": "食品企业如何用期货锁定成本",
+  "current_day": 85,
+  "last_topic": "航空公司如何“锁定”燃油成本",
   "history": [
     {
       "date": "2026-07-08",
@@ -662,6 +662,14 @@
       "date": "2026-10-03",
       "day": 83,
       "topic": "食品企业如何用期货锁定成本",
+      "module": "期货与套期保值",
+      "level": "intermediate",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-04",
+      "day": 84,
+      "topic": "航空公司如何“锁定”燃油成本",
       "module": "期货与套期保值",
       "level": "intermediate",
       "style": "case_review"
