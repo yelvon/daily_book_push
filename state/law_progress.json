@@ -1,6 +1,6 @@
 {
-  "current_day": 99,
-  "last_topic": "平行诉讼与管辖冲突",
+  "current_day": 100,
+  "last_topic": "公司僵局下的强制清算：当合伙人“撕破脸”，公司怎么办？",
   "history": [
     {
       "date": "2026-06-26",
@@ -785,6 +785,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-03",
+      "day": 99,
+      "topic": "公司僵局下的强制清算：当合伙人“撕破脸”，公司怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
