@@ -1,6 +1,6 @@
 {
-  "current_day": 95,
-  "last_case": "烧钱陷阱与市场脱节：创业失败的结构性原因",
+  "current_day": 96,
+  "last_case": "创业失败的深层机制",
   "history": [
     {
       "date": "2026-06-26",
@@ -844,6 +844,15 @@
       "day": 94,
       "case": "烧钱陷阱与市场脱节：创业失败的结构性原因",
       "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-03",
+      "day": 95,
+      "case": "创业失败的深层机制",
+      "company": "多公司",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
