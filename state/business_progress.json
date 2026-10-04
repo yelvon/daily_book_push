@@ -1,6 +1,6 @@
 {
-  "current_day": 96,
-  "last_case": "创业失败的深层机制",
+  "current_day": 97,
+  "last_case": "失败案例中的结构性错位",
   "history": [
     {
       "date": "2026-06-26",
@@ -853,6 +853,15 @@
       "day": 95,
       "case": "创业失败的深层机制",
       "company": "多公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-04",
+      "day": 96,
+      "case": "失败案例中的结构性错位",
+      "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
