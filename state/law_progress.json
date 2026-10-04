@@ -1,6 +1,6 @@
 {
-  "current_day": 100,
-  "last_topic": "公司僵局下的强制清算：当合伙人“撕破脸”，公司怎么办？",
+  "current_day": 101,
+  "last_topic": "疫情下供应链中断的合同争议：是“不可抗力”还是“商业风险”？",
   "history": [
     {
       "date": "2026-06-26",
@@ -790,6 +790,14 @@
       "date": "2026-10-03",
       "day": 99,
       "topic": "公司僵局下的强制清算：当合伙人“撕破脸”，公司怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-04",
+      "day": 100,
+      "topic": "疫情下供应链中断的合同争议：是“不可抗力”还是“商业风险”？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
