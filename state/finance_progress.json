@@ -1,6 +1,6 @@
 {
-  "current_day": 85,
-  "last_topic": "航空公司如何“锁定”燃油成本",
+  "current_day": 86,
+  "last_topic": "量化交易的核心要素：数据与模型",
   "history": [
     {
       "date": "2026-07-08",
@@ -673,6 +673,14 @@
       "module": "期货与套期保值",
       "level": "intermediate",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-05",
+      "day": 85,
+      "topic": "量化交易的核心要素：数据与模型",
+      "module": "量化交易入门",
+      "level": "intermediate",
+      "style": "concept"
     }
   ]
 }
