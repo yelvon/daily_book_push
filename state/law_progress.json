@@ -1,6 +1,6 @@
 {
-  "current_day": 101,
-  "last_topic": "疫情下供应链中断的合同争议：是“不可抗力”还是“商业风险”？",
+  "current_day": 102,
+  "last_topic": "第三方撤销之诉：判决之外，如何维护自身权益？",
   "history": [
     {
       "date": "2026-06-26",
@@ -801,6 +801,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-05",
+      "day": 101,
+      "topic": "第三方撤销之诉：判决之外，如何维护自身权益？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
