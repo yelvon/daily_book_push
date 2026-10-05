@@ -1,6 +1,6 @@
 {
-  "current_day": 97,
-  "last_case": "失败案例中的结构性错位",
+  "current_day": 98,
+  "last_case": "Google+：巨头的社交网络梦碎",
   "history": [
     {
       "date": "2026-06-26",
@@ -865,6 +865,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-06",
+      "day": 97,
+      "case": "Google+：巨头的社交网络梦碎",
+      "company": "Google",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
     }
   ]
 }
