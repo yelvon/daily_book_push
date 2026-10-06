@@ -1,6 +1,6 @@
 {
-  "current_day": 96,
-  "last_topic": "制度套利",
+  "current_day": 97,
+  "last_topic": "制度的融合与冲突",
   "history": [
     {
       "date": "2026-06-25",
@@ -761,6 +761,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-07",
+      "day": 96,
+      "topic": "制度的融合与冲突",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
