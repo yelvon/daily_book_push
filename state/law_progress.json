@@ -1,6 +1,6 @@
 {
-  "current_day": 102,
-  "last_topic": "第三方撤销之诉：判决之外，如何维护自身权益？",
+  "current_day": 103,
+  "last_topic": "股东代表诉讼：当公司“受委屈”，股东如何“替公司出头”？",
   "history": [
     {
       "date": "2026-06-26",
@@ -806,6 +806,14 @@
       "date": "2026-10-05",
       "day": 101,
       "topic": "第三方撤销之诉：判决之外，如何维护自身权益？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-06",
+      "day": 102,
+      "topic": "股东代表诉讼：当公司“受委屈”，股东如何“替公司出头”？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
