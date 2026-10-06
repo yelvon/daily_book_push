@@ -1,6 +1,6 @@
 {
-  "current_day": 98,
-  "last_case": "Google+：巨头的社交网络梦碎",
+  "current_day": 99,
+  "last_case": "Windows Phone",
   "history": [
     {
       "date": "2026-06-26",
@@ -871,6 +871,15 @@
       "day": 97,
       "case": "Google+：巨头的社交网络梦碎",
       "company": "Google",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-07",
+      "day": 98,
+      "case": "Windows Phone",
+      "company": "Microsoft",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
