@@ -1,6 +1,6 @@
 {
-  "current_day": 103,
-  "last_topic": "股东代表诉讼：当公司“受委屈”，股东如何“替公司出头”？",
+  "current_day": 104,
+  "last_topic": "执行异议之诉：你的财产，如何避免被“误伤”？",
   "history": [
     {
       "date": "2026-06-26",
@@ -814,6 +814,14 @@
       "date": "2026-10-06",
       "day": 102,
       "topic": "股东代表诉讼：当公司“受委屈”，股东如何“替公司出头”？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-07",
+      "day": 103,
+      "topic": "执行异议之诉：你的财产，如何避免被“误伤”？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
