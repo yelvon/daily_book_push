@@ -1,6 +1,6 @@
 {
-  "current_day": 89,
-  "last_topic": "量化交易策略的分类",
+  "current_day": 90,
+  "last_topic": "量化交易的执行",
   "history": [
     {
       "date": "2026-07-08",
@@ -702,6 +702,14 @@
       "date": "2026-10-08",
       "day": 88,
       "topic": "量化交易策略的分类",
+      "module": "量化交易入门",
+      "level": "intermediate",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-09",
+      "day": 89,
+      "topic": "量化交易的执行",
       "module": "量化交易入门",
       "level": "intermediate",
       "style": "concept"
