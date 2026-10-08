@@ -1,6 +1,6 @@
 {
-  "current_day": 104,
-  "last_topic": "执行异议之诉：你的财产，如何避免被“误伤”？",
+  "current_day": 105,
+  "last_topic": "跨境商事争议中的证据开示",
   "history": [
     {
       "date": "2026-06-26",
@@ -822,6 +822,14 @@
       "date": "2026-10-07",
       "day": 103,
       "topic": "执行异议之诉：你的财产，如何避免被“误伤”？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-08",
+      "day": 104,
+      "topic": "跨境商事争议中的证据开示",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
