@@ -1,6 +1,6 @@
 {
-  "current_day": 97,
-  "last_topic": "制度套利",
+  "current_day": 98,
+  "last_topic": "科技巨头“区域化”布局与全球生产网络重构",
   "history": [
     {
       "date": "2026-06-25",
@@ -769,6 +769,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-10",
+      "day": 97,
+      "topic": "科技巨头“区域化”布局与全球生产网络重构",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
