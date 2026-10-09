@@ -1,6 +1,6 @@
 {
-  "current_day": 90,
-  "last_topic": "量化交易的执行",
+  "current_day": 91,
+  "last_topic": "量化策略为何会“水土不服”？",
   "history": [
     {
       "date": "2026-07-08",
@@ -713,6 +713,14 @@
       "module": "量化交易入门",
       "level": "intermediate",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-10",
+      "day": 90,
+      "topic": "量化策略为何会“水土不服”？",
+      "module": "量化交易入门",
+      "level": "intermediate",
+      "style": "case_review"
     }
   ]
 }
