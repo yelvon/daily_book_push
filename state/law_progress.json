@@ -1,6 +1,6 @@
 {
-  "current_day": 105,
-  "last_topic": "跨境商事争议中的证据开示",
+  "current_day": 106,
+  "last_topic": "公益诉讼在商业领域的挑战与应对",
   "history": [
     {
       "date": "2026-06-26",
@@ -830,6 +830,14 @@
       "date": "2026-10-08",
       "day": 104,
       "topic": "跨境商事争议中的证据开示",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-09",
+      "day": 105,
+      "topic": "公益诉讼在商业领域的挑战与应对",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
