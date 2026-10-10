@@ -1,6 +1,6 @@
 {
-  "current_day": 102,
-  "last_case": "高估与错配：早期创业者的常见陷阱",
+  "current_day": 103,
+  "last_case": "从失败中学习：警惕创业中的结构性陷阱与反模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -906,6 +906,15 @@
       "date": "2026-10-10",
       "day": 101,
       "case": "高估与错配：早期创业者的常见陷阱",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-10",
+      "day": 102,
+      "case": "从失败中学习：警惕创业中的结构性陷阱与反模式",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
