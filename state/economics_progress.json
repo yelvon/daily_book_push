@@ -1,6 +1,6 @@
 {
-  "current_day": 98,
-  "last_topic": "科技巨头“区域化”布局与全球生产网络重构",
+  "current_day": 99,
+  "last_topic": "全球AI监管碎片化下的跨国企业挑战",
   "history": [
     {
       "date": "2026-06-25",
@@ -774,6 +774,14 @@
       "date": "2026-10-10",
       "day": 97,
       "topic": "科技巨头“区域化”布局与全球生产网络重构",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-11",
+      "day": 98,
+      "topic": "全球AI监管碎片化下的跨国企业挑战",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
