@@ -1,6 +1,6 @@
 {
-  "current_day": 106,
-  "last_topic": "公益诉讼在商业领域的挑战与应对",
+  "current_day": 107,
+  "last_topic": "投资对赌协议的“双刃剑”：业绩不达标，创始人怎么办？",
   "history": [
     {
       "date": "2026-06-26",
@@ -841,6 +841,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-10",
+      "day": 106,
+      "topic": "投资对赌协议的“双刃剑”：业绩不达标，创始人怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
