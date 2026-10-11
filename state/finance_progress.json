@@ -1,6 +1,6 @@
 {
-  "current_day": 92,
-  "last_topic": "量化策略失效",
+  "current_day": 93,
+  "last_topic": "量化策略的过度拟合",
   "history": [
     {
       "date": "2026-07-08",
@@ -729,6 +729,14 @@
       "module": "量化交易入门",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-12",
+      "day": 92,
+      "topic": "量化策略的过度拟合",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
