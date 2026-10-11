@@ -1,6 +1,6 @@
 {
-  "current_day": 103,
-  "last_case": "从失败中学习：警惕创业中的结构性陷阱与反模式",
+  "current_day": 104,
+  "last_case": "MySpace：从社交霸主到没落的启示",
   "history": [
     {
       "date": "2026-06-26",
@@ -919,6 +919,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-12",
+      "day": 103,
+      "case": "MySpace：从社交霸主到没落的启示",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
     }
   ]
 }
