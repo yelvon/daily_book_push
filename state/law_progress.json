@@ -1,6 +1,6 @@
 {
-  "current_day": 107,
-  "last_topic": "投资对赌协议的“双刃剑”：业绩不达标，创始人怎么办？",
+  "current_day": 108,
+  "last_topic": "诉前财产保全",
   "history": [
     {
       "date": "2026-06-26",
@@ -846,6 +846,14 @@
       "date": "2026-10-10",
       "day": 106,
       "topic": "投资对赌协议的“双刃剑”：业绩不达标，创始人怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-11",
+      "day": 107,
+      "topic": "诉前财产保全",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
