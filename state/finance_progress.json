@@ -1,6 +1,6 @@
 {
-  "current_day": 93,
-  "last_topic": "量化策略的过度拟合",
+  "current_day": 94,
+  "last_topic": "前瞻性偏差在量化回测中的影响",
   "history": [
     {
       "date": "2026-07-08",
@@ -734,6 +734,14 @@
       "date": "2026-10-12",
       "day": 92,
       "topic": "量化策略的过度拟合",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-13",
+      "day": 93,
+      "topic": "前瞻性偏差在量化回测中的影响",
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "concept"
