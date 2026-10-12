@@ -1,6 +1,6 @@
 {
-  "current_day": 108,
-  "last_topic": "诉前财产保全",
+  "current_day": 109,
+  "last_topic": "撤销仲裁裁决之诉",
   "history": [
     {
       "date": "2026-06-26",
@@ -857,6 +857,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-12",
+      "day": 108,
+      "topic": "撤销仲裁裁决之诉",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
