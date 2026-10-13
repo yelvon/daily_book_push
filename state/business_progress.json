@@ -1,6 +1,6 @@
 {
-  "current_day": 105,
-  "last_case": "Juicero：过度工程与市场错位",
+  "current_day": 106,
+  "last_case": "Google Wave",
   "history": [
     {
       "date": "2026-06-26",
@@ -934,6 +934,15 @@
       "day": 104,
       "case": "Juicero：过度工程与市场错位",
       "company": "Juicero",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-14",
+      "day": 105,
+      "case": "Google Wave",
+      "company": "Google",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
