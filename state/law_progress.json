@@ -1,6 +1,6 @@
 {
-  "current_day": 109,
-  "last_topic": "撤销仲裁裁决之诉",
+  "current_day": 110,
+  "last_topic": "证据保全与行为保全",
   "history": [
     {
       "date": "2026-06-26",
@@ -862,6 +862,14 @@
       "date": "2026-10-12",
       "day": 108,
       "topic": "撤销仲裁裁决之诉",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-13",
+      "day": 109,
+      "topic": "证据保全与行为保全",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
