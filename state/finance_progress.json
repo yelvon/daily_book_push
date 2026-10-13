@@ -1,6 +1,6 @@
 {
-  "current_day": 94,
-  "last_topic": "前瞻性偏差在量化回测中的影响",
+  "current_day": 95,
+  "last_topic": "量化策略回测中的幸存者偏差",
   "history": [
     {
       "date": "2026-07-08",
@@ -742,6 +742,14 @@
       "date": "2026-10-13",
       "day": 93,
       "topic": "前瞻性偏差在量化回测中的影响",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-14",
+      "day": 94,
+      "topic": "量化策略回测中的幸存者偏差",
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "concept"
