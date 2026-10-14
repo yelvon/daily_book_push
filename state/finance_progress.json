@@ -1,6 +1,6 @@
 {
-  "current_day": 95,
-  "last_topic": "量化策略回测中的幸存者偏差",
+  "current_day": 96,
+  "last_topic": "量化策略的稳健性测试",
   "history": [
     {
       "date": "2026-07-08",
@@ -750,6 +750,14 @@
       "date": "2026-10-14",
       "day": 94,
       "topic": "量化策略回测中的幸存者偏差",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-15",
+      "day": 95,
+      "topic": "量化策略的稳健性测试",
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "concept"
