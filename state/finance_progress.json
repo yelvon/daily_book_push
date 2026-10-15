@@ -1,6 +1,6 @@
 {
-  "current_day": 96,
-  "last_topic": "量化策略的稳健性测试",
+  "current_day": 97,
+  "last_topic": "蒙特卡洛模拟与量化回测",
   "history": [
     {
       "date": "2026-07-08",
@@ -758,6 +758,14 @@
       "date": "2026-10-15",
       "day": 95,
       "topic": "量化策略的稳健性测试",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-16",
+      "day": 96,
+      "topic": "蒙特卡洛模拟与量化回测",
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "concept"
