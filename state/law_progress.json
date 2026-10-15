@@ -1,6 +1,6 @@
 {
-  "current_day": 111,
-  "last_topic": "跨境商事争议中的临时措施与保全",
+  "current_day": 112,
+  "last_topic": "国际投资仲裁",
   "history": [
     {
       "date": "2026-06-26",
@@ -878,6 +878,14 @@
       "date": "2026-10-14",
       "day": 110,
       "topic": "跨境商事争议中的临时措施与保全",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-15",
+      "day": 111,
+      "topic": "国际投资仲裁",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
