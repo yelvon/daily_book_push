@@ -1,6 +1,6 @@
 {
-  "current_day": 107,
-  "last_case": "Blockbuster：巨头的“视而不见”与颠覆者的崛起",
+  "current_day": 108,
+  "last_case": "Theranos：血液检测的“颠覆者”神话破灭",
   "history": [
     {
       "date": "2026-06-26",
@@ -952,6 +952,15 @@
       "day": 106,
       "case": "Blockbuster：巨头的“视而不见”与颠覆者的崛起",
       "company": "Blockbuster",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-15",
+      "day": 107,
+      "case": "Theranos：血液检测的“颠覆者”神话破灭",
+      "company": "Theranos",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
