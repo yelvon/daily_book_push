@@ -1,6 +1,6 @@
 {
-  "current_day": 100,
-  "last_topic": "制度套利",
+  "current_day": 101,
+  "last_topic": "制度企业家",
   "history": [
     {
       "date": "2026-06-25",
@@ -790,6 +790,14 @@
       "date": "2026-10-13",
       "day": 99,
       "topic": "多层级治理",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-16",
+      "day": 100,
+      "topic": "制度企业家",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
