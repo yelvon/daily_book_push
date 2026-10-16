@@ -1,6 +1,6 @@
 {
-  "current_day": 108,
-  "last_case": "Theranos：血液检测的“颠覆者”神话破灭",
+  "current_day": 109,
+  "last_case": "Groupon的折扣困境",
   "history": [
     {
       "date": "2026-06-26",
@@ -961,6 +961,15 @@
       "day": 107,
       "case": "Theranos：血液检测的“颠覆者”神话破灭",
       "company": "Theranos",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-16",
+      "day": 108,
+      "case": "Groupon的折扣困境",
+      "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
