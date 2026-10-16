@@ -1,6 +1,6 @@
 {
-  "current_day": 112,
-  "last_topic": "国际投资仲裁",
+  "current_day": 113,
+  "last_topic": "承认与执行外国法院判决与仲裁裁决",
   "history": [
     {
       "date": "2026-06-26",
@@ -886,6 +886,14 @@
       "date": "2026-10-15",
       "day": 111,
       "topic": "国际投资仲裁",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-16",
+      "day": 112,
+      "topic": "承认与执行外国法院判决与仲裁裁决",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
