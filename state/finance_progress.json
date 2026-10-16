@@ -1,6 +1,6 @@
 {
-  "current_day": 97,
-  "last_topic": "蒙特卡洛模拟与量化回测",
+  "current_day": 98,
+  "last_topic": "回测亮眼，实盘折戟：量化策略的“幻觉”",
   "history": [
     {
       "date": "2026-07-08",
@@ -769,6 +769,14 @@
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-17",
+      "day": 97,
+      "topic": "回测亮眼，实盘折戟：量化策略的“幻觉”",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
