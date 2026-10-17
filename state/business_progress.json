@@ -1,6 +1,6 @@
 {
-  "current_day": 109,
-  "last_case": "Groupon的折扣困境",
+  "current_day": 110,
+  "last_case": "创业失败的深层机制与反模式复盘",
   "history": [
     {
       "date": "2026-06-26",
@@ -973,6 +973,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
+    },
+    {
+      "date": "2026-10-17",
+      "day": 109,
+      "case": "创业失败的深层机制与反模式复盘",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
