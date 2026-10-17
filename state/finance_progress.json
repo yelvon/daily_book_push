@@ -1,6 +1,6 @@
 {
-  "current_day": 98,
-  "last_topic": "回测亮眼，实盘折戟：量化策略的“幻觉”",
+  "current_day": 99,
+  "last_topic": "量化策略的实盘幻觉",
   "history": [
     {
       "date": "2026-07-08",
@@ -774,6 +774,14 @@
       "date": "2026-10-17",
       "day": 97,
       "topic": "回测亮眼，实盘折戟：量化策略的“幻觉”",
+      "module": "量化策略与回测",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-18",
+      "day": 98,
+      "topic": "量化策略的实盘幻觉",
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "case_review"
