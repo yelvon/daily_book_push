@@ -1,6 +1,6 @@
 {
-  "current_day": 113,
-  "last_topic": "承认与执行外国法院判决与仲裁裁决",
+  "current_day": 114,
+  "last_topic": "执行和解协议“反悔”了，怎么办？",
   "history": [
     {
       "date": "2026-06-26",
@@ -897,6 +897,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-17",
+      "day": 113,
+      "topic": "执行和解协议“反悔”了，怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
