@@ -1,6 +1,6 @@
 {
-  "current_day": 101,
-  "last_topic": "制度企业家",
+  "current_day": 102,
+  "last_topic": "ESG标准分化下的全球投资与合规挑战",
   "history": [
     {
       "date": "2026-06-25",
@@ -801,6 +801,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-17",
+      "day": 101,
+      "topic": "ESG标准分化下的全球投资与合规挑战",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
