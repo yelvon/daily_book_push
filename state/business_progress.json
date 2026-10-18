@@ -1,6 +1,6 @@
 {
-  "current_day": 110,
-  "last_case": "创业失败的深层机制与反模式复盘",
+  "current_day": 111,
+  "last_case": "失败案例的共同语言：如何识别创业反模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -978,6 +978,15 @@
       "date": "2026-10-17",
       "day": 109,
       "case": "创业失败的深层机制与反模式复盘",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-18",
+      "day": 110,
+      "case": "失败案例的共同语言：如何识别创业反模式",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
