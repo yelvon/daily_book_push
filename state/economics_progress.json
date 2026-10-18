@@ -1,6 +1,6 @@
 {
-  "current_day": 102,
-  "last_topic": "ESG标准分化下的全球投资与合规挑战",
+  "current_day": 103,
+  "last_topic": "各国“绿色产业”补贴竞赛：全球化下的制度竞争与贸易摩擦",
   "history": [
     {
       "date": "2026-06-25",
@@ -806,6 +806,14 @@
       "date": "2026-10-17",
       "day": 101,
       "topic": "ESG标准分化下的全球投资与合规挑战",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-18",
+      "day": 102,
+      "topic": "各国“绿色产业”补贴竞赛：全球化下的制度竞争与贸易摩擦",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
