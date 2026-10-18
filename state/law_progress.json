@@ -1,6 +1,6 @@
 {
-  "current_day": 114,
-  "last_topic": "执行和解协议“反悔”了，怎么办？",
+  "current_day": 115,
+  "last_topic": "当境外禁诉令“挑战”中国法院管辖权",
   "history": [
     {
       "date": "2026-06-26",
@@ -902,6 +902,14 @@
       "date": "2026-10-17",
       "day": 113,
       "topic": "执行和解协议“反悔”了，怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-18",
+      "day": 114,
+      "topic": "当境外禁诉令“挑战”中国法院管辖权",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
