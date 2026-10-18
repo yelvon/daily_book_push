@@ -1,6 +1,6 @@
 {
-  "current_day": 99,
-  "last_topic": "量化策略的实盘幻觉",
+  "current_day": 100,
+  "last_topic": "风险价值 (VaR) 的局限与高级应用",
   "history": [
     {
       "date": "2026-07-08",
@@ -785,6 +785,14 @@
       "module": "量化策略与回测",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-19",
+      "day": 99,
+      "topic": "风险价值 (VaR) 的局限与高级应用",
+      "module": "风险管理",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
