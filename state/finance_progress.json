@@ -1,6 +1,6 @@
 {
-  "current_day": 100,
-  "last_topic": "风险价值 (VaR) 的局限与高级应用",
+  "current_day": 101,
+  "last_topic": "预期损失",
   "history": [
     {
       "date": "2026-07-08",
@@ -790,6 +790,14 @@
       "date": "2026-10-19",
       "day": 99,
       "topic": "风险价值 (VaR) 的局限与高级应用",
+      "module": "风险管理",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-20",
+      "day": 100,
+      "topic": "预期损失",
       "module": "风险管理",
       "level": "advanced",
       "style": "concept"
