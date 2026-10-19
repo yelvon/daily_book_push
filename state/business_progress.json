@@ -1,6 +1,6 @@
 {
-  "current_day": 111,
-  "last_case": "失败案例的共同语言：如何识别创业反模式",
+  "current_day": 112,
+  "last_case": "Google Glass：超前科技与社会认知的鸿沟",
   "history": [
     {
       "date": "2026-06-26",
@@ -991,6 +991,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-20",
+      "day": 111,
+      "case": "Google Glass：超前科技与社会认知的鸿沟",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
     }
   ]
 }
