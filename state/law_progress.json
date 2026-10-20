@@ -1,6 +1,6 @@
 {
-  "current_day": 116,
-  "last_topic": "揭开公司面纱：有限责任的“例外”与创始人责任",
+  "current_day": 117,
+  "last_topic": "仲裁协议的效力认定与挑战",
   "history": [
     {
       "date": "2026-06-26",
@@ -918,6 +918,14 @@
       "date": "2026-10-19",
       "day": 115,
       "topic": "揭开公司面纱：有限责任的“例外”与创始人责任",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-20",
+      "day": 116,
+      "topic": "仲裁协议的效力认定与挑战",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
