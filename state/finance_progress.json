@@ -1,6 +1,6 @@
 {
-  "current_day": 101,
-  "last_topic": "预期损失",
+  "current_day": 102,
+  "last_topic": "压力测试",
   "history": [
     {
       "date": "2026-07-08",
@@ -798,6 +798,14 @@
       "date": "2026-10-20",
       "day": 100,
       "topic": "预期损失",
+      "module": "风险管理",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-21",
+      "day": 101,
+      "topic": "压力测试",
       "module": "风险管理",
       "level": "advanced",
       "style": "concept"
