@@ -1,6 +1,6 @@
 {
-  "current_day": 117,
-  "last_topic": "仲裁协议的效力认定与挑战",
+  "current_day": 118,
+  "last_topic": "涉外商事争议中的域外取证与司法协助",
   "history": [
     {
       "date": "2026-06-26",
@@ -926,6 +926,14 @@
       "date": "2026-10-20",
       "day": 116,
       "topic": "仲裁协议的效力认定与挑战",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-21",
+      "day": 117,
+      "topic": "涉外商事争议中的域外取证与司法协助",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
