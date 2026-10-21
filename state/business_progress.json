@@ -1,6 +1,6 @@
 {
-  "current_day": 113,
-  "last_case": "Digg的社区危机与自我颠覆",
+  "current_day": 114,
+  "last_case": "Magic Leap：虚假繁荣与技术幻象的破灭",
   "history": [
     {
       "date": "2026-06-26",
@@ -1005,6 +1005,15 @@
       "date": "2026-10-20",
       "day": 112,
       "case": "Digg的社区危机与自我颠覆",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-21",
+      "day": 113,
+      "case": "Magic Leap：虚假繁荣与技术幻象的破灭",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
