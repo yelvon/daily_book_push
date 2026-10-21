@@ -1,6 +1,6 @@
 {
-  "current_day": 102,
-  "last_topic": "压力测试",
+  "current_day": 103,
+  "last_topic": "尾部风险",
   "history": [
     {
       "date": "2026-07-08",
@@ -806,6 +806,14 @@
       "date": "2026-10-21",
       "day": 101,
       "topic": "压力测试",
+      "module": "风险管理",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-22",
+      "day": 102,
+      "topic": "尾部风险",
       "module": "风险管理",
       "level": "advanced",
       "style": "concept"
