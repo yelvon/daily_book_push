@@ -1,6 +1,6 @@
 {
-  "current_day": 118,
-  "last_topic": "涉外商事争议中的域外取证与司法协助",
+  "current_day": 119,
+  "last_topic": "刑事控告对民商事争议解决的影响",
   "history": [
     {
       "date": "2026-06-26",
@@ -934,6 +934,14 @@
       "date": "2026-10-21",
       "day": 117,
       "topic": "涉外商事争议中的域外取证与司法协助",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-22",
+      "day": 118,
+      "topic": "刑事控告对民商事争议解决的影响",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
