@@ -1,6 +1,6 @@
 {
-  "current_day": 103,
-  "last_topic": "制度同构",
+  "current_day": 104,
+  "last_topic": "全球关键矿产的制度争夺战",
   "history": [
     {
       "date": "2026-06-25",
@@ -814,6 +814,14 @@
       "date": "2026-10-18",
       "day": 102,
       "topic": "各国“绿色产业”补贴竞赛：全球化下的制度竞争与贸易摩擦",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-24",
+      "day": 103,
+      "topic": "全球关键矿产的制度争夺战",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
