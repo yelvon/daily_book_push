@@ -1,6 +1,6 @@
 {
-  "current_day": 115,
-  "last_case": "HP TouchPad：巨头入局的“急刹车”与生态构建之难",
+  "current_day": 116,
+  "last_case": "Clubhouse：从爆红到沉寂的社交神话",
   "history": [
     {
       "date": "2026-06-26",
@@ -1023,6 +1023,15 @@
       "date": "2026-10-22",
       "day": 114,
       "case": "HP TouchPad：巨头入局的“急刹车”与生态构建之难",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-23",
+      "day": 115,
+      "case": "Clubhouse：从爆红到沉寂的社交神话",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
