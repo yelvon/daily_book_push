@@ -1,6 +1,6 @@
 {
-  "current_day": 119,
-  "last_topic": "刑事控告对民商事争议解决的影响",
+  "current_day": 120,
+  "last_topic": "平行诉讼与一事不再理：当同一争议在不同法院“赛跑”",
   "history": [
     {
       "date": "2026-06-26",
@@ -942,6 +942,14 @@
       "date": "2026-10-22",
       "day": 118,
       "topic": "刑事控告对民商事争议解决的影响",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-23",
+      "day": 119,
+      "topic": "平行诉讼与一事不再理：当同一争议在不同法院“赛跑”",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
