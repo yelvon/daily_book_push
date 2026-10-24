@@ -1,6 +1,6 @@
 {
-  "current_day": 104,
-  "last_topic": "全球关键矿产的制度争夺战",
+  "current_day": 105,
+  "last_topic": "各国央行数字货币（CBDC）“各自为政”：全球支付体系的制度新挑战",
   "history": [
     {
       "date": "2026-06-25",
@@ -822,6 +822,14 @@
       "date": "2026-10-24",
       "day": 103,
       "topic": "全球关键矿产的制度争夺战",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-24",
+      "day": 104,
+      "topic": "各国央行数字货币（CBDC）“各自为政”：全球支付体系的制度新挑战",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
