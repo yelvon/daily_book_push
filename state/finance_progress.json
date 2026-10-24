@@ -1,6 +1,6 @@
 {
-  "current_day": 105,
-  "last_topic": "低波动陷阱与系统性风险",
+  "current_day": 106,
+  "last_topic": "量化策略的“八月惊魂”",
   "history": [
     {
       "date": "2026-07-08",
@@ -830,6 +830,14 @@
       "date": "2026-10-24",
       "day": 104,
       "topic": "低波动陷阱与系统性风险",
+      "module": "风险管理",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-25",
+      "day": 105,
+      "topic": "量化策略的“八月惊魂”",
       "module": "风险管理",
       "level": "advanced",
       "style": "case_review"
