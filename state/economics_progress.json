@@ -1,6 +1,6 @@
 {
-  "current_day": 105,
-  "last_topic": "各国央行数字货币（CBDC）“各自为政”：全球支付体系的制度新挑战",
+  "current_day": 106,
+  "last_topic": "跨国企业“数据飞地”：全球化下的制度套利策略",
   "history": [
     {
       "date": "2026-06-25",
@@ -830,6 +830,14 @@
       "date": "2026-10-24",
       "day": 104,
       "topic": "各国央行数字货币（CBDC）“各自为政”：全球支付体系的制度新挑战",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-25",
+      "day": 105,
+      "topic": "跨国企业“数据飞地”：全球化下的制度套利策略",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
