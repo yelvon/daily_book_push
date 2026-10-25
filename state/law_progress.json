@@ -1,6 +1,6 @@
 {
-  "current_day": 120,
-  "last_topic": "平行诉讼与一事不再理：当同一争议在不同法院“赛跑”",
+  "current_day": 121,
+  "last_topic": "跨境仲裁裁决：赢了官司，如何让“纸面裁决”变现？",
   "history": [
     {
       "date": "2026-06-26",
@@ -953,6 +953,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-25",
+      "day": 120,
+      "topic": "跨境仲裁裁决：赢了官司，如何让“纸面裁决”变现？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
