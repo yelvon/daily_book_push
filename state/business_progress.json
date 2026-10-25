@@ -1,6 +1,6 @@
 {
-  "current_day": 117,
-  "last_case": "结构性错位与反模式陷阱",
+  "current_day": 118,
+  "last_case": "警惕宏大叙事下的结构性陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1041,6 +1041,15 @@
       "date": "2026-10-24",
       "day": 116,
       "case": "结构性错位与反模式陷阱",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-25",
+      "day": 117,
+      "case": "警惕宏大叙事下的结构性陷阱",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
