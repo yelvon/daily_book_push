@@ -1,6 +1,6 @@
 {
-  "current_day": 106,
-  "last_topic": "量化策略的“八月惊魂”",
+  "current_day": 107,
+  "last_topic": "风险平价策略",
   "history": [
     {
       "date": "2026-07-08",
@@ -841,6 +841,14 @@
       "module": "风险管理",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-26",
+      "day": 106,
+      "topic": "风险平价策略",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
