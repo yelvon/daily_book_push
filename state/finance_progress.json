@@ -1,6 +1,6 @@
 {
-  "current_day": 107,
-  "last_topic": "风险平价策略",
+  "current_day": 108,
+  "last_topic": "资产配置",
   "history": [
     {
       "date": "2026-07-08",
@@ -846,6 +846,14 @@
       "date": "2026-10-26",
       "day": 106,
       "topic": "风险平价策略",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-27",
+      "day": 107,
+      "topic": "资产配置",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
