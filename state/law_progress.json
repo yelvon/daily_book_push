@@ -1,6 +1,6 @@
 {
-  "current_day": 121,
-  "last_topic": "跨境仲裁裁决：赢了官司，如何让“纸面裁决”变现？",
+  "current_day": 122,
+  "last_topic": "商事争议中的专家证人与专家意见",
   "history": [
     {
       "date": "2026-06-26",
@@ -961,6 +961,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-10-26",
+      "day": 121,
+      "topic": "商事争议中的专家证人与专家意见",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
