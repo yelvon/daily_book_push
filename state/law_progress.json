@@ -1,6 +1,6 @@
 {
-  "current_day": 122,
-  "last_topic": "商事争议中的专家证人与专家意见",
+  "current_day": 123,
+  "last_topic": "第三方撤销之诉：当判决“误伤”了局外人",
   "history": [
     {
       "date": "2026-06-26",
@@ -966,6 +966,14 @@
       "date": "2026-10-26",
       "day": 121,
       "topic": "商事争议中的专家证人与专家意见",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-27",
+      "day": 122,
+      "topic": "第三方撤销之诉：当判决“误伤”了局外人",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
