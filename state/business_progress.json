@@ -1,6 +1,6 @@
 {
-  "current_day": 119,
-  "last_case": "Pets.com：被增长神话掩盖的单位经济陷阱",
+  "current_day": 120,
+  "last_case": "Google Plus：巨头的社交困境",
   "history": [
     {
       "date": "2026-06-26",
@@ -1059,6 +1059,15 @@
       "date": "2026-10-27",
       "day": 118,
       "case": "Pets.com：被增长神话掩盖的单位经济陷阱",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-27",
+      "day": 119,
+      "case": "Google Plus：巨头的社交困境",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
