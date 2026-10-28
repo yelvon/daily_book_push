@@ -1,6 +1,6 @@
 {
-  "current_day": 109,
-  "last_topic": "动态资产配置",
+  "current_day": 110,
+  "last_topic": "风险预算",
   "history": [
     {
       "date": "2026-07-08",
@@ -862,6 +862,14 @@
       "date": "2026-10-28",
       "day": 108,
       "topic": "动态资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-29",
+      "day": 109,
+      "topic": "风险预算",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
