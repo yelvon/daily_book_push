@@ -1,6 +1,6 @@
 {
-  "current_day": 123,
-  "last_topic": "第三方撤销之诉：当判决“误伤”了局外人",
+  "current_day": 124,
+  "last_topic": "强制执行中的债权人代位权与撤销权诉讼：如何追回“隐藏”的资产？",
   "history": [
     {
       "date": "2026-06-26",
@@ -974,6 +974,14 @@
       "date": "2026-10-27",
       "day": 122,
       "topic": "第三方撤销之诉：当判决“误伤”了局外人",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-28",
+      "day": 123,
+      "topic": "强制执行中的债权人代位权与撤销权诉讼：如何追回“隐藏”的资产？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
