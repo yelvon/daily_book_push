@@ -1,6 +1,6 @@
 {
-  "current_day": 121,
-  "last_case": "Quibi：被误读的用户行为与市场错位",
+  "current_day": 122,
+  "last_case": "Webvan：超前布局的“重资产”陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1077,6 +1077,15 @@
       "date": "2026-10-29",
       "day": 120,
       "case": "Quibi：被误读的用户行为与市场错位",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-10-30",
+      "day": 121,
+      "case": "Webvan：超前布局的“重资产”陷阱",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
