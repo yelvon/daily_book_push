@@ -1,6 +1,6 @@
 {
-  "current_day": 110,
-  "last_topic": "风险预算",
+  "current_day": 111,
+  "last_topic": "资产负债管理（ALM）",
   "history": [
     {
       "date": "2026-07-08",
@@ -870,6 +870,14 @@
       "date": "2026-10-29",
       "day": 109,
       "topic": "风险预算",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-30",
+      "day": 110,
+      "topic": "资产负债管理（ALM）",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
