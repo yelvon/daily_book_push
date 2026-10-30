@@ -1,6 +1,6 @@
 {
-  "current_day": 122,
-  "last_case": "Webvan：超前布局的“重资产”陷阱",
+  "current_day": 123,
+  "last_case": "创业失败的“死亡三角”：产品、市场与商业模式的结构性错位",
   "history": [
     {
       "date": "2026-06-26",
@@ -1090,6 +1090,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
+    },
+    {
+      "date": "2026-10-31",
+      "day": 122,
+      "case": "创业失败的“死亡三角”：产品、市场与商业模式的结构性错位",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
