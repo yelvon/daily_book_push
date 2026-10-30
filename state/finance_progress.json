@@ -1,6 +1,6 @@
 {
-  "current_day": 111,
-  "last_topic": "资产负债管理（ALM）",
+  "current_day": 112,
+  "last_topic": "极端市场下的资产配置韧性",
   "history": [
     {
       "date": "2026-07-08",
@@ -881,6 +881,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-31",
+      "day": 111,
+      "topic": "极端市场下的资产配置韧性",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
