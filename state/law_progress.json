@@ -1,6 +1,6 @@
 {
-  "current_day": 125,
-  "last_topic": "股东代表诉讼",
+  "current_day": 126,
+  "last_topic": "司法鉴定在争议解决中的作用",
   "history": [
     {
       "date": "2026-06-26",
@@ -990,6 +990,14 @@
       "date": "2026-10-29",
       "day": 124,
       "topic": "股东代表诉讼",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-10-30",
+      "day": 125,
+      "topic": "司法鉴定在争议解决中的作用",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
