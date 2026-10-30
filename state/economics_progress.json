@@ -1,6 +1,6 @@
 {
-  "current_day": 106,
-  "last_topic": "制度同构",
+  "current_day": 107,
+  "last_topic": "碳边境调节机制（CBAM）引发的全球制度涟漪",
   "history": [
     {
       "date": "2026-06-25",
@@ -838,6 +838,14 @@
       "date": "2026-10-25",
       "day": 105,
       "topic": "跨国企业“数据飞地”：全球化下的制度套利策略",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-31",
+      "day": 106,
+      "topic": "碳边境调节机制（CBAM）引发的全球制度涟漪",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
