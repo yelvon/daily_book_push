@@ -1,6 +1,6 @@
 {
-  "current_day": 107,
-  "last_topic": "碳边境调节机制（CBAM）引发的全球制度涟漪",
+  "current_day": 108,
+  "last_topic": "全球最低企业税：跨国公司税收策略的制度重构",
   "history": [
     {
       "date": "2026-06-25",
@@ -846,6 +846,14 @@
       "date": "2026-10-31",
       "day": 106,
       "topic": "碳边境调节机制（CBAM）引发的全球制度涟漪",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-01",
+      "day": 107,
+      "topic": "全球最低企业税：跨国公司税收策略的制度重构",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
