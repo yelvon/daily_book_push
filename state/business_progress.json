@@ -1,6 +1,6 @@
 {
-  "current_day": 123,
-  "last_case": "创业失败的“死亡三角”：产品、市场与商业模式的结构性错位",
+  "current_day": 124,
+  "last_case": "警惕创业陷阱：失败案例中的共性反模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -1095,6 +1095,15 @@
       "date": "2026-10-31",
       "day": 122,
       "case": "创业失败的“死亡三角”：产品、市场与商业模式的结构性错位",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-10-31",
+      "day": 123,
+      "case": "警惕创业陷阱：失败案例中的共性反模式",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
