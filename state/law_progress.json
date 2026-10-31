@@ -1,6 +1,6 @@
 {
-  "current_day": 126,
-  "last_topic": "司法鉴定在争议解决中的作用",
+  "current_day": 127,
+  "last_topic": "当被执行人“玩消失”或拒不执行：藐视法庭与拒执罪的边界",
   "history": [
     {
       "date": "2026-06-26",
@@ -1001,6 +1001,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-10-31",
+      "day": 126,
+      "topic": "当被执行人“玩消失”或拒不执行：藐视法庭与拒执罪的边界",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
