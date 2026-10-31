@@ -1,6 +1,6 @@
 {
-  "current_day": 112,
-  "last_topic": "极端市场下的资产配置韧性",
+  "current_day": 113,
+  "last_topic": "养老金的“再平衡”挑战",
   "history": [
     {
       "date": "2026-07-08",
@@ -886,6 +886,14 @@
       "date": "2026-10-31",
       "day": 111,
       "topic": "极端市场下的资产配置韧性",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-01",
+      "day": 112,
+      "topic": "养老金的“再平衡”挑战",
       "module": "资产配置",
       "level": "advanced",
       "style": "case_review"
