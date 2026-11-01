@@ -1,6 +1,6 @@
 {
-  "current_day": 113,
-  "last_topic": "养老金的“再平衡”挑战",
+  "current_day": 114,
+  "last_topic": "战术资产配置",
   "history": [
     {
       "date": "2026-07-08",
@@ -897,6 +897,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-02",
+      "day": 113,
+      "topic": "战术资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
