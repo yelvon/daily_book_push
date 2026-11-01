@@ -1,6 +1,6 @@
 {
-  "current_day": 124,
-  "last_case": "警惕创业陷阱：失败案例中的共性反模式",
+  "current_day": 125,
+  "last_case": "Microsoft Zune的生态系统困境",
   "history": [
     {
       "date": "2026-06-26",
@@ -1108,6 +1108,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-02",
+      "day": 124,
+      "case": "Microsoft Zune的生态系统困境",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
     }
   ]
 }
