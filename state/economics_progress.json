@@ -1,6 +1,6 @@
 {
-  "current_day": 108,
-  "last_topic": "全球最低企业税：跨国公司税收策略的制度重构",
+  "current_day": 109,
+  "last_topic": "制度空隙",
   "history": [
     {
       "date": "2026-06-25",
@@ -857,6 +857,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-02",
+      "day": 108,
+      "topic": "制度空隙",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
