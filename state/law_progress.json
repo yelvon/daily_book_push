@@ -1,6 +1,6 @@
 {
-  "current_day": 127,
-  "last_topic": "当被执行人“玩消失”或拒不执行：藐视法庭与拒执罪的边界",
+  "current_day": 128,
+  "last_topic": "竞争对手“碰瓷”式诉讼：如何识别与反击滥用诉权？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1006,6 +1006,14 @@
       "date": "2026-10-31",
       "day": 126,
       "topic": "当被执行人“玩消失”或拒不执行：藐视法庭与拒执罪的边界",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-01",
+      "day": 127,
+      "topic": "竞争对手“碰瓷”式诉讼：如何识别与反击滥用诉权？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
