@@ -1,6 +1,6 @@
 {
-  "current_day": 125,
-  "last_case": "Microsoft Zune的生态系统困境",
+  "current_day": 126,
+  "last_case": "Juicero的过度工程化陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1113,6 +1113,15 @@
       "date": "2026-11-02",
       "day": 124,
       "case": "Microsoft Zune的生态系统困境",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-03",
+      "day": 125,
+      "case": "Juicero的过度工程化陷阱",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
