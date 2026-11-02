@@ -1,6 +1,6 @@
 {
-  "current_day": 128,
-  "last_topic": "竞争对手“碰瓷”式诉讼：如何识别与反击滥用诉权？",
+  "current_day": 129,
+  "last_topic": "代表人诉讼",
   "history": [
     {
       "date": "2026-06-26",
@@ -1017,6 +1017,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-02",
+      "day": 128,
+      "topic": "代表人诉讼",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
