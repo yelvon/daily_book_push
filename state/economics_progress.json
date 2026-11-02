@@ -1,6 +1,6 @@
 {
-  "current_day": 109,
-  "last_topic": "制度空隙",
+  "current_day": 110,
+  "last_topic": "制度的相互依赖性",
   "history": [
     {
       "date": "2026-06-25",
@@ -862,6 +862,14 @@
       "date": "2026-11-02",
       "day": 108,
       "topic": "制度空隙",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-03",
+      "day": 109,
+      "topic": "制度的相互依赖性",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
