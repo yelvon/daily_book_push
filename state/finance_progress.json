@@ -1,6 +1,6 @@
 {
-  "current_day": 114,
-  "last_topic": "战术资产配置",
+  "current_day": 115,
+  "last_topic": "战略资产配置",
   "history": [
     {
       "date": "2026-07-08",
@@ -902,6 +902,14 @@
       "date": "2026-11-02",
       "day": 113,
       "topic": "战术资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-03",
+      "day": 114,
+      "topic": "战略资产配置",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
