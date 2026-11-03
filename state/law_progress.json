@@ -1,6 +1,6 @@
 {
-  "current_day": 129,
-  "last_topic": "代表人诉讼",
+  "current_day": 130,
+  "last_topic": "执行异议之诉：当我的财产被“误抓”怎么办？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1022,6 +1022,14 @@
       "date": "2026-11-02",
       "day": 128,
       "topic": "代表人诉讼",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-03",
+      "day": 129,
+      "topic": "执行异议之诉：当我的财产被“误抓”怎么办？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
