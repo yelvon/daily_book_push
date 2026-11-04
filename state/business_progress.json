@@ -1,6 +1,6 @@
 {
-  "current_day": 127,
-  "last_case": "Google Wave：颠覆性创新与用户认知鸿沟",
+  "current_day": 128,
+  "last_case": "Jawbone的硬件困境：过度烧钱与市场竞争的绞杀",
   "history": [
     {
       "date": "2026-06-26",
@@ -1131,6 +1131,15 @@
       "date": "2026-11-04",
       "day": 126,
       "case": "Google Wave：颠覆性创新与用户认知鸿沟",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-05",
+      "day": 127,
+      "case": "Jawbone的硬件困境：过度烧钱与市场竞争的绞杀",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
