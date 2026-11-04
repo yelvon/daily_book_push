@@ -1,6 +1,6 @@
 {
-  "current_day": 130,
-  "last_topic": "执行异议之诉：当我的财产被“误抓”怎么办？",
+  "current_day": 131,
+  "last_topic": "行政处罚对民事争议解决的影响",
   "history": [
     {
       "date": "2026-06-26",
@@ -1030,6 +1030,14 @@
       "date": "2026-11-03",
       "day": 129,
       "topic": "执行异议之诉：当我的财产被“误抓”怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-04",
+      "day": 130,
+      "topic": "行政处罚对民事争议解决的影响",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
