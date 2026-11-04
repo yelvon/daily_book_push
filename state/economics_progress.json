@@ -1,6 +1,6 @@
 {
-  "current_day": 110,
-  "last_topic": "制度同构",
+  "current_day": 111,
+  "last_topic": "制度同构 (Institutional Isomorphism)",
   "history": [
     {
       "date": "2026-06-25",
@@ -870,6 +870,14 @@
       "date": "2026-11-03",
       "day": 109,
       "topic": "制度的相互依赖性",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-05",
+      "day": 110,
+      "topic": "制度同构 (Institutional Isomorphism)",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
