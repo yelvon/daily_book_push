@@ -1,6 +1,6 @@
 {
-  "current_day": 128,
-  "last_case": "Jawbone的硬件困境：过度烧钱与市场竞争的绞杀",
+  "current_day": 129,
+  "last_case": "MoviePass：颠覆性定价的“自杀式”陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1140,6 +1140,15 @@
       "date": "2026-11-05",
       "day": 127,
       "case": "Jawbone的硬件困境：过度烧钱与市场竞争的绞杀",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-06",
+      "day": 128,
+      "case": "MoviePass：颠覆性定价的“自杀式”陷阱",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
