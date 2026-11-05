@@ -1,6 +1,6 @@
 {
-  "current_day": 117,
-  "last_topic": "Black-Litterman 模型：融合专业判断的资产配置",
+  "current_day": 118,
+  "last_topic": "负债驱动投资（LDI）",
   "history": [
     {
       "date": "2026-07-08",
@@ -926,6 +926,14 @@
       "date": "2026-11-05",
       "day": 116,
       "topic": "Black-Litterman 模型：融合专业判断的资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-06",
+      "day": 117,
+      "topic": "负债驱动投资（LDI）",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
