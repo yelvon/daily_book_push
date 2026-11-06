@@ -1,6 +1,6 @@
 {
-  "current_day": 112,
-  "last_topic": "制度的竞争性共存",
+  "current_day": 113,
+  "last_topic": "全球云服务商的本地化部署与数据主权",
   "history": [
     {
       "date": "2026-06-25",
@@ -889,6 +889,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-07",
+      "day": 112,
+      "topic": "全球云服务商的本地化部署与数据主权",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
