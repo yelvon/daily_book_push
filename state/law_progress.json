@@ -1,6 +1,6 @@
 {
-  "current_day": 132,
-  "last_topic": "诉前保全与诉中保全",
+  "current_day": 133,
+  "last_topic": "涉外争议中的法律适用",
   "history": [
     {
       "date": "2026-06-26",
@@ -1046,6 +1046,14 @@
       "date": "2026-11-05",
       "day": 131,
       "topic": "诉前保全与诉中保全",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-06",
+      "day": 132,
+      "topic": "涉外争议中的法律适用",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
