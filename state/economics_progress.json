@@ -1,6 +1,6 @@
 {
-  "current_day": 113,
-  "last_topic": "全球云服务商的本地化部署与数据主权",
+  "current_day": 114,
+  "last_topic": "战略产业的“近岸外包”与“友岸外包”",
   "history": [
     {
       "date": "2026-06-25",
@@ -894,6 +894,14 @@
       "date": "2026-11-07",
       "day": 112,
       "topic": "全球云服务商的本地化部署与数据主权",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-08",
+      "day": 113,
+      "topic": "战略产业的“近岸外包”与“友岸外包”",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
