@@ -1,6 +1,6 @@
 {
-  "current_day": 133,
-  "last_topic": "涉外争议中的法律适用",
+  "current_day": 134,
+  "last_topic": "境外法院判决在中国境内的承认与执行：没有条约怎么办？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1057,6 +1057,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-07",
+      "day": 133,
+      "topic": "境外法院判决在中国境内的承认与执行：没有条约怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
