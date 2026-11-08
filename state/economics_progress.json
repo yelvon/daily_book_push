@@ -1,6 +1,6 @@
 {
-  "current_day": 114,
-  "last_topic": "战略产业的“近岸外包”与“友岸外包”",
+  "current_day": 115,
+  "last_topic": "全球治理赤字",
   "history": [
     {
       "date": "2026-06-25",
@@ -905,6 +905,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-09",
+      "day": 114,
+      "topic": "全球治理赤字",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
