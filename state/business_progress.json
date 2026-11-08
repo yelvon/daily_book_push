@@ -1,6 +1,6 @@
 {
-  "current_day": 131,
-  "last_case": "失败案例中的结构性错位与反模式",
+  "current_day": 132,
+  "last_case": "Theranos的“科技神话”与真实性陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1171,6 +1171,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-09",
+      "day": 131,
+      "case": "Theranos的“科技神话”与真实性陷阱",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
     }
   ]
 }
