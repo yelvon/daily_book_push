@@ -1,6 +1,6 @@
 {
-  "current_day": 134,
-  "last_topic": "境外法院判决在中国境内的承认与执行：没有条约怎么办？",
+  "current_day": 135,
+  "last_topic": "商业秘密纠纷中的“行为保全”：如何紧急叫停侵权行为？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1062,6 +1062,14 @@
       "date": "2026-11-07",
       "day": 133,
       "topic": "境外法院判决在中国境内的承认与执行：没有条约怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-08",
+      "day": 134,
+      "topic": "商业秘密纠纷中的“行为保全”：如何紧急叫停侵权行为？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
