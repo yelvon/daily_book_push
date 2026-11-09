@@ -1,6 +1,6 @@
 {
-  "current_day": 120,
-  "last_topic": "鲁棒性资产配置",
+  "current_day": 121,
+  "last_topic": "交易成本与资产配置的再平衡决策",
   "history": [
     {
       "date": "2026-07-08",
@@ -950,6 +950,14 @@
       "date": "2026-11-09",
       "day": 119,
       "topic": "鲁棒性资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-10",
+      "day": 120,
+      "topic": "交易成本与资产配置的再平衡决策",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
