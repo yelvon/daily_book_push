@@ -1,6 +1,6 @@
 {
-  "current_day": 135,
-  "last_topic": "商业秘密纠纷中的“行为保全”：如何紧急叫停侵权行为？",
+  "current_day": 136,
+  "last_topic": "仲裁裁决的“生死劫”：撤销与不予执行之诉",
   "history": [
     {
       "date": "2026-06-26",
@@ -1073,6 +1073,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-09",
+      "day": 135,
+      "topic": "仲裁裁决的“生死劫”：撤销与不予执行之诉",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
