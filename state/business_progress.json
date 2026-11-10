@@ -1,6 +1,6 @@
 {
-  "current_day": 133,
-  "last_case": "Solyndra的“技术优越性”陷阱",
+  "current_day": 134,
+  "last_case": "柯达的“自我颠覆”困境",
   "history": [
     {
       "date": "2026-06-26",
@@ -1186,6 +1186,15 @@
       "day": 132,
       "case": "Solyndra的“技术优越性”陷阱",
       "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-11",
+      "day": 133,
+      "case": "柯达的“自我颠覆”困境",
+      "company": "柯达",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
