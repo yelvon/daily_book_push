@@ -1,6 +1,6 @@
 {
-  "current_day": 121,
-  "last_topic": "交易成本与资产配置的再平衡决策",
+  "current_day": 122,
+  "last_topic": "因子投资与资产配置的深度融合",
   "history": [
     {
       "date": "2026-07-08",
@@ -958,6 +958,14 @@
       "date": "2026-11-10",
       "day": 120,
       "topic": "交易成本与资产配置的再平衡决策",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-11",
+      "day": 121,
+      "topic": "因子投资与资产配置的深度融合",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
