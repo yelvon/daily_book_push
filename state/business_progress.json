@@ -1,6 +1,6 @@
 {
-  "current_day": 134,
-  "last_case": "柯达的“自我颠覆”困境",
+  "current_day": 135,
+  "last_case": "WeWork的“增长神话”与核心商业逻辑错位",
   "history": [
     {
       "date": "2026-06-26",
@@ -1195,6 +1195,15 @@
       "day": 133,
       "case": "柯达的“自我颠覆”困境",
       "company": "柯达",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-12",
+      "day": 134,
+      "case": "WeWork的“增长神话”与核心商业逻辑错位",
+      "company": "WeWork",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
