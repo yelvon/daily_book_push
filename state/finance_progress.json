@@ -1,6 +1,6 @@
 {
-  "current_day": 122,
-  "last_topic": "因子投资与资产配置的深度融合",
+  "current_day": 123,
+  "last_topic": "期权在资产配置中的高级应用：从保护到增强",
   "history": [
     {
       "date": "2026-07-08",
@@ -966,6 +966,14 @@
       "date": "2026-11-11",
       "day": 121,
       "topic": "因子投资与资产配置的深度融合",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-12",
+      "day": 122,
+      "topic": "期权在资产配置中的高级应用：从保护到增强",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
