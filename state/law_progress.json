@@ -1,6 +1,6 @@
 {
-  "current_day": 137,
-  "last_topic": "非法证据排除规则",
+  "current_day": 138,
+  "last_topic": "诉讼调解协议的司法确认与强制执行",
   "history": [
     {
       "date": "2026-06-26",
@@ -1086,6 +1086,14 @@
       "date": "2026-11-10",
       "day": 136,
       "topic": "非法证据排除规则",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-11",
+      "day": 137,
+      "topic": "诉讼调解协议的司法确认与强制执行",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
