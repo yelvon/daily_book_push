@@ -1,6 +1,6 @@
 {
-  "current_day": 135,
-  "last_case": "WeWork的“增长神话”与核心商业逻辑错位",
+  "current_day": 136,
+  "last_case": "BlackBerry：被颠覆的“专业”神话",
   "history": [
     {
       "date": "2026-06-26",
@@ -1204,6 +1204,15 @@
       "day": 134,
       "case": "WeWork的“增长神话”与核心商业逻辑错位",
       "company": "WeWork",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-13",
+      "day": 135,
+      "case": "BlackBerry：被颠覆的“专业”神话",
+      "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
