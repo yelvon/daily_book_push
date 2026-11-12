@@ -1,6 +1,6 @@
 {
-  "current_day": 138,
-  "last_topic": "诉讼调解协议的司法确认与强制执行",
+  "current_day": 139,
+  "last_topic": "申请再审",
   "history": [
     {
       "date": "2026-06-26",
@@ -1094,6 +1094,14 @@
       "date": "2026-11-11",
       "day": 137,
       "topic": "诉讼调解协议的司法确认与强制执行",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-12",
+      "day": 138,
+      "topic": "申请再审",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
