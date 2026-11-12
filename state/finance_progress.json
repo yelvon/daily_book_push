@@ -1,6 +1,6 @@
 {
-  "current_day": 123,
-  "last_topic": "期权在资产配置中的高级应用：从保护到增强",
+  "current_day": 124,
+  "last_topic": "目标导向型投资",
   "history": [
     {
       "date": "2026-07-08",
@@ -974,6 +974,14 @@
       "date": "2026-11-12",
       "day": 122,
       "topic": "期权在资产配置中的高级应用：从保护到增强",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-13",
+      "day": 123,
+      "topic": "目标导向型投资",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
