@@ -1,6 +1,6 @@
 {
-  "current_day": 116,
-  "last_topic": "制度的路径依赖",
+  "current_day": 117,
+  "last_topic": "制度的路径依赖与全球化挑战",
   "history": [
     {
       "date": "2026-06-25",
@@ -918,6 +918,14 @@
       "date": "2026-11-10",
       "day": 115,
       "topic": "制度的全球扩散与本土化调适",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-13",
+      "day": 116,
+      "topic": "制度的路径依赖与全球化挑战",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
