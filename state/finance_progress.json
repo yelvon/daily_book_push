@@ -1,6 +1,6 @@
 {
-  "current_day": 124,
-  "last_topic": "目标导向型投资",
+  "current_day": 125,
+  "last_topic": "市场恐慌下的“万物皆跌”",
   "history": [
     {
       "date": "2026-07-08",
@@ -985,6 +985,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-14",
+      "day": 124,
+      "topic": "市场恐慌下的“万物皆跌”",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
