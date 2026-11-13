@@ -1,6 +1,6 @@
 {
-  "current_day": 139,
-  "last_topic": "申请再审",
+  "current_day": 140,
+  "last_topic": "跨境争议解决中的证据收集与送达",
   "history": [
     {
       "date": "2026-06-26",
@@ -1102,6 +1102,14 @@
       "date": "2026-11-12",
       "day": 138,
       "topic": "申请再审",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-13",
+      "day": 139,
+      "topic": "跨境争议解决中的证据收集与送达",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
