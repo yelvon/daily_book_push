@@ -1,6 +1,6 @@
 {
-  "current_day": 117,
-  "last_topic": "制度的路径依赖与全球化挑战",
+  "current_day": 118,
+  "last_topic": "全球贸易协定“碎片化”下的区域经济整合潮",
   "history": [
     {
       "date": "2026-06-25",
@@ -929,6 +929,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-14",
+      "day": 117,
+      "topic": "全球贸易协定“碎片化”下的区域经济整合潮",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
