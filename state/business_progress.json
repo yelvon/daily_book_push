@@ -1,6 +1,6 @@
 {
-  "current_day": 137,
-  "last_case": "失败案例中的结构性陷阱与决策反模式",
+  "current_day": 138,
+  "last_case": "当增长神话遭遇现实：失败案例中的结构性错位与反模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -1221,6 +1221,15 @@
       "date": "2026-11-14",
       "day": 136,
       "case": "失败案例中的结构性陷阱与决策反模式",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-15",
+      "day": 137,
+      "case": "当增长神话遭遇现实：失败案例中的结构性错位与反模式",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
