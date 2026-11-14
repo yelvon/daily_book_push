@@ -1,6 +1,6 @@
 {
-  "current_day": 125,
-  "last_topic": "市场恐慌下的“万物皆跌”",
+  "current_day": 126,
+  "last_topic": "高通胀环境下传统股债组合的考验",
   "history": [
     {
       "date": "2026-07-08",
@@ -990,6 +990,14 @@
       "date": "2026-11-14",
       "day": 124,
       "topic": "市场恐慌下的“万物皆跌”",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-15",
+      "day": 125,
+      "topic": "高通胀环境下传统股债组合的考验",
       "module": "资产配置",
       "level": "advanced",
       "style": "case_review"
