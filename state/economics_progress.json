@@ -1,6 +1,6 @@
 {
-  "current_day": 118,
-  "last_topic": "全球贸易协定“碎片化”下的区域经济整合潮",
+  "current_day": 119,
+  "last_topic": "国际投资仲裁：主权与商业利益的全球博弈",
   "history": [
     {
       "date": "2026-06-25",
@@ -934,6 +934,14 @@
       "date": "2026-11-14",
       "day": 117,
       "topic": "全球贸易协定“碎片化”下的区域经济整合潮",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-15",
+      "day": 118,
+      "topic": "国际投资仲裁：主权与商业利益的全球博弈",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
