@@ -1,6 +1,6 @@
 {
-  "current_day": 140,
-  "last_topic": "跨境争议解决中的证据收集与送达",
+  "current_day": 141,
+  "last_topic": "当公司资产被侵占：民事追偿与刑事报案的十字路口",
   "history": [
     {
       "date": "2026-06-26",
@@ -1113,6 +1113,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-14",
+      "day": 140,
+      "topic": "当公司资产被侵占：民事追偿与刑事报案的十字路口",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
