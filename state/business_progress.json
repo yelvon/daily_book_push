@@ -1,6 +1,6 @@
 {
-  "current_day": 138,
-  "last_case": "当增长神话遭遇现实：失败案例中的结构性错位与反模式",
+  "current_day": 139,
+  "last_case": "Homejoy的按需服务陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1234,6 +1234,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-16",
+      "day": 138,
+      "case": "Homejoy的按需服务陷阱",
+      "company": "Homejoy",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
     }
   ]
 }
