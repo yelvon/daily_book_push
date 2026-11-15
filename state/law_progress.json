@@ -1,6 +1,6 @@
 {
-  "current_day": 141,
-  "last_topic": "当公司资产被侵占：民事追偿与刑事报案的十字路口",
+  "current_day": 142,
+  "last_topic": "平行诉讼与禁诉令：跨境争议中的攻防策略",
   "history": [
     {
       "date": "2026-06-26",
@@ -1118,6 +1118,14 @@
       "date": "2026-11-14",
       "day": 140,
       "topic": "当公司资产被侵占：民事追偿与刑事报案的十字路口",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-15",
+      "day": 141,
+      "topic": "平行诉讼与禁诉令：跨境争议中的攻防策略",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
