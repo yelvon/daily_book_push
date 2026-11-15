@@ -1,6 +1,6 @@
 {
-  "current_day": 126,
-  "last_topic": "高通胀环境下传统股债组合的考验",
+  "current_day": 127,
+  "last_topic": "情景分析与压力测试在资产配置中的高级应用",
   "history": [
     {
       "date": "2026-07-08",
@@ -1001,6 +1001,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-16",
+      "day": 126,
+      "topic": "情景分析与压力测试在资产配置中的高级应用",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
