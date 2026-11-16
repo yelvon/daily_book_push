@@ -1,6 +1,6 @@
 {
-  "current_day": 142,
-  "last_topic": "平行诉讼与禁诉令：跨境争议中的攻防策略",
+  "current_day": 143,
+  "last_topic": "专家辅助人",
   "history": [
     {
       "date": "2026-06-26",
@@ -1129,6 +1129,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-16",
+      "day": 142,
+      "topic": "专家辅助人",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
