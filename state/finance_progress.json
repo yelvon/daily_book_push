@@ -1,6 +1,6 @@
 {
-  "current_day": 127,
-  "last_topic": "情景分析与压力测试在资产配置中的高级应用",
+  "current_day": 128,
+  "last_topic": "相干风险度量在资产配置中的应用",
   "history": [
     {
       "date": "2026-07-08",
@@ -1006,6 +1006,14 @@
       "date": "2026-11-16",
       "day": 126,
       "topic": "情景分析与压力测试在资产配置中的高级应用",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-17",
+      "day": 127,
+      "topic": "相干风险度量在资产配置中的应用",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
