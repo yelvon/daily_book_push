@@ -1,6 +1,6 @@
 {
-  "current_day": 139,
-  "last_case": "Homejoy的按需服务陷阱",
+  "current_day": 140,
+  "last_case": "Pets.com",
   "history": [
     {
       "date": "2026-06-26",
@@ -1240,6 +1240,15 @@
       "day": 138,
       "case": "Homejoy的按需服务陷阱",
       "company": "Homejoy",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-17",
+      "day": 139,
+      "case": "Pets.com",
+      "company": "Pets.com",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
