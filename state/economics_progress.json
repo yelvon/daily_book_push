@@ -1,6 +1,6 @@
 {
-  "current_day": 120,
-  "last_topic": "制度的全球化反弹",
+  "current_day": 121,
+  "last_topic": "监管竞次",
   "history": [
     {
       "date": "2026-06-25",
@@ -950,6 +950,14 @@
       "date": "2026-11-16",
       "day": 119,
       "topic": "制度的全球化反弹",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-17",
+      "day": 120,
+      "topic": "监管竞次",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
