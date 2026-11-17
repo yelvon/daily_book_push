@@ -1,6 +1,6 @@
 {
-  "current_day": 121,
-  "last_topic": "监管竞次",
+  "current_day": 122,
+  "last_topic": "制度的融合与分化",
   "history": [
     {
       "date": "2026-06-25",
@@ -958,6 +958,14 @@
       "date": "2026-11-17",
       "day": 120,
       "topic": "监管竞次",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-18",
+      "day": 121,
+      "topic": "制度的融合与分化",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
