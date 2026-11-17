@@ -1,6 +1,6 @@
 {
-  "current_day": 128,
-  "last_topic": "相干风险度量在资产配置中的应用",
+  "current_day": 129,
+  "last_topic": "风险平价（Risk Parity）",
   "history": [
     {
       "date": "2026-07-08",
@@ -1014,6 +1014,14 @@
       "date": "2026-11-17",
       "day": 127,
       "topic": "相干风险度量在资产配置中的应用",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-18",
+      "day": 128,
+      "topic": "风险平价（Risk Parity）",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
