@@ -1,6 +1,6 @@
 {
-  "current_day": 143,
-  "last_topic": "专家辅助人",
+  "current_day": 144,
+  "last_topic": "仲裁协议的效力与管辖权异议",
   "history": [
     {
       "date": "2026-06-26",
@@ -1134,6 +1134,14 @@
       "date": "2026-11-16",
       "day": 142,
       "topic": "专家辅助人",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-17",
+      "day": 143,
+      "topic": "仲裁协议的效力与管辖权异议",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
