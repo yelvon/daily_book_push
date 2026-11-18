@@ -1,6 +1,6 @@
 {
-  "current_day": 144,
-  "last_topic": "仲裁协议的效力与管辖权异议",
+  "current_day": 145,
+  "last_topic": "中国民事诉讼中的证据开示与英美法系“Discovery”的对比",
   "history": [
     {
       "date": "2026-06-26",
@@ -1142,6 +1142,14 @@
       "date": "2026-11-17",
       "day": 143,
       "topic": "仲裁协议的效力与管辖权异议",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-18",
+      "day": 144,
+      "topic": "中国民事诉讼中的证据开示与英美法系“Discovery”的对比",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
