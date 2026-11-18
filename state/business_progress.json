@@ -1,6 +1,6 @@
 {
-  "current_day": 141,
-  "last_case": "Google Glass的“超前”困境",
+  "current_day": 142,
+  "last_case": "Quibi的“内容+移动”错位陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1258,6 +1258,15 @@
       "day": 140,
       "case": "Google Glass的“超前”困境",
       "company": "Google",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-19",
+      "day": 141,
+      "case": "Quibi的“内容+移动”错位陷阱",
+      "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
