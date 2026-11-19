@@ -1,6 +1,6 @@
 {
-  "current_day": 123,
-  "last_topic": "制度的超国家化与全球治理",
+  "current_day": 124,
+  "last_topic": "软法与全球治理",
   "history": [
     {
       "date": "2026-06-25",
@@ -974,6 +974,14 @@
       "date": "2026-11-19",
       "day": 122,
       "topic": "制度的超国家化与全球治理",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-20",
+      "day": 123,
+      "topic": "软法与全球治理",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
