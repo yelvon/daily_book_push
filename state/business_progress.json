@@ -1,6 +1,6 @@
 {
-  "current_day": 142,
-  "last_case": "Quibi的“内容+移动”错位陷阱",
+  "current_day": 143,
+  "last_case": "Blockbuster的“便利店”困境",
   "history": [
     {
       "date": "2026-06-26",
@@ -1266,6 +1266,15 @@
       "date": "2026-11-19",
       "day": 141,
       "case": "Quibi的“内容+移动”错位陷阱",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-20",
+      "day": 142,
+      "case": "Blockbuster的“便利店”困境",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
