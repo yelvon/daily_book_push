@@ -1,6 +1,6 @@
 {
-  "current_day": 145,
-  "last_topic": "中国民事诉讼中的证据开示与英美法系“Discovery”的对比",
+  "current_day": 146,
+  "last_topic": "公司人格否认：当有限责任成为“无限责任”",
   "history": [
     {
       "date": "2026-06-26",
@@ -1150,6 +1150,14 @@
       "date": "2026-11-18",
       "day": 144,
       "topic": "中国民事诉讼中的证据开示与英美法系“Discovery”的对比",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-19",
+      "day": 145,
+      "topic": "公司人格否认：当有限责任成为“无限责任”",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
