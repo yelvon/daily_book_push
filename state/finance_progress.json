@@ -1,6 +1,6 @@
 {
-  "current_day": 129,
-  "last_topic": "动态资产配置",
+  "current_day": 130,
+  "last_topic": "全球经济周期错位下的资产配置",
   "history": [
     {
       "date": "2026-07-08",
@@ -1025,6 +1025,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-21",
+      "day": 129,
+      "topic": "全球经济周期错位下的资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
