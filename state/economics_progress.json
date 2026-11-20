@@ -1,6 +1,6 @@
 {
-  "current_day": 124,
-  "last_topic": "软法与全球治理",
+  "current_day": 125,
+  "last_topic": "数字服务税与全球税收秩序的重塑",
   "history": [
     {
       "date": "2026-06-25",
@@ -985,6 +985,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-21",
+      "day": 124,
+      "topic": "数字服务税与全球税收秩序的重塑",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
