@@ -1,6 +1,6 @@
 {
-  "current_day": 146,
-  "last_topic": "公司人格否认：当有限责任成为“无限责任”",
+  "current_day": 147,
+  "last_topic": "强制执行中的财产调查与悬赏执行",
   "history": [
     {
       "date": "2026-06-26",
@@ -1158,6 +1158,14 @@
       "date": "2026-11-19",
       "day": 145,
       "topic": "公司人格否认：当有限责任成为“无限责任”",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-20",
+      "day": 146,
+      "topic": "强制执行中的财产调查与悬赏执行",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
