@@ -1,6 +1,6 @@
 {
-  "current_day": 125,
-  "last_topic": "数字服务税与全球税收秩序的重塑",
+  "current_day": 126,
+  "last_topic": "全球供应链“去风险化”与“韧性中心”的崛起",
   "history": [
     {
       "date": "2026-06-25",
@@ -990,6 +990,14 @@
       "date": "2026-11-21",
       "day": 124,
       "topic": "数字服务税与全球税收秩序的重塑",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-22",
+      "day": 125,
+      "topic": "全球供应链“去风险化”与“韧性中心”的崛起",
       "module": "全球化与制度",
       "level": "advanced",
       "style": "case_review"
