@@ -1,6 +1,6 @@
 {
-  "current_day": 147,
-  "last_topic": "强制执行中的财产调查与悬赏执行",
+  "current_day": 148,
+  "last_topic": "“合同套娃”下的管辖之争：仲裁还是诉讼？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1169,6 +1169,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-21",
+      "day": 147,
+      "topic": "“合同套娃”下的管辖之争：仲裁还是诉讼？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
