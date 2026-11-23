@@ -1,6 +1,6 @@
 {
-  "current_day": 149,
-  "last_topic": "当争议变成陷阱：警惕虚假诉讼与恶意诉讼的风险",
+  "current_day": 150,
+  "last_topic": "执行回转：当“赢”了的官司又输了，钱能要回来吗？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1185,6 +1185,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-23",
+      "day": 149,
+      "topic": "执行回转：当“赢”了的官司又输了，钱能要回来吗？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
