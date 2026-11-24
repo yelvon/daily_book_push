@@ -1,6 +1,6 @@
 {
-  "current_day": 132,
-  "last_topic": "效用函数在资产配置中的高级应用",
+  "current_day": 133,
+  "last_topic": "资本市场假设（CMAs）与资产配置",
   "history": [
     {
       "date": "2026-07-08",
@@ -1046,6 +1046,14 @@
       "date": "2026-11-24",
       "day": 131,
       "topic": "效用函数在资产配置中的高级应用",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-25",
+      "day": 132,
+      "topic": "资本市场假设（CMAs）与资产配置",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
