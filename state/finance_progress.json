@@ -1,6 +1,6 @@
 {
-  "current_day": 131,
-  "last_topic": "动态资产配置",
+  "current_day": 132,
+  "last_topic": "效用函数在资产配置中的高级应用",
   "history": [
     {
       "date": "2026-07-08",
@@ -1041,6 +1041,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "case_review"
+    },
+    {
+      "date": "2026-11-24",
+      "day": 131,
+      "topic": "效用函数在资产配置中的高级应用",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
     }
   ]
 }
