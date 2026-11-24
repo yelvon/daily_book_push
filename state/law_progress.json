@@ -1,6 +1,6 @@
 {
-  "current_day": 150,
-  "last_topic": "执行回转：当“赢”了的官司又输了，钱能要回来吗？",
+  "current_day": 151,
+  "last_topic": "当判决损害了“局外人”：第三人撤销之诉",
   "history": [
     {
       "date": "2026-06-26",
@@ -1190,6 +1190,14 @@
       "date": "2026-11-23",
       "day": 149,
       "topic": "执行回转：当“赢”了的官司又输了，钱能要回来吗？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-24",
+      "day": 150,
+      "topic": "当判决损害了“局外人”：第三人撤销之诉",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
