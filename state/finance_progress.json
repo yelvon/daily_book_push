@@ -1,6 +1,6 @@
 {
-  "current_day": 133,
-  "last_topic": "资本市场假设（CMAs）与资产配置",
+  "current_day": 134,
+  "last_topic": "恒定比例投资组合保险（CPPI）",
   "history": [
     {
       "date": "2026-07-08",
@@ -1054,6 +1054,14 @@
       "date": "2026-11-25",
       "day": 132,
       "topic": "资本市场假设（CMAs）与资产配置",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-26",
+      "day": 133,
+      "topic": "恒定比例投资组合保险（CPPI）",
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
