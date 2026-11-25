@@ -1,6 +1,6 @@
 {
-  "current_day": 148,
-  "last_case": "Juicero的“过度工程”陷阱",
+  "current_day": 149,
+  "last_case": "Jawbone的“创新先驱”陷阱",
   "history": [
     {
       "date": "2026-06-26",
@@ -1321,6 +1321,15 @@
       "day": 147,
       "case": "Juicero的“过度工程”陷阱",
       "company": "Juicero",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case"
+    },
+    {
+      "date": "2026-11-26",
+      "day": 148,
+      "case": "Jawbone的“创新先驱”陷阱",
+      "company": "Jawbone",
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
