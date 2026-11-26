@@ -1,6 +1,6 @@
 {
-  "current_day": 152,
-  "last_topic": "外国仲裁裁决的承认与执行",
+  "current_day": 153,
+  "last_topic": "执行异议之诉：当“我的”财产被法院查封了怎么办？",
   "history": [
     {
       "date": "2026-06-26",
@@ -1206,6 +1206,14 @@
       "date": "2026-11-25",
       "day": 151,
       "topic": "外国仲裁裁决的承认与执行",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-26",
+      "day": 152,
+      "topic": "执行异议之诉：当“我的”财产被法院查封了怎么办？",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
