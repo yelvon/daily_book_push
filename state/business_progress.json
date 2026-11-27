@@ -1,6 +1,6 @@
 {
-  "current_day": 149,
-  "last_case": "MoviePass",
+  "current_day": 150,
+  "last_case": "警惕创业的“增长幻象”与“核心逻辑错位”",
   "history": [
     {
       "date": "2026-06-26",
@@ -1333,6 +1333,15 @@
       "module": "失败案例与反模式",
       "level": "advanced",
       "style": "case"
+    },
+    {
+      "date": "2026-11-28",
+      "day": 149,
+      "case": "警惕创业的“增长幻象”与“核心逻辑错位”",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
