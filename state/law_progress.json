@@ -1,6 +1,6 @@
 {
-  "current_day": 153,
-  "last_topic": "执行异议之诉：当“我的”财产被法院查封了怎么办？",
+  "current_day": 154,
+  "last_topic": "诉讼融资：让“打不起官司”不再是难题",
   "history": [
     {
       "date": "2026-06-26",
@@ -1214,6 +1214,14 @@
       "date": "2026-11-26",
       "day": 152,
       "topic": "执行异议之诉：当“我的”财产被法院查封了怎么办？",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "concept"
+    },
+    {
+      "date": "2026-11-27",
+      "day": 153,
+      "topic": "诉讼融资：让“打不起官司”不再是难题",
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
