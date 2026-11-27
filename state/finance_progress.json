@@ -1,6 +1,6 @@
 {
-  "current_day": 134,
-  "last_topic": "动态资产配置",
+  "current_day": 135,
+  "last_topic": "机构投资者在市场波动中私募资产的再平衡困境",
   "history": [
     {
       "date": "2026-07-08",
@@ -1065,6 +1065,14 @@
       "module": "资产配置",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-28",
+      "day": 134,
+      "topic": "机构投资者在市场波动中私募资产的再平衡困境",
+      "module": "资产配置",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
