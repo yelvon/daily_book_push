@@ -1,6 +1,6 @@
 {
-  "current_day": 129,
-  "last_topic": "制度的跨国套利",
+  "current_day": 130,
+  "last_topic": "数据跨境流动与国家安全审查",
   "history": [
     {
       "date": "2026-06-25",
@@ -1025,6 +1025,14 @@
       "module": "全球化与制度",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-28",
+      "day": 129,
+      "topic": "数据跨境流动与国家安全审查",
+      "module": "全球化与制度",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
