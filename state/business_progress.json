@@ -1,6 +1,6 @@
 {
-  "current_day": 150,
-  "last_case": "警惕创业的“增长幻象”与“核心逻辑错位”",
+  "current_day": 151,
+  "last_case": "从增长幻象到核心逻辑错位：创业失败的常见反模式",
   "history": [
     {
       "date": "2026-06-26",
@@ -1338,6 +1338,15 @@
       "date": "2026-11-28",
       "day": 149,
       "case": "警惕创业的“增长幻象”与“核心逻辑错位”",
+      "company": "未知公司",
+      "module": "失败案例与反模式",
+      "level": "advanced",
+      "style": "case_review"
+    },
+    {
+      "date": "2026-11-29",
+      "day": 150,
+      "case": "从增长幻象到核心逻辑错位：创业失败的常见反模式",
       "company": "未知公司",
       "module": "失败案例与反模式",
       "level": "advanced",
