@@ -1,6 +1,6 @@
 {
-  "current_day": 154,
-  "last_topic": "诉讼融资：让“打不起官司”不再是难题",
+  "current_day": 155,
+  "last_topic": "当民事纠纷撞上刑事犯罪：诉讼“中止”与“移送”的玄机",
   "history": [
     {
       "date": "2026-06-26",
@@ -1225,6 +1225,14 @@
       "module": "争议解决与维权",
       "level": "advanced",
       "style": "concept"
+    },
+    {
+      "date": "2026-11-28",
+      "day": 154,
+      "topic": "当民事纠纷撞上刑事犯罪：诉讼“中止”与“移送”的玄机",
+      "module": "争议解决与维权",
+      "level": "advanced",
+      "style": "case_review"
     }
   ]
 }
